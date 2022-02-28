@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isHappy(int n) {
-        int t=300;
+        int t=200;
         while(n!=1 && t>0){
             string s=to_string(n);
             n=0;
