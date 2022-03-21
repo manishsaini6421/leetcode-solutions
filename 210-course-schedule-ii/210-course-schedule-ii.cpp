@@ -46,7 +46,6 @@ public:
         }
         while(!st.empty()){
             ans.push_back(st.top());
-            cout<<st.top();
             st.pop();
         }
         return ans;
