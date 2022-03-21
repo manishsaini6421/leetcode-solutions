@@ -1,7 +1,7 @@
 class Solution {
 public:
     int scheduleCourse(vector<vector<int>>& courses) {
-        sort(courses.begin(),courses.end(),[this](auto &p ,auto &q){return p[1]<q[1];});
+        sort(courses.begin(),courses.end(),[](auto &p ,auto &q){return p[1]<q[1];});
        int sum=0;
         priority_queue<int> q;
         for(auto x:courses){
