@@ -9,7 +9,7 @@ public:
             vector<int> tmp;
             tmp.push_back(1);
             for(int j=0; j<ans[i-1].size(); j++){
-                if(i>=1 && j<ans[i-1].size()-1)
+                if(j<ans[i-1].size()-1)
                     tmp.push_back(ans[i-1][j]+ans[i-1][j+1]);
             }
             tmp.push_back(1);
