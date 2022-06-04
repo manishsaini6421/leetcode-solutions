@@ -19,8 +19,8 @@ public:
     bool helper(vector<vector<char>>& board,int row,int col){
         if(row==9) return true;
         
-        int nrow=0; 
-        int ncol=0;
+        int nrow,ncol; 
+        
         
         if(col !=8){
             ncol=col+1;
