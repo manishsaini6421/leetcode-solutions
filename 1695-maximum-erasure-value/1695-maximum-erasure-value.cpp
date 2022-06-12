@@ -7,7 +7,7 @@ public:
         int start=0,end=0;
         while(start<n && end<n){
             if(m[nums[end]]==0){
-                m[nums[end]]++;
+                m[nums[end]]=1;
                 sum+=nums[end];
                 ans=max(sum,ans);
                 end++;
