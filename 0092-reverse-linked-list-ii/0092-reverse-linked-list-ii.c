@@ -6,7 +6,7 @@
  * };
  */
 struct ListNode* reverseBetween(struct ListNode* head, int left, int right) {
-    // if(head==NULL || head->next==NULL || left==right) return(head);
+   
     struct ListNode *c=head,*bc=NULL;
     for(int i=1; i<left; i++){
         bc=c;
