@@ -12,4 +12,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0025-reverse-nodes-in-k-group](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0025-reverse-nodes-in-k-group) |
 | [0206-reverse-linked-list](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0206-reverse-linked-list) |
+## Math
+|  |
+| ------- |
+| [2383-add-two-integers](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2383-add-two-integers) |
 <!---LeetCode Topics End-->
