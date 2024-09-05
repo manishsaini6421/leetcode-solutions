@@ -14,14 +14,7 @@ public:
             else
             count--;
         }
-        count=0;
-        for(int i=0; i<nums.size(); i++){
-            if(nums[i]==num)
-            count++;
-        }
-        if(count >= (nums.size()/2)){
-            return num;
-        }
-        return -1;
+       
+        return num;
     }
 };
