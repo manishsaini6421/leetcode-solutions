@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1392-find-the-difference-of-two-arrays) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2190-count-common-words-with-one-occurrence) |
+| [2277-count-equal-and-divisible-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2277-count-equal-and-divisible-pairs-in-an-array) |
 | [2331-intersection-of-multiple-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2331-intersection-of-multiple-arrays) |
 | [2486-most-frequent-even-element](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2486-most-frequent-even-element) |
 ## Hash Table
