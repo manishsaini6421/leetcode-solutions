@@ -14,7 +14,6 @@ public:
             else
             count--;
         }
-       
         return num;
     }
 };
