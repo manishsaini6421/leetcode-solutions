@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [1806-count-of-matches-in-tournament](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1806-count-of-matches-in-tournament) |
 | [2284-smallest-value-of-the-rearranged-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2284-smallest-value-of-the-rearranged-number) |
 | [2383-add-two-integers](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2383-add-two-integers) |
 | [2679-count-distinct-numbers-on-board](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2679-count-distinct-numbers-on-board) |
@@ -95,5 +96,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [1806-count-of-matches-in-tournament](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1806-count-of-matches-in-tournament) |
 | [2679-count-distinct-numbers-on-board](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2679-count-distinct-numbers-on-board) |
 <!---LeetCode Topics End-->
