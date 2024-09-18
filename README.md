@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [2284-smallest-value-of-the-rearranged-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2284-smallest-value-of-the-rearranged-number) |
 | [2383-add-two-integers](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2383-add-two-integers) |
 | [3568-find-the-key-of-the-numbers](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3568-find-the-key-of-the-numbers) |
 ## Array
@@ -56,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+| [2284-smallest-value-of-the-rearranged-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2284-smallest-value-of-the-rearranged-number) |
 | [2331-intersection-of-multiple-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2331-intersection-of-multiple-arrays) |
 ## Counting
 |  |
