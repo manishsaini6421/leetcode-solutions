@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0169-majority-element) |
+| [0179-largest-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0179-largest-number) |
 | [0229-majority-element-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
@@ -50,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0169-majority-element) |
+| [0179-largest-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0179-largest-number) |
 | [0229-majority-element-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
@@ -67,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0179-largest-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0179-largest-number) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0920-uncommon-words-from-two-sentences) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2190-count-common-words-with-one-occurrence) |
 ## Two Pointers
@@ -79,4 +82,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+## Greedy
+|  |
+| ------- |
+| [0179-largest-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0179-largest-number) |
 <!---LeetCode Topics End-->
