@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1806-count-of-matches-in-tournament](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1806-count-of-matches-in-tournament) |
 | [2284-smallest-value-of-the-rearranged-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2284-smallest-value-of-the-rearranged-number) |
 | [2383-add-two-integers](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2383-add-two-integers) |
@@ -29,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1392-find-the-difference-of-two-arrays) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [2116-count-number-of-pairs-with-absolute-difference-k](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2116-count-number-of-pairs-with-absolute-difference-k) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2190-count-common-words-with-one-occurrence) |
 | [2277-count-equal-and-divisible-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2277-count-equal-and-divisible-pairs-in-an-array) |
