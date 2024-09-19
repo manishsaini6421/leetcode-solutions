@@ -25,14 +25,6 @@ public:
             }
         }
         string result="";
-        cout<<arr[0].size()<<endl;
-        cout<<arr.size()<<endl;
-        for(int i=0; i<arr.size(); i++){
-            for(int j=0; j<arr[i].size(); j++){
-                cout<<arr[i][j]<<" ";
-            }
-            cout<<endl;
-        }
         int x=0;
        for(int j=arr[0].size()-1; j>=0; j--){
             
