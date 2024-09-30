@@ -12,6 +12,7 @@ public:
         map[key]++;
         if(key==s2){
             count2=INT_MAX;
+            s2="";
             for(auto &pair:map){
                 if(count2>pair.second){
                     count2=pair.second;
@@ -32,21 +33,14 @@ public:
     
     void dec(string key) {
         map[key]--;
-        if(key==s1){
-            count1=0;
-            for(auto& pair:map){
-                if(count1<pair.second){
-                    count1=pair.second;
-                    s1=pair.first;
-                }
-            }
-        }
+       
         if(map[key]==0 && key==s2){
             auto iter = map.find(key);
             map.erase(iter);
           
         
             count2=INT_MAX;
+            s2="";
             for(auto& pair:map){
                 if(count2>pair.second){
                     count2=pair.second;
@@ -62,7 +56,16 @@ public:
             s2=key;
             count2=map[key];
         }
-
+         if(key==s1){
+            count1=0;
+            s1="";
+            for(auto& pair:map){
+                if(count1<pair.second){
+                    count1=pair.second;
+                    s1=pair.first;
+                }
+            }
+        }
     }
     
     string getMaxKey() {
