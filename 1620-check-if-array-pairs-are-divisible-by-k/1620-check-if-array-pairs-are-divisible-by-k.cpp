@@ -13,8 +13,6 @@ public:
                     a=k+(arr[i]%k);
                     
                 }  
-                // a=k+(arr[i]%k);
-                // cout<<"a "<<arr[i]%k<<endl;
                 store[a].push_back(arr[i]);  
                 
             }
