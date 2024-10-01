@@ -15,8 +15,8 @@ public:
             if(freq[i]!=freq[k-i]) return false;
         }  
 
-        // if(k%2==0 && freq[k/2]%2!=0)
-        //     return false;
+        if(k%2==0 && freq[k/2]%2!=0)
+            return false;
        
         return true;
     }
