@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+| [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1392-find-the-difference-of-two-arrays) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1497-design-a-stack-with-increment-operation) |
@@ -53,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0432-all-oone-data-structure](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0432-all-oone-data-structure) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0920-uncommon-words-from-two-sentences) |
+| [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1392-find-the-difference-of-two-arrays) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [2116-count-number-of-pairs-with-absolute-difference-k](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2116-count-number-of-pairs-with-absolute-difference-k) |
@@ -81,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0920-uncommon-words-from-two-sentences) |
+| [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [2116-count-number-of-pairs-with-absolute-difference-k](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2116-count-number-of-pairs-with-absolute-difference-k) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2190-count-common-words-with-one-occurrence) |
