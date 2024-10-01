@@ -7,12 +7,14 @@ public:
             cout<<i<<endl;
             int a;
             if(arr[i]<0){
-                if(abs(arr[i])%k==0)
+                if(arr[i]%k==0)
                     a=0;
                 else{
-                    a=k-(abs(arr[i])%k);
+                    a=k+(arr[i]%k);
                     
                 }  
+                // a=k+(arr[i]%k);
+                // cout<<"a "<<arr[i]%k<<endl;
                 store[a].push_back(arr[i]);  
                 
             }
