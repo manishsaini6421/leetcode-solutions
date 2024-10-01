@@ -1,39 +1,36 @@
 class Solution {
 public:
     bool canArrange(vector<int>& arr, int k) {
-        if(arr.size()==0) return false;
-        vector<vector<int>> store(k);
+        vector<int> freq(k,0);
        for(int i=0; i<arr.size(); i++){
             cout<<i<<endl;
             int a;
             if(arr[i]<0){
                 if(arr[i]%k==0)
                     a=0;
-                else{
+                else
                     a=k+(arr[i]%k);
-                    
-                }  
-                store[a].push_back(arr[i]);  
-                
+
             }
-            else{
-                
+            else                
                 a=arr[i]%k;
-                store[a].push_back(arr[i]);
+
+            freq[a]++;
                 
-            }
+            
        }     
         
-        if(store[0].size()%2!=0)
+        if(freq[0]%2 !=0)
             return false;
-        int i=1,j=store.size()-1;    
+
+        int i=1,j=k-1;    
         while(i<j){
-            if(store[i].size()!=store[j].size())
+            if(freq[i]!=freq[j])
                 return false;
             i++;
             j--;    
         }
-        if(k%2==0 && (store[k/2].size())%2!=0)
+        if(k%2==0 && freq[k/2]%2!=0)
             return false;
        
         return true;
