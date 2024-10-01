@@ -2,21 +2,9 @@ class Solution {
 public:
     bool canArrange(vector<int>& arr, int k) {
         vector<int> freq(k,0);
-       for(int i=0; i<arr.size(); i++){
-            cout<<i<<endl;
-            int a;
-            if(arr[i]<0){
-                if(arr[i]%k==0)
-                    a=0;
-                else
-                    a=k+(arr[i]%k);
-
-            }
-            else                
-                a=arr[i]%k;
-
-            freq[a]++;
-                
+       for(auto num :arr){
+            int rem=((num%k)+k)%k;
+            freq[rem]++;          
             
        }     
         
