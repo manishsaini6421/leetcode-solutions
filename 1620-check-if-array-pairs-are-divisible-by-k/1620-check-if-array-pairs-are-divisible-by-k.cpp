@@ -11,13 +11,10 @@ public:
         if(freq[0]%2 !=0)
             return false;
 
-        int i=1,j=k-1;    
-        while(i<j){
-            if(freq[i]!=freq[j])
-                return false;
-            i++;
-            j--;    
-        }
+        for(int i=1; i<=k/2; i++){
+            if(freq[i]!=freq[k-i]) return false;
+        }  
+
         if(k%2==0 && freq[k/2]%2!=0)
             return false;
        
