@@ -11,12 +11,11 @@ public:
         sort(temp.begin(),temp.end());
 
         unordered_map<int,int> map;
-        int j=1;
+        int rank=1;
         map[temp[0]]=1;
         for(int i=1; i<temp.size(); i++){
-            if(temp[i-1]!=temp[i])
-               j++;
-            map[temp[i]]=j;
+            if(temp[i-1]!=temp[i]) rank++;
+            map[temp[i]]=rank;
         }
 
        
