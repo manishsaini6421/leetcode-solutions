@@ -5,12 +5,12 @@ public:
         vector<int> temp=arr;
 
         if(arr.size()==0) return res;
-        
+
         sort(temp.begin(),temp.end());
 
         unordered_map<int,int> map;
         int rank=1;
-        map[temp[0]]=1;
+        map[temp[0]]=rank;
         for(int i=1; i<temp.size(); i++){
             if(temp[i-1]!=temp[i]) rank++;
             map[temp[i]]=rank;
