@@ -2,12 +2,10 @@ class Solution {
 public:
     vector<int> arrayRankTransform(vector<int>& arr) {
         vector<int> res;
-        vector<int> temp;
+        vector<int> temp=arr;
 
         if(arr.size()==0) return res;
-        for(auto num: arr){
-            temp.push_back(num);
-        }
+        
         sort(temp.begin(),temp.end());
 
         unordered_map<int,int> map;
