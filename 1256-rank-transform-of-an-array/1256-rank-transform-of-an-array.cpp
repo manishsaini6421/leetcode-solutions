@@ -10,7 +10,7 @@ public:
 
         unordered_map<int,int> map;
         int rank=1;
-        map[temp[0]]=rank;
+        map[temp[0]]=1;
         for(int i=1; i<temp.size(); i++){
             if(temp[i-1]!=temp[i]) rank++;
             map[temp[i]]=rank;
