@@ -23,7 +23,8 @@ public:
                 }
                 else break;
             }
-            if(flag==26) return true;
+            if(flag==26) 
+                return true;
             
             map2[s2[i+1]]++;
             map2[s2[k]]--;
