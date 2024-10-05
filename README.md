@@ -57,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0432-all-oone-data-structure](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0432-all-oone-data-structure) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+| [0567-permutation-in-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0567-permutation-in-string) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0920-uncommon-words-from-two-sentences) |
 | [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
 | [1256-rank-transform-of-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1256-rank-transform-of-an-array) |
@@ -107,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0008-string-to-integer-atoi](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0008-string-to-integer-atoi) |
 | [0043-multiply-strings](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0043-multiply-strings) |
 | [0179-largest-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0179-largest-number) |
+| [0567-permutation-in-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0567-permutation-in-string) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0920-uncommon-words-from-two-sentences) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2190-count-common-words-with-one-occurrence) |
 ## Two Pointers
@@ -114,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+| [0567-permutation-in-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0567-permutation-in-string) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 ## Binary Search
@@ -157,4 +160,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1694-make-sum-divisible-by-p](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1694-make-sum-divisible-by-p) |
+## Sliding Window
+|  |
+| ------- |
+| [0567-permutation-in-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0567-permutation-in-string) |
 <!---LeetCode Topics End-->
