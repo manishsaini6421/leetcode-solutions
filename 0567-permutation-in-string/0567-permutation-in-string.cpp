@@ -12,23 +12,19 @@ public:
             map2[s2[i]]++;
         }
         int k=0;
-        cout<<i<<endl;
         i--;
         for(i; i<s2.size(); i++){
-            cout<<"HELOO"<<endl;
+            
             int flag=0;
             for(char j='a'; j<='z'; j++){
-                cout<<map1[j]<<" "<<map2[j]<<endl;
                 if(map1[j]==map2[j]) {
                     
                     flag++;
                 }
                 else break;
             }
-            if(flag==26) {
-                cout<<k<<" "<<i<<endl;
-                return true;
-            }
+            if(flag==26) return true;
+            
             map2[s2[i+1]]++;
             map2[s2[k]]--;
             k++;
