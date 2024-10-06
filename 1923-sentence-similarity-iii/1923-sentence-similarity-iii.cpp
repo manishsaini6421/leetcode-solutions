@@ -11,6 +11,7 @@ public:
 
        stringstream ss2(sentence2);
        vector<string> v2;
+       
        while(ss2>>word){
         v2.push_back(word);
        }
@@ -19,12 +20,10 @@ public:
 
        while(l<=r1 && l<=r2){
         if(v1[l]==v2[l]){
-            cout<<v1[l]<<endl;
             l++;
             
         }
         else if(v1[r1]==v2[r2]){
-            cout<<v1[r1]<<v2[r2]<<endl;
             r1--;
             r2--;
 
