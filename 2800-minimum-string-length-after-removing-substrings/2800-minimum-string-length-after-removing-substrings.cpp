@@ -1,14 +1,16 @@
 class Solution {
 public:
     int minLength(string s) {
-        stack<int> st;
         int i=0;
         while(i<s.size()){
-            if(!st.empty() && ((st.top()=='A' && s[i]=='B') || (st.top()=='C' && s[i]=='D')))st.pop();
-            else st.push(s[i]);
-            
-           i++;
+            if((s[i]=='A' && s[i+1]=='B') || (s[i]=='C' && s[i+1]=='D')){
+                
+                s.erase(i,2);
+                if(i!=0) i--;
+            }
+            else i++;
+           
         }
-        return st.size();
+        return s.size();
     }
 };
