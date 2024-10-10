@@ -7,8 +7,7 @@ public:
                 st.push(i);
             }
        }
-       int res=0,i;
-       cout<<st.top()<<endl;
+       int res=0;
        for(int i=nums.size()-1; i>=0; i--){
             while(!st.empty() && nums[i]>=nums[st.top()]){
                 res=max(res,i-st.top());
