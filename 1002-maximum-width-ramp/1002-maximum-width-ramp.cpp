@@ -14,7 +14,6 @@ public:
                 st.pop();
 
             }
-            if(st.empty())break;
        }
       
        return res;
