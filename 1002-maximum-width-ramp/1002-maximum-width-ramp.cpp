@@ -8,7 +8,7 @@ public:
             }
        }
        int res=0;
-       for(int i=nums.size()-1; i>=0; i--){
+       for(int i=nums.size()-1; (!st.empty()&&i>=0); i--){
             while(!st.empty() && nums[i]>=nums[st.top()]){
                 res=max(res,i-st.top());
                 st.pop();
