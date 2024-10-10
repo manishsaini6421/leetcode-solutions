@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+| [1002-maximum-width-ramp](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1002-maximum-width-ramp) |
 | [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
 | [1256-rank-transform-of-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1256-rank-transform-of-an-array) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1392-find-the-difference-of-two-arrays) |
@@ -168,6 +169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0957-minimum-add-to-make-parentheses-valid) |
+| [1002-maximum-width-ramp](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1002-maximum-width-ramp) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1497-design-a-stack-with-increment-operation) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2800-minimum-string-length-after-removing-substrings) |
@@ -179,4 +181,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0567-permutation-in-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0567-permutation-in-string) |
+## Monotonic Stack
+|  |
+| ------- |
+| [1002-maximum-width-ramp](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1002-maximum-width-ramp) |
 <!---LeetCode Topics End-->
