@@ -25,7 +25,7 @@ public:
             int type=event.first.second;
             int person=event.second;
 
-            if(person==targetFriend && type==1) return availableChairs.top();
+            if(person==targetFriend) return availableChairs.top();
 
             else if(type==1){
                 assignedChairs[person]=availableChairs.top();
