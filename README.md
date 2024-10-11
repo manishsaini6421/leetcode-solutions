@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2284-smallest-value-of-the-rearranged-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2284-smallest-value-of-the-rearranged-number) |
 | [2383-add-two-integers](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2383-add-two-integers) |
 | [2679-count-distinct-numbers-on-board](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2679-count-distinct-numbers-on-board) |
+| [3234-double-modular-exponentiation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3234-double-modular-exponentiation) |
 | [3568-find-the-key-of-the-numbers](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3568-find-the-key-of-the-numbers) |
 ## Array
 |  |
@@ -52,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2679-count-distinct-numbers-on-board](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2679-count-distinct-numbers-on-board) |
 | [2727-number-of-senior-citizens](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2727-number-of-senior-citizens) |
+| [3234-double-modular-exponentiation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3234-double-modular-exponentiation) |
 | [3418-count-pairs-that-form-a-complete-day-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3418-count-pairs-that-form-a-complete-day-ii) |
 ## Hash Table
 |  |
@@ -149,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1806-count-of-matches-in-tournament](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1806-count-of-matches-in-tournament) |
 | [2679-count-distinct-numbers-on-board](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2679-count-distinct-numbers-on-board) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2800-minimum-string-length-after-removing-substrings) |
+| [3234-double-modular-exponentiation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3234-double-modular-exponentiation) |
 ## Depth-First Search
 |  |
 | ------- |
