@@ -21,7 +21,6 @@ public:
        
 
         for(auto event:events){
-            int time=event.first.first;
             int type=event.first.second;
             int person=event.second;
 
