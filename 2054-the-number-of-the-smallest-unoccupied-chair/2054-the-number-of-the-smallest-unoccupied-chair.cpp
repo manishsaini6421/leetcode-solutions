@@ -10,7 +10,7 @@ public:
         }
         sort(events.begin(),events.end());
 
-        vector<int> assignedChairs(n,-1);
+        vector<int> assignedChairs(n);
 
         priority_queue<int,vector<int>,greater<int>> availableChairs;
 
@@ -33,7 +33,7 @@ public:
             }
             else if(type==-1){
                 availableChairs.push(assignedChairs[person]);
-                assignedChairs[person]=-1;
+                
             }
         }
         return -1;
