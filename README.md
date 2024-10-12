@@ -50,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2277-count-equal-and-divisible-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2277-count-equal-and-divisible-pairs-in-an-array) |
 | [2331-intersection-of-multiple-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2331-intersection-of-multiple-arrays) |
 | [2486-most-frequent-even-element](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2486-most-frequent-even-element) |
+| [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2679-count-distinct-numbers-on-board](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2679-count-distinct-numbers-on-board) |
 | [2727-number-of-senior-citizens](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2727-number-of-senior-citizens) |
@@ -96,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1798-max-number-of-k-sum-pairs](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2284-smallest-value-of-the-rearranged-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2284-smallest-value-of-the-rearranged-number) |
 | [2331-intersection-of-multiple-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2331-intersection-of-multiple-arrays) |
+| [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 ## Counting
 |  |
@@ -134,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1798-max-number-of-k-sum-pairs](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1923-sentence-similarity-iii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1923-sentence-similarity-iii) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 ## Binary Search
 |  |
@@ -146,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0179-largest-number) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 ## Simulation
 |  |
 | ------- |
@@ -185,6 +189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1694-make-sum-divisible-by-p](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1694-make-sum-divisible-by-p) |
+| [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 ## Sliding Window
 |  |
 | ------- |
@@ -197,4 +202,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
+| [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 <!---LeetCode Topics End-->
