@@ -13,8 +13,8 @@ public:
         sort(ed.begin(),ed.end());
         int res=0,ed_ptr=0;
         
-        for(auto stnum:st){
-            if(stnum > ed[ed_ptr]){
+        for(auto start:st){
+            if(start > ed[ed_ptr]){
                 ed_ptr++;
             }
             else{
