@@ -28,9 +28,7 @@ public:
             maxVal=max(maxVal,nums[temp.first.second][temp.second+1]);
             }
         }
-        vector<int> vc;
-        vc.push_back(start);
-        vc.push_back(end);
-        return vc;
+       
+        return {start,end};
     }
 };
