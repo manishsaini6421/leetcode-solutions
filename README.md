@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [1002-maximum-width-ramp](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1002-maximum-width-ramp) |
 | [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
 | [1256-rank-transform-of-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1256-rank-transform-of-an-array) |
@@ -66,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0432-all-oone-data-structure](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0432-all-oone-data-structure) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0567-permutation-in-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0567-permutation-in-string) |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0920-uncommon-words-from-two-sentences) |
 | [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
 | [1256-rank-transform-of-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1256-rank-transform-of-an-array) |
@@ -93,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [1256-rank-transform-of-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1256-rank-transform-of-an-array) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2284-smallest-value-of-the-rearranged-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2284-smallest-value-of-the-rearranged-number) |
@@ -147,6 +150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0179-largest-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0179-largest-number) |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
@@ -194,6 +198,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0567-permutation-in-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0567-permutation-in-string) |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -201,6 +206,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 <!---LeetCode Topics End-->
