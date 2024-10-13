@@ -27,9 +27,9 @@ public:
                 start=val;
             }
             if(column+1<nums[index].size()){
-                
-            pq.push({{nums[index][column+1],index},column+1});
-            maxVal=max(maxVal,nums[index][column+1]);
+                int nextVal=nums[index][column+1];
+                pq.push({{nextVal,index},column+1});
+                maxVal=max(maxVal,nextVal);
             }
         }
        
