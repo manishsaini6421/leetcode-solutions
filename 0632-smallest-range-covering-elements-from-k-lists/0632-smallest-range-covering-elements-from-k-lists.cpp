@@ -15,17 +15,21 @@ public:
         while(pq.size()==nums.size()){
             pair<pair<int,int>,int> temp;
             temp=pq.top();
+
+            int val=temp.first.first;
+            int index=temp.first.second;
+            int column=temp.second;
             pq.pop();
             
-            if(diff>maxVal-temp.first.first){
-                diff=maxVal-temp.first.first;
+            if(diff>maxVal-val){
+                diff=maxVal-val;
                 end=maxVal;
-                start=temp.first.first;
+                start=val;
             }
-            if(temp.second+1<nums[temp.first.second].size()){
+            if(column+1<nums[index].size()){
                 
-            pq.push({{nums[temp.first.second][temp.second+1],temp.first.second},temp.second+1});
-            maxVal=max(maxVal,nums[temp.first.second][temp.second+1]);
+            pq.push({{nums[index][column+1],index},column+1});
+            maxVal=max(maxVal,nums[index][column+1]);
             }
         }
        
