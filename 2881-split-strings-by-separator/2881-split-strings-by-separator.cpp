@@ -5,7 +5,8 @@ public:
         vector<string> res;
         for(int i=0; i<n; i++){
             string s="";
-            for(int j=0; j<=words[i].size(); j++){
+            int m=words[i].size();
+            for(int j=0; j<=m; j++){
                 if(words[i][j]==separator && s!="") {
                     res.push_back(s);
                     s="";
