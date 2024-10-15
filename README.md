@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2616-maximal-score-after-applying-k-operations](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2679-count-distinct-numbers-on-board](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2679-count-distinct-numbers-on-board) |
 | [2727-number-of-senior-citizens](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2727-number-of-senior-citizens) |
+| [2881-split-strings-by-separator](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2881-split-strings-by-separator) |
 | [3234-double-modular-exponentiation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3234-double-modular-exponentiation) |
 | [3418-count-pairs-that-form-a-complete-day-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3418-count-pairs-that-form-a-complete-day-ii) |
 | [3533-snake-in-matrix](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3533-snake-in-matrix) |
@@ -132,6 +133,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2190-count-common-words-with-one-occurrence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2190-count-common-words-with-one-occurrence) |
 | [2727-number-of-senior-citizens](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2727-number-of-senior-citizens) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2800-minimum-string-length-after-removing-substrings) |
+| [2881-split-strings-by-separator](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2881-split-strings-by-separator) |
 | [3195-separate-black-and-white-balls](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3195-separate-black-and-white-balls) |
 | [3533-snake-in-matrix](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3533-snake-in-matrix) |
 ## Two Pointers
