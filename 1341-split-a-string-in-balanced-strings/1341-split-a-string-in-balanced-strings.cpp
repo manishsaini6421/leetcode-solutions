@@ -1,15 +1,15 @@
 class Solution {
 public:
     int balancedStringSplit(string s) {
-        int R=0,L=0;
+        int r=0,l=0,n=s.size();
         int ans=0;
-        for(int i=0; i<s.size(); i++){
-            if(s[i]=='R')R++;
-            else L++;
-            if(R==L){
+        for(int i=0; i<n; i++){
+            if(s[i]=='R')r++;
+            else l++;
+            if(r==l){
                 ans++;
-                R=0;
-                L=0;
+                r=0;
+                l=0;
             }
         }
         return ans;
