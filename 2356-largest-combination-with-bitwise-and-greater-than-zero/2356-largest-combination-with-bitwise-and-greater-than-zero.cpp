@@ -6,11 +6,10 @@ public:
             int count=0;
             for(int i=0; i<n; i++){
                 if(candidates[i]&1)count++;
-            }
-            ans=max(ans,count);
-            for(int i=0; i<n; i++){
                 candidates[i]=candidates[i]>>1;
             }
+            ans=max(ans,count);
+           
             i--;
         }
         return ans;
