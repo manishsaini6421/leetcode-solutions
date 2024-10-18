@@ -7,7 +7,7 @@ public:
         for(auto s:word){
             if(s>='0' && s<='9'){
                 x=x*10+(s-'0');
-                x%=10000000000;
+                x%=10000000000;//To avoid overflow
                 flag=1;
             }
             else if(flag){
