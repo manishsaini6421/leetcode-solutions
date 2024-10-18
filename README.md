@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1923-sentence-similarity-iii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1923-sentence-similarity-iii) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2116-count-number-of-pairs-with-absolute-difference-k](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2116-count-number-of-pairs-with-absolute-difference-k) |
+| [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2190-count-common-words-with-one-occurrence) |
 | [2277-count-equal-and-divisible-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2277-count-equal-and-divisible-pairs-in-an-array) |
 | [2331-intersection-of-multiple-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2331-intersection-of-multiple-arrays) |
@@ -228,4 +229,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2616-maximal-score-after-applying-k-operations) |
+## Backtracking
+|  |
+| ------- |
+| [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+## Bit Manipulation
+|  |
+| ------- |
+| [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+## Enumeration
+|  |
+| ------- |
+| [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 <!---LeetCode Topics End-->
