@@ -12,7 +12,6 @@ public:
             if(temp>ans)ans=temp;
 
         }
-        cout<<max<<endl;
         return ans;
     }
 };
