@@ -18,7 +18,6 @@ public:
             }
             if(temp==maxOR)ans++;
         }
-        cout<<maxOR<<endl;
         return ans;
     }
 };
