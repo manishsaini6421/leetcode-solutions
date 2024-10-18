@@ -8,14 +8,11 @@ public:
             maxOR|=num;
         }
         for(int i=0; i<pow(2,n); i++){
-            vector<int> v;
-            for(int j=0; j<n; j++){
-                if(i & (1<<j)) v.push_back(nums[j]);
-            }
             int temp=0;
-            for(auto val:v){
-                temp|=val;
+            for(int j=0; j<n; j++){
+                if(i & (1<<j)) temp|=nums[j];
             }
+           
             if(temp==maxOR)ans++;
         }
         return ans;
