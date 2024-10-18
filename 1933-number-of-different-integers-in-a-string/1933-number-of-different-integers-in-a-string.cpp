@@ -12,7 +12,6 @@ public:
             }
             else if(flag){
                 map[x]++;
-                cout<<x<<endl;
                 x=0;
                 flag=0;
             }
