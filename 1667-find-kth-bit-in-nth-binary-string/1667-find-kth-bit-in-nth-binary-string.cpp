@@ -2,18 +2,18 @@ class Solution {
 public:
     string flip(string s){
         int n=s.size();
-        string s1="";
-        for(int i=n-1; i>=0; i--){
-            if(s[i]=='1')s1+='0';
-            else s1+='1';
+        for(int i=0; i<n; i++){
+            if(s[i]=='1')s[i]='0';
+            else s[i]='1';
         }
-        return s1;
+        return s;
     }
     string generate(int n){
         if(n==1) return "0";
         else if(n==2) return "011";
         string temp1=generate(n-1);
         string temp2=flip(temp1);
+        reverse(temp2.begin(),temp2.end());
         return temp1+"1"+temp2;
 
     }
