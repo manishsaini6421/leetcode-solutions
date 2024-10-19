@@ -14,7 +14,6 @@ public:
         else if(n==2) return "011";
         string temp1=generate(n-1);
         string temp2=flip(temp1);
-        // reverse(temp2.begin(),temp2.end());
         return temp1+"1"+temp2;
 
     }
