@@ -22,13 +22,11 @@ public:
                     char c=stack.top();
                     if(c=='t'){
                         if(expression[i]=='&') temp&=true;
-                        else if(expression[i]=='|') temp|=true;
-                        else if(expression[i]=='!') temp=false;
+                        else temp|=true;
                     }  
                     else {
                         if(expression[i]=='&') temp&=false;
-                        else if(expression[i]=='|') temp|=false;
-                        else if(expression[i]=='!') temp=true;
+                        else temp|=false;
                     }  
                     stack.pop();
                 }
