@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0025-reverse-nodes-in-k-group](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0025-reverse-nodes-in-k-group) |
 | [0206-reverse-linked-list](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0206-reverse-linked-list) |
+| [1197-parsing-a-boolean-expression](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1197-parsing-a-boolean-expression) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1667-find-kth-bit-in-nth-binary-string) |
 ## Math
 |  |
@@ -136,6 +137,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0567-permutation-in-string) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0957-minimum-add-to-make-parentheses-valid) |
+| [1197-parsing-a-boolean-expression](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1197-parsing-a-boolean-expression) |
 | [1304-longest-happy-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1304-longest-happy-string) |
 | [1341-split-a-string-in-balanced-strings](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1341-split-a-string-in-balanced-strings) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1667-find-kth-bit-in-nth-binary-string) |
@@ -212,6 +214,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1002-maximum-width-ramp](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1002-maximum-width-ramp) |
+| [1197-parsing-a-boolean-expression](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1197-parsing-a-boolean-expression) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1497-design-a-stack-with-increment-operation) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2800-minimum-string-length-after-removing-substrings) |
