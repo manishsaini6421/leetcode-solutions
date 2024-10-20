@@ -5,8 +5,8 @@ public:
         int n=expression.size()-1;
         for(int i=n; i>=0; i--){
             if(expression[i]==',') continue;
-           else if(!(expression[i]=='!'  || expression[i]=='|' || expression[i]=='&'))
-            stack.push(expression[i]);
+            else if(!(expression[i]=='!'  || expression[i]=='|' || expression[i]=='&'))
+                stack.push(expression[i]);
             else{
                 stack.pop();
 
