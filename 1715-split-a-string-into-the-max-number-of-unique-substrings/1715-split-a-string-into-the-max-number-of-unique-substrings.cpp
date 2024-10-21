@@ -1,14 +1,14 @@
 class Solution {
 public:
-    int dfs(int start,string s, unordered_set<string>map){
+    int dfs(int start,string s, unordered_set<string>set){
         if(start==s.size()) return 0;
         int maxLength=0;
         for(int i=start+1; i<=s.size(); i++){
             string subs=s.substr(start,i-start);
-            if(map.find(subs)==map.end()){
-                map.insert(subs);
-                maxLength=max(maxLength,1+dfs(i,s,map));
-                map.erase(subs);
+            if(set.find(subs)==set.end()){
+                set.insert(subs);
+                maxLength=max(maxLength,1+dfs(i,s,set));
+                set.erase(subs);
             }
         }
         return maxLength;
