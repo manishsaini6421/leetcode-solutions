@@ -3,7 +3,8 @@ public:
     int dfs(int start,string s, unordered_set<string>set){
         if(start==s.size()) return 0;
         int maxLength=0;
-        for(int i=start+1; i<=s.size(); i++){
+        int n=s.size();
+        for(int i=start+1; i<=n; i++){
             string subs=s.substr(start,i-start);
             if(set.find(subs)==set.end()){
                 set.insert(subs);
