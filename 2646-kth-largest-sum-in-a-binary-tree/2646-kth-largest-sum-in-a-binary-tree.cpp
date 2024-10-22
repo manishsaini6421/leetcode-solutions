@@ -31,9 +31,6 @@ public:
             v.push_back(levelSum);
         }
         sort(v.begin(),v.end());
-        for(auto val:v){
-            cout<<val<<endl;
-        }
         if(v.size()<k) return -1;
         return v[v.size()-k];
     }
