@@ -42,8 +42,6 @@ public:
         TreeNode* parent2;
         int level1=0,level2=0;
         dfs(root,x, y,parent1,parent2,level1,level2,0);
-        // cout<<parent1->val;
-        // cout<<level1<<" "<<level2<<(parent1->val)<<" "<<(parent2->val)<<endl;
         if(level1==level2 && parent1!=parent2) return true;
         return false;
     }
