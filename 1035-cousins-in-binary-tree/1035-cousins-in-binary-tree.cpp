@@ -18,7 +18,7 @@ public:
             parent1=root;
             level1=level;
         }
-        if(root->left && root->left->val==y)
+        else if(root->left && root->left->val==y)
         {
             parent2=root;
             level2=level;
@@ -28,7 +28,7 @@ public:
             parent1=root;
             level1=level;
         }
-        if(root->right && root->right->val==y)
+        else if(root->right && root->right->val==y)
         {
             parent2=root;
             level2=level;
