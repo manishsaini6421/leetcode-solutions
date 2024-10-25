@@ -1,6 +1,6 @@
 class Solution {
 public:
-   static bool custom(const string& s1,const string& s2){
+   static bool custom(string s1,string s2){
         return s1.back()<s2.back();
     }
     string sortSentence(string s) {
