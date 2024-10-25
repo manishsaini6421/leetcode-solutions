@@ -8,7 +8,7 @@ public:
       v.push_back(folder[0]);
       int n=folder.size();
       for(int i=1; i<n; i++){
-        string temp=v[v.size()-1];
+        string temp=v.back();
         string s=folder[i].substr(0,temp.size());
         if(temp==s && folder[i][temp.size()]=='/')continue;
         else v.push_back(folder[i]);
