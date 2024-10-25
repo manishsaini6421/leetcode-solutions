@@ -9,8 +9,9 @@ public:
       int n=folder.size();
       for(int i=1; i<n; i++){
         string temp=v.back();
-        // string s=folder[i].substr(0,temp.size());
-        if(temp==folder[i].substr(0,temp.size()) && folder[i][temp.size()]=='/')continue;
+        int size=temp.size();
+        string s=folder[i].substr(0,size);
+        if(temp==s && folder[i][size]=='/')continue;
         else v.push_back(folder[i]);
       }
       return v;
