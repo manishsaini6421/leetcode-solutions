@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1002-maximum-width-ramp](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1002-maximum-width-ramp) |
 | [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
 | [1256-rank-transform-of-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1256-rank-transform-of-an-array) |
+| [1350-remove-sub-folders-from-the-filesystem](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1392-find-the-difference-of-two-arrays) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1497-design-a-stack-with-increment-operation) |
@@ -143,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1197-parsing-a-boolean-expression](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1197-parsing-a-boolean-expression) |
 | [1304-longest-happy-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1304-longest-happy-string) |
 | [1341-split-a-string-in-balanced-strings](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1341-split-a-string-in-balanced-strings) |
+| [1350-remove-sub-folders-from-the-filesystem](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1667-find-kth-bit-in-nth-binary-string) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
@@ -202,12 +204,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0988-flip-equivalent-binary-trees](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0988-flip-equivalent-binary-trees) |
 | [1035-cousins-in-binary-tree](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1035-cousins-in-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
+| [1350-remove-sub-folders-from-the-filesystem](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Trie
 |  |
 | ------- |
 | [0386-lexicographical-numbers](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0386-lexicographical-numbers) |
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0440-k-th-smallest-in-lexicographical-order) |
+| [1350-remove-sub-folders-from-the-filesystem](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 ## Design
 |  |
 | ------- |
