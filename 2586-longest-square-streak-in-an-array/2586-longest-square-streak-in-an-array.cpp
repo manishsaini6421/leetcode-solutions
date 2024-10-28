@@ -6,7 +6,8 @@ public:
             s.insert(num);
         }
         int ans=0;
-        for(int i=0; i<nums.size(); i++){
+        int n=nums.size();
+        for(int i=0; i<n; i++){
             vector<int> v;
           int temp=nums[i];
             for(int j=1; j<=5; j++){
