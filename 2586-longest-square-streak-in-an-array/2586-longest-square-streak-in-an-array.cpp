@@ -19,7 +19,6 @@ public:
             if(count>ans)
                 ans=count;
         }
-        if(ans==1)return -1;
-        return ans;
+        return (ans==1)?-1:ans;
     }
 };
