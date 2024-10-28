@@ -13,7 +13,7 @@ public:
             for(int j=1; j<=5; j++){
                 if(map[temp]==1)count++;
                 else break;
-                if(temp>500)break;
+                if(temp>350)break;
                 temp*=temp;
             }
             if(count>ans)
