@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2581-divide-players-into-teams-of-equal-skill) |
+| [2586-longest-square-streak-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2679-count-distinct-numbers-on-board](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2679-count-distinct-numbers-on-board) |
 | [2727-number-of-senior-citizens](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2727-number-of-senior-citizens) |
@@ -96,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2486-most-frequent-even-element](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2486-most-frequent-even-element) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2581-divide-players-into-teams-of-equal-skill) |
+| [2586-longest-square-streak-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2677-cousins-in-binary-tree-ii) |
 | [2679-count-distinct-numbers-on-board](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2679-count-distinct-numbers-on-board) |
 | [3418-count-pairs-that-form-a-complete-day-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3418-count-pairs-that-form-a-complete-day-ii) |
@@ -119,6 +121,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2331-intersection-of-multiple-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2331-intersection-of-multiple-arrays) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2581-divide-players-into-teams-of-equal-skill) |
+| [2586-longest-square-streak-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 ## Counting
 |  |
@@ -179,6 +182,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+| [2586-longest-square-streak-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 ## Greedy
 |  |
 | ------- |
@@ -312,6 +316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0097-interleaving-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0097-interleaving-string) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1402-count-square-submatrices-with-all-ones) |
+| [2586-longest-square-streak-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 ## Matrix
 |  |
 | ------- |
