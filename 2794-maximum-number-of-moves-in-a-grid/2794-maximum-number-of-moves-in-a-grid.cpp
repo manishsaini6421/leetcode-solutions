@@ -17,16 +17,15 @@ public:
                     if(grid[j][i-1]<grid[j][i] && dp[j][i-1]!=0)
                     {
                         dp[j][i]=1+dp[j][i-1];
-                        ans=(dp[j][i]>ans)?dp[j][i]:ans;
                     } 
                     if(j>0 && grid[j-1][i-1]<grid[j][i] && dp[j-1][i-1]!=0){
                         dp[j][i]=max(1+dp[j-1][i-1],dp[j][i]);
-                        ans=(dp[j][i]>ans)?dp[j][i]:ans;
                     }
                     if(j<m-1 && grid[j+1][i-1]<grid[j][i] &&dp[j+1][i-1]!=0){
                         dp[j][i]=max(1+dp[j+1][i-1],dp[j][i]);
-                        ans=(dp[j][i]>ans)?dp[j][i]:ans;
+                        
                     }
+                    ans=(dp[j][i]>ans)?dp[j][i]:ans;
                 }    
                 
             }
