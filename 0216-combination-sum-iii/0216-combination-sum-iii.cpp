@@ -6,16 +6,17 @@ public:
         for(int i=1; i<=512; i++){
                 vector<int> sub;
                 int sum=0;
+                int size=0;
                 for(int j=0; j<9; j++){
                     if(1<<j & i)
                     {
                         sub.push_back(set[j]);
                         sum+=set[j];
-                        
+                        size++;
                     }
                     
                 }
-                if(sum==n && sub.size()==k){
+                if(sum==n && size==k){
                     ans.push_back(sub);
                 }
             
