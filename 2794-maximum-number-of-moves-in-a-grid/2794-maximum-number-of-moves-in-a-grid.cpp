@@ -10,7 +10,7 @@ public:
                 if(i==1){
                     if((j>0 && grid[j-1][i-1]<grid[j][i]) || grid[j][i-1]<grid[j][i] || (j<m-1 && grid[j+1][i-1]<grid[j][i] )){
                         dp[j][i]=1;
-                        ans=(dp[j][i]>ans)?dp[j][i]:ans;
+                        ans=1;
                     }
                 }
                 else{
