@@ -15,7 +15,6 @@ public:
                 else{
                     if(grid[j][i-1]<grid[j][i] && dp[j][i-1]!=0)
                     {
-                        cout<<j<<" "<<i<<endl;
                         dp[j][i]=1+dp[j][i-1];
                     } 
                     if(j>0 && grid[j-1][i-1]<grid[j][i] && dp[j-1][i-1]!=0){
