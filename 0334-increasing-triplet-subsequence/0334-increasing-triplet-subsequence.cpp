@@ -10,8 +10,8 @@ public:
             else{
                 *it=num;
             }    
-            if(v.size()==3)return true;
+            
         }
-        return false;
+        return (v.size()>=3)?true:false;
     }
 };
