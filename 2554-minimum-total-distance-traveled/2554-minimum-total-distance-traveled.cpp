@@ -3,7 +3,8 @@ public:
     long long fun(vector<int>& robot,vector<int>& factory,int robotIndex,int factIndex,vector<vector<long long>>&dp){
          if(robotIndex==robot.size())return 0;
         if(factIndex==factory.size())return 1e12;
-
+        
+        //If fun(robot,factory,robotIndex,factIndex,dp) already stored indp table then no need to calculate again.
         if(dp[robotIndex][factIndex]!=-1)return dp[robotIndex][factIndex];
 
         long long pick=abs(robot[robotIndex]-factory[factIndex])+fun(robot,factory,robotIndex+1,factIndex+1,dp);
