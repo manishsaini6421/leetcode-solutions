@@ -5,7 +5,7 @@ public:
         ans+=s[0];
         int count=1;
         for(int i=1; i<s.size(); i++){
-            if(s[i]!=ans[ans.size()-1])
+            if(s[i]!=ans.back())
             {
                 ans+=s[i];
                 count=1;
