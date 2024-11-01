@@ -22,7 +22,6 @@ public:
        }
 
          vector<vector<long long>> dp(robot.size()+1,vector<long long>(fact.size()+1,-1));
-        cout<<fact.size()<<endl;
         return fun(robot,fact,0,0,dp);
     }
 };
