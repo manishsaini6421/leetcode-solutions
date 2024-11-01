@@ -5,6 +5,7 @@ public:
       
         sort(robot.begin(),robot.end());
         sort(factory.begin(),factory.end());
+        
        vector<int> fact;
        for(auto pair:factory){
         fact.insert(fact.end(),pair[1],pair[0]);
