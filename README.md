@@ -169,6 +169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1970-sorting-the-sentence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1970-sorting-the-sentence) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2190-count-common-words-with-one-occurrence) |
+| [2580-circular-sentence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2580-circular-sentence) |
 | [2727-number-of-senior-citizens](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2727-number-of-senior-citizens) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [2881-split-strings-by-separator](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2881-split-strings-by-separator) |
