@@ -154,6 +154,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0097-interleaving-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0097-interleaving-string) |
 | [0179-largest-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0179-largest-number) |
 | [0567-permutation-in-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0567-permutation-in-string) |
+| [0812-rotate-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0812-rotate-string) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1197-parsing-a-boolean-expression](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1197-parsing-a-boolean-expression) |
@@ -342,4 +343,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1402-count-square-submatrices-with-all-ones](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 | [3188-find-champion-i](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3188-find-champion-i) |
+## String Matching
+|  |
+| ------- |
+| [0812-rotate-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0812-rotate-string) |
 <!---LeetCode Topics End-->
