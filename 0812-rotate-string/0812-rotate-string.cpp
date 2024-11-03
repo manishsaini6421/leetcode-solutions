@@ -6,7 +6,6 @@ public:
         while(n>0){
             s+=s[0];
             s.erase(s.begin());
-            cout<<s<<endl;
             if(s==goal)return true;
             n--;
         }
