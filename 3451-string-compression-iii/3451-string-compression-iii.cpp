@@ -8,16 +8,12 @@ public:
             if(temp!=word[i] && count!=9){
                 ans+='0'+count;
                 ans+=temp;
-                
-                cout<<count<<endl;
                 count=1;
                 temp=word[i];
             }
             else if(count==9){
                 ans+='0'+count;
                 ans+=temp;
-                
-                cout<<count<<endl;
                 count=1;
                 temp=word[i];
             } 
