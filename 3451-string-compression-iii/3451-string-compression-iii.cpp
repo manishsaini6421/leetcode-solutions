@@ -5,7 +5,7 @@ public:
         string ans="";
         char temp=word[0];
         for(int i=1; i<=word.size(); i++){
-            if(temp!=word[i] && count!=9){
+            if(temp!=word[i]){
                 ans+='0'+count;
                 ans+=temp;
                 count=1;
