@@ -16,35 +16,31 @@ public:
     
     void fix(int idx) {
         if(flipp%2==0){
-            if(bits[idx]=='0'){
-                count1++;
+            if(bits[idx]=='0')count1++;
                 bits[idx]='1';
                 rev[idx]='0';
-            }
+            
         }
         else{
-            if(bits[idx]=='1'){
-                count1--;
+            if(bits[idx]=='1') count1--;
                 bits[idx]='0';
                 rev[idx]='1';
-            }
+            
         }
     }
     
     void unfix(int idx) {
         if(flipp%2==0){
-            if(bits[idx]=='1'){
-                count1--;
+            if(bits[idx]=='1') count1--;
                 bits[idx]='0';
                 rev[idx]='1';
-            }
+            
         }
         else{
-            if(bits[idx]=='0'){
-                count1++;
+            if(bits[idx]=='0') count1++;
                 bits[idx]='1';
                 rev[idx]='0';
-            }
+            
         }
     }
     
