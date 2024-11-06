@@ -11,7 +11,9 @@ public:
     bool canSortArray(vector<int>& nums) {
         int maxPrevSegment=0,maxCurrSegment=nums[0],count=setBits(nums[0]);
 
-        for(int i=1; i<nums.size(); i++){
+        int n=nums.size();    
+
+        for(int i=1; i<n; i++){
             if(setBits(nums[i])==count && nums[i]>maxPrevSegment){
                 maxCurrSegment=max(maxCurrSegment,nums[i]);
             }
