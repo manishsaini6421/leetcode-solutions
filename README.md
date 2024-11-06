@@ -77,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2881-split-strings-by-separator](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2881-split-strings-by-separator) |
 | [3188-find-champion-i](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3188-find-champion-i) |
 | [3234-double-modular-exponentiation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3234-double-modular-exponentiation) |
+| [3291-find-if-array-can-be-sorted](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3291-find-if-array-can-be-sorted) |
 | [3418-count-pairs-that-form-a-complete-day-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3418-count-pairs-that-form-a-complete-day-ii) |
 | [3533-snake-in-matrix](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3533-snake-in-matrix) |
 ## Hash Table
@@ -133,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2586-longest-square-streak-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
+| [3291-find-if-array-can-be-sorted](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3291-find-if-array-can-be-sorted) |
 ## Counting
 |  |
 | ------- |
@@ -296,6 +298,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
+| [3291-find-if-array-can-be-sorted](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3291-find-if-array-can-be-sorted) |
 ## Enumeration
 |  |
 | ------- |
