@@ -8,8 +8,9 @@ public:
         }
         return count;
     }
-  static  int manual(int num1,int num2){
-    if(setBits(num1)==setBits(num2)) return num1<num2;
+    
+    static  int manual(int num1,int num2){
+        if(setBits(num1)==setBits(num2)) return num1<num2;
         return setBits(num1)<setBits(num2);
     }
     vector<int> sortByBits(vector<int>& arr) {
