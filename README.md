@@ -74,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2586-longest-square-streak-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2679-count-distinct-numbers-on-board](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2679-count-distinct-numbers-on-board) |
+| [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [2727-number-of-senior-citizens](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2727-number-of-senior-citizens) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 | [2881-split-strings-by-separator](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2881-split-strings-by-separator) |
@@ -113,6 +114,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2586-longest-square-streak-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2677-cousins-in-binary-tree-ii) |
 | [2679-count-distinct-numbers-on-board](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2679-count-distinct-numbers-on-board) |
+| [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [3418-count-pairs-that-form-a-complete-day-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3418-count-pairs-that-form-a-complete-day-ii) |
 ## Divide and Conquer
 |  |
