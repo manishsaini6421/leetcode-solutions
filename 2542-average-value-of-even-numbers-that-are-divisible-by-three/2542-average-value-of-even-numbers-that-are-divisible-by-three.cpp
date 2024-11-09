@@ -5,7 +5,7 @@ public:
         int sum=0;
         int n=nums.size();
         for(int i=0; i<n; i++){
-            if(nums[i]%2==0 && nums[i]%3==0){
+            if(nums[i]%6==0){
                 count++;
                 sum+=nums[i];
             }
