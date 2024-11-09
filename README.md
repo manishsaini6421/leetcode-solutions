@@ -44,6 +44,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1001-n-repeated-element-in-size-2n-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1001-n-repeated-element-in-size-2n-array) |
 | [1002-maximum-width-ramp](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1002-maximum-width-ramp) |
 | [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
+| [1071-binary-prefix-divisible-by-5](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1071-binary-prefix-divisible-by-5) |
 | [1256-rank-transform-of-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1256-rank-transform-of-an-array) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1392-find-the-difference-of-two-arrays) |
@@ -304,6 +305,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [1071-binary-prefix-divisible-by-5](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1071-binary-prefix-divisible-by-5) |
 | [1458-sort-integers-by-the-number-of-1-bits](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
 | [1940-maximum-xor-for-each-query](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1940-maximum-xor-for-each-query) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
