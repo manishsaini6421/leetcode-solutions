@@ -18,7 +18,7 @@ public:
             }
             num = 0;
             for (int idx = 0; idx < 32; idx++) {
-                if (v[idx]) num |= (1 << idx);
+                if (v[idx]) num += (1 << idx);
                 
             }
             while (num >= k && i <= j) {
@@ -34,7 +34,7 @@ public:
                 i++;
                 num = 0;
                 for (int idx = 0; idx < 32; idx++) {
-                    if (v[idx]) num |= (1 << idx);
+                    if (v[idx]) num += (1 << idx);
                     
                 }
             }
