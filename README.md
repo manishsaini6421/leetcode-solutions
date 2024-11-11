@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2383-add-two-integers](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2383-add-two-integers) |
 | [2542-average-value-of-even-numbers-that-are-divisible-by-three](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2542-average-value-of-even-numbers-that-are-divisible-by-three) |
 | [2679-count-distinct-numbers-on-board](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2679-count-distinct-numbers-on-board) |
+| [2716-prime-subtraction-operation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2716-prime-subtraction-operation) |
 | [3234-double-modular-exponentiation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3234-double-modular-exponentiation) |
 | [3568-find-the-key-of-the-numbers](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3568-find-the-key-of-the-numbers) |
 ## Array
@@ -78,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2586-longest-square-streak-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2679-count-distinct-numbers-on-board](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2679-count-distinct-numbers-on-board) |
+| [2716-prime-subtraction-operation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2716-prime-subtraction-operation) |
 | [2724-convert-an-array-into-a-2d-array-with-conditions](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2724-convert-an-array-into-a-2d-array-with-conditions) |
 | [2727-number-of-senior-citizens](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2727-number-of-senior-citizens) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2794-maximum-number-of-moves-in-a-grid) |
@@ -215,6 +217,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2586-longest-square-streak-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
+| [2716-prime-subtraction-operation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2716-prime-subtraction-operation) |
 ## Greedy
 |  |
 | ------- |
@@ -229,6 +232,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2616-maximal-score-after-applying-k-operations) |
+| [2716-prime-subtraction-operation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2716-prime-subtraction-operation) |
 | [3195-separate-black-and-white-balls](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3195-separate-black-and-white-balls) |
 ## Simulation
 |  |
@@ -375,4 +379,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0812-rotate-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0812-rotate-string) |
+## Number Theory
+|  |
+| ------- |
+| [2716-prime-subtraction-operation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2716-prime-subtraction-operation) |
 <!---LeetCode Topics End-->
