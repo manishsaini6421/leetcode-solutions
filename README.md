@@ -86,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2727-number-of-senior-citizens](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2727-number-of-senior-citizens) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 | [2881-split-strings-by-separator](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2881-split-strings-by-separator) |
+| [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3188-find-champion-i](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3188-find-champion-i) |
 | [3234-double-modular-exponentiation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3234-double-modular-exponentiation) |
 | [3291-find-if-array-can-be-sorted](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3291-find-if-array-can-be-sorted) |
@@ -151,6 +152,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2586-longest-square-streak-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2699-count-the-number-of-fair-pairs) |
+| [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3291-find-if-array-can-be-sorted](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3291-find-if-array-can-be-sorted) |
 ## Counting
 |  |
@@ -213,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2699-count-the-number-of-fair-pairs) |
+| [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 | [3195-separate-black-and-white-balls](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3195-separate-black-and-white-balls) |
 ## Binary Search
 |  |
@@ -225,6 +228,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2586-longest-square-streak-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2699-count-the-number-of-fair-pairs) |
 | [2716-prime-subtraction-operation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2716-prime-subtraction-operation) |
+| [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
 ## Greedy
 |  |
 | ------- |
