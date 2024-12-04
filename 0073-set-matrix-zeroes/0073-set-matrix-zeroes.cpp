@@ -3,25 +3,43 @@ public:
     void setZeroes(vector<vector<int>>& matrix) {
         int m=matrix.size();
         int n=matrix[0].size();
-        vector<int> row;
-        vector<int> colom;
+        int x=0,y=0;
         for(int i=0; i<m; i++){
-            for(int j=0; j<n; j++){
+            if(matrix[i][0]==0)x=1;
+        }
+        for(int j=0; j<n; j++){
+            if(matrix[0][j]==0)y=1;
+        }
+        for(int i=1; i<m; i++){
+            for(int j=1; j<n; j++){
                 if(matrix[i][j]==0){
-                    row.push_back(i);
-                    colom.push_back(j);
+                    matrix[i][0]=0;
+                    matrix[0][j]=0;
                 }
             }
         }
-        for(auto i:row){
+        for(int i=1; i<m; i++){
+            if(matrix[i][0]==0)
             for(int j=0; j<n; j++){
                 matrix[i][j]=0;
             }
             
         }
-        for(auto j:colom){
+        for(int j=1; j<n; j++){
+            if(matrix[0][j]==0)
             for(int i=0; i<m; i++){
                 matrix[i][j]=0;
+            }
+        }
+        if(x==1){
+            for(int i=0; i<m; i++){
+                matrix[i][0]=0;
+            }
+            
+        }
+        if(y==1){
+            for(int j=0; j<n; j++){
+                matrix[0][j]=0;
             }
         }
     }
