@@ -3,6 +3,7 @@ public:
     string addSpaces(string s, vector<int>& spaces) {
         string ans="";
         int n=spaces.size();
+        int m=s.size();
         int x=0;
         for(int i=0; i<n; i++){
             spaces[i]+=x;
@@ -20,7 +21,7 @@ public:
             }
             k++;
         }
-        while(j<s.size()){
+        while(j<m){
             ans+=s[j];
                 j++;
         }
