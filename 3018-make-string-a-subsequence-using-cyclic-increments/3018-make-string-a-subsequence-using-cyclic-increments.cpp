@@ -9,10 +9,11 @@ public:
                 cout<<i<<endl;
                 i++;
                 j++;
+                if(j==n) return true;
             }
             else i++;
         }
-        if(j==n) return true;
+        
         return false;
     }
 };
