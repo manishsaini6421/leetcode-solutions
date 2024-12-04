@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0066-plus-one](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0073-set-matrix-zeroes) |
+| [0118-pascals-triangle](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0118-pascals-triangle) |
 | [0169-majority-element](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0169-majority-element) |
 | [0179-largest-number](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0179-largest-number) |
 | [0216-combination-sum-iii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0216-combination-sum-iii) |
@@ -396,6 +397,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0097-interleaving-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0097-interleaving-string) |
+| [0118-pascals-triangle](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0118-pascals-triangle) |
 | [0300-longest-increasing-subsequence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0300-longest-increasing-subsequence) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
