@@ -6,7 +6,6 @@ public:
         int i=0,j=0;
         while(i<m){
             if(str2[j]==str1[i] || str2[j]=='a'+((str1[i]-'a'+1))%26){
-                cout<<i<<endl;
                 i++;
                 j++;
                 if(j==n) return true;
