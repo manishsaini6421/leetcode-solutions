@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool canChange(string start, string target) {
-        int i=0,j=0,n=start.size();
+        int i=0,n=start.size();
         int l=0,r=0;
         while(i<n){
               
