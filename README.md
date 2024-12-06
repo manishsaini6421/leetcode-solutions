@@ -68,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1923-sentence-similarity-iii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1923-sentence-similarity-iii) |
 | [1940-maximum-xor-for-each-query](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1940-maximum-xor-for-each-query) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
+| [2107-find-unique-binary-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2107-find-unique-binary-string) |
 | [2116-count-number-of-pairs-with-absolute-difference-k](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2116-count-number-of-pairs-with-absolute-difference-k) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2179-most-beautiful-item-for-each-query) |
@@ -127,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1798-max-number-of-k-sum-pairs](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1933-number-of-different-integers-in-a-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1933-number-of-different-integers-in-a-string) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
+| [2107-find-unique-binary-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2107-find-unique-binary-string) |
 | [2116-count-number-of-pairs-with-absolute-difference-k](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2116-count-number-of-pairs-with-absolute-difference-k) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2190-count-common-words-with-one-occurrence) |
 | [2285-design-bitset](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2285-design-bitset) |
@@ -213,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1933-number-of-different-integers-in-a-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1933-number-of-different-integers-in-a-string) |
 | [1970-sorting-the-sentence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1970-sorting-the-sentence) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2107-find-unique-binary-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2107-find-unique-binary-string) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2190-count-common-words-with-one-occurrence) |
 | [2232-adding-spaces-to-a-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2232-adding-spaces-to-a-string) |
 | [2285-design-bitset](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2285-design-bitset) |
@@ -361,6 +364,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0216-combination-sum-iii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0216-combination-sum-iii) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
+| [2107-find-unique-binary-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2107-find-unique-binary-string) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 ## Bit Manipulation
 |  |
