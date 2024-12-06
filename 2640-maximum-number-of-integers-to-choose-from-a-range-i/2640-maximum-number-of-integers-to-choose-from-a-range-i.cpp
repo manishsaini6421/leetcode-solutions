@@ -18,7 +18,6 @@ bool find(vector<int>& banned,int x,int i,int j){
         int ans=0,count=0;
         for(int i=1; i<=n; i++){
             if(!find(banned,i,0,banned.size()-1)){
-                cout<<i<<endl;
                 if(ans+i<=maxSum){
                     ans+=i; 
                     count++;
