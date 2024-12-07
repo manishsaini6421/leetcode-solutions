@@ -70,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1923-sentence-similarity-iii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1923-sentence-similarity-iii) |
 | [1940-maximum-xor-for-each-query](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1940-maximum-xor-for-each-query) |
+| [2000-minimum-speed-to-arrive-on-time](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2000-minimum-speed-to-arrive-on-time) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2107-find-unique-binary-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2107-find-unique-binary-string) |
 | [2116-count-number-of-pairs-with-absolute-difference-k](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2116-count-number-of-pairs-with-absolute-difference-k) |
@@ -265,6 +266,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
+| [2000-minimum-speed-to-arrive-on-time](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2000-minimum-speed-to-arrive-on-time) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 | [2586-longest-square-streak-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2586-longest-square-streak-in-an-array) |
