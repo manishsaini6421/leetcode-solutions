@@ -8,7 +8,7 @@ public:
         while(left<right){
             int operations=0;
             int mid=(left+right)/2;
-            for(auto num:nums){
+            for(int num:nums){
                     operations+=(num-1)/mid;
                 
             }
