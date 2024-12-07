@@ -5,7 +5,6 @@ public:
        int left=1;
        int right =*max_element(nums.begin(),nums.end());
         
-        int x=0;
         while(left<right){
             int operations=0;
             int mid=(left+right)/2;
