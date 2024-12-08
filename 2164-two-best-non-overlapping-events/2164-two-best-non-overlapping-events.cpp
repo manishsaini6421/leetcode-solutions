@@ -26,7 +26,7 @@ int upper_bound(vector<vector<int>>& events, int index){
     int maxTwoEvents(vector<vector<int>>& events) {
         sort(events.begin(),events.end());
 
-        vector<vector<int>> memo(events.size(),vector<int>(3,-1));
+        vector<vector<int>> memo(events.size(),vector<int>(2,-1));
         return profit(events,0,0,memo);
     }
 };
