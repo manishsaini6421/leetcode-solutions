@@ -108,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3291-find-if-array-can-be-sorted](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3291-find-if-array-can-be-sorted) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3418-count-pairs-that-form-a-complete-day-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3418-count-pairs-that-form-a-complete-day-ii) |
+| [3427-special-array-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3427-special-array-ii) |
 | [3533-snake-in-matrix](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3533-snake-in-matrix) |
 ## Hash Table
 |  |
@@ -279,6 +280,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2699-count-the-number-of-fair-pairs](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2699-count-the-number-of-fair-pairs) |
 | [2716-prime-subtraction-operation](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2716-prime-subtraction-operation) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
+| [3427-special-array-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3427-special-array-ii) |
 ## Greedy
 |  |
 | ------- |
@@ -353,6 +355,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1940-maximum-xor-for-each-query](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1940-maximum-xor-for-each-query) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manishsaini6421/leetcode-solutions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
+| [3427-special-array-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/3427-special-array-ii) |
 ## Sliding Window
 |  |
 | ------- |
