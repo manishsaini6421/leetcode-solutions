@@ -10,9 +10,7 @@ public:
             }
         }
         v.push_back({x,(int) nums.size()-1});
-        for(int i=0; i<v.size(); i++){
-            cout<<v[i][0]<<" "<<v[i][1]<<endl;
-        }
+       
         vector<bool>result;
         for(int i=0; i<queries.size(); i++){
             int first=queries[i][0];
