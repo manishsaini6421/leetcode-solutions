@@ -3,16 +3,18 @@ public:
     vector<bool> isArraySpecial(vector<int>& nums, vector<vector<int>>& queries) {
         vector<vector<int>> v;
         int x=0;
-        for(int i=1; i<nums.size(); i++){
+        int n=nums.size();
+        for(int i=1; i<n; i++){
             if((nums[i]%2==0 &nums[i-1]%2==0) || (nums[i]%2!=0 &nums[i-1]%2!=0)) {
                 v.push_back({x,i-1});
                 x=i;
             }
         }
-        v.push_back({x,(int) nums.size()-1});
+        v.push_back({x,n-1});
        
         vector<bool>result;
-        for(int i=0; i<queries.size(); i++){
+        int m=queries.size();
+        for(int i=0; i<m; i++){
             int first=queries[i][0];
             int l=0,h=v.size()-1;
              while(l<=h){
