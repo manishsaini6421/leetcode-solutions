@@ -14,9 +14,10 @@ public:
        
         vector<bool>result;
         int m=queries.size();
+        int vsize=v.size();
         for(int i=0; i<m; i++){
             int first=queries[i][0];
-            int l=0,h=v.size()-1;
+            int l=0,h=vsize-1;
              while(l<=h){
                 int mid=(l+h)/2;
                 if(v[mid][0]<=first && first<=v[mid][1]){
