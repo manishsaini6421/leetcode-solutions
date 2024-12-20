@@ -12,7 +12,7 @@
 class Solution {
 public:
    void reverse(TreeNode* leftChild,TreeNode* rightChild, int lavel){
-    if(leftChild==NULL)return;
+    if(leftChild==NULL || rightChild==NULL)return;
     if(lavel%2==0){
         int temp=leftChild->val;
         leftChild->val=rightChild->val;
