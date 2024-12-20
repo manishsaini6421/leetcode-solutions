@@ -125,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0567-permutation-in-string](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0567-permutation-in-string) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0920-uncommon-words-from-two-sentences) |
 | [1001-n-repeated-element-in-size-2n-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1001-n-repeated-element-in-size-2n-array) |
 | [1055-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1055-pairs-of-songs-with-total-durations-divisible-by-60) |
@@ -318,6 +319,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0386-lexicographical-numbers](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0386-lexicographical-numbers) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [0988-flip-equivalent-binary-trees](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0988-flip-equivalent-binary-trees) |
 | [1035-cousins-in-binary-tree](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1035-cousins-in-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
@@ -416,6 +418,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0102-binary-tree-level-order-traversal) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [0988-flip-equivalent-binary-trees](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0988-flip-equivalent-binary-trees) |
 | [1035-cousins-in-binary-tree](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1035-cousins-in-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
@@ -428,6 +431,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0102-binary-tree-level-order-traversal) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1035-cousins-in-binary-tree](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1035-cousins-in-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
@@ -439,6 +443,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0102-binary-tree-level-order-traversal) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [0988-flip-equivalent-binary-trees](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0988-flip-equivalent-binary-trees) |
 | [1035-cousins-in-binary-tree](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1035-cousins-in-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
