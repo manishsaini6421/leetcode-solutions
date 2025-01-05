@@ -3,8 +3,6 @@ public:
     string shiftingLetters(string s, vector<vector<int>>& shifts) {
         int n=shifts.size();
         int m=s.size();
-        
-        cout<<m<<endl;
         int arr[m+1];
         for(int i=0; i<=m; i++){
             arr[i]=0;
