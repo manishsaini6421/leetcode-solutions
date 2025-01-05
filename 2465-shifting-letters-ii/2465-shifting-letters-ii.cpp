@@ -3,10 +3,8 @@ public:
     string shiftingLetters(string s, vector<vector<int>>& shifts) {
         int n=shifts.size();
         int m=s.size();
-        int arr[m+1];
-        for(int i=0; i<=m; i++){
-            arr[i]=0;
-        }
+        vector<int> arr(m+1,0);
+       
         for(int i=0; i<n; i++){
             if(shifts[i][2]==0){
                 arr[shifts[i][0]]-=1;
