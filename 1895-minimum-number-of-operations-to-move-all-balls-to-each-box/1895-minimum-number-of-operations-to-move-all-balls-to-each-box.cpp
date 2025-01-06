@@ -1,16 +1,16 @@
 class Solution {
 public:
     vector<int> minOperations(string boxes) {
-        
+        vector<int> result;
         int n=boxes.size();
-        vector<int> ans(n,0);
         for(int i=0; i<n; i++){
-            
-            for(int j=0;j<n; j++){
-                if(boxes[j]=='1' && i!=j)ans[i]+=abs(j-i);
+            int count=0;
+            for(int j=0; j<n; j++){
+                if(boxes[j]=='1')count+=abs(i-j);
             }
+            result.push_back(count);
+            
         }
-        
-        return ans;
+        return result;
     }
 };
