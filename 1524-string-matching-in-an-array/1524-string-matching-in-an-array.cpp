@@ -8,7 +8,7 @@ static bool manual(string s1,string s2){
         sort(words.begin(),words.end(),manual);
         for(int i=0; i<words.size(); i++){
             for(int j=i+1; j<words.size(); j++){
-                if(words[j].find(words[i])!=string::npos){
+                if(words[j].find(words[i])!=-1){//find will return -1 if not fount.
                     ans.push_back(words[i]);
                     break;
                 }
