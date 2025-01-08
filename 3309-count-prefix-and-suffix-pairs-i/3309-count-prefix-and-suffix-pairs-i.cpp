@@ -5,23 +5,11 @@ public:
         int n=words.size();
         for(int i=0; i<n; i++){
             for(int j=i+1; j<n; j++){
-                int size=words[i].size();
-                 int size1=words[j].size();
-                if(size<=size1){
-                    int flag=0;
-                for(int k=0; k<size; k++){
-                    if(words[i][k]!=words[j][k])flag++;
-                    
+                int size1=words[i].size();
+                 int size2=words[j].size();
+                if(size1<=size2){
+                    if(words[j].substr(0,size1)==words[i] && words[j].substr(size2-size1,size1)==words[i])ans++;
                 }
-               
-                for(int l=size1-size; l<size1; l++){
-                    if(words[i][l-(size1-size)]!=words[j][l])flag++;
-                   
-                }
-                cout<<flag<<endl;
-                if(flag==0)ans++;
-                }
-                
             }
         }
         return ans;
