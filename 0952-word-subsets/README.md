@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/word-subsets">952. Word Subsets</a></h2><h3>Medium</h3><hr><p>You are given two string arrays <code>words1</code> and <code>words2</code>.</p>
+<h2><a href="https://leetcode.com/problems/word-subsets/?envType=daily-question&envId=2025-01-10">952. Word Subsets</a></h2><h3>Medium</h3><hr><p>You are given two string arrays <code>words1</code> and <code>words2</code>.</p>
 
 <p>A string <code>b</code> is a <strong>subset</strong> of string <code>a</code> if every letter in <code>b</code> occurs in <code>a</code> including multiplicity.</p>
 
