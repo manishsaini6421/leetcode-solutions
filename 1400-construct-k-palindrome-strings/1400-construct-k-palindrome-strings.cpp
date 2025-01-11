@@ -1,10 +1,12 @@
 class Solution {
 public:
     bool canConstruct(string s, int k) {
-        if(s.size()<k)return false;
+        int n=s.size();
+
+        if(n<k)return false;
         vector<int> v(26,0);
 
-        for(int i=0; i<s.size(); i++){
+        for(int i=0; i<n; i++){
             v[s[i]-'a']++;
         }
         int count=0;
