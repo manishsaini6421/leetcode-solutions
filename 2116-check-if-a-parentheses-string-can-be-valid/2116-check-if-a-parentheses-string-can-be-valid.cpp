@@ -2,8 +2,9 @@ class Solution {
 public:
     bool canBeValid(string s, string locked) {
         if(s.size()%2!=0)return false;
-        vector<long int> v1;
-        vector<long int> v2;
+        vector<int> v1;
+        vector<int> v2;
+
         for(int i=0; i<s.size(); i++){
            if(locked[i]=='0')v1.push_back(i);
            else{
