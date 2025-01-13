@@ -13,7 +13,7 @@ public:
         for(int i=0; i<26; i++){
             if(v[i]>0){
                 if(v[i]%2==0)ans+=2;
-            else ans+=1;
+                else ans+=1;
             }
             
 
