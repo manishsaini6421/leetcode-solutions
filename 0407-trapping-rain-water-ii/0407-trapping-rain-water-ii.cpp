@@ -10,34 +10,16 @@ public:
         vector<vector<int>> visited(m,vector<int> (n,0));
 
         for(int i=0; i<m; i++){
-            vector<int> v1(3,0);
-            v1[0]=heightMap[i][0];
-            v1[1]=i;
-            v1[2]=0;
-            visited[i][0]=1;
-            pq.push(v1);
-            vector<int> v2(3,0);
-            v2[0]=heightMap[i][n-1];
-            v2[1]=i;
-            v2[2]=n-1;
-            visited[i][n-1]=1;
-            pq.push(v2);
+            pq.push({heightMap[i][0],i,0});
+            pq.push({heightMap[i][n-1],i,n-1});
+            visited[i][0]= visited[i][n-1]=1;
 
         }
 
         for(int j=0; j<n; j++){
-            vector<int> v1(3,0);
-            v1[0]=heightMap[0][j];
-            v1[1]=0;
-            v1[2]=j;
-            visited[0][j]=1;
-            pq.push(v1);
-            vector<int> v2(3,0);
-            v2[0]=heightMap[m-1][j];
-            v2[1]=m-1;
-            v2[2]=j;
-            visited[m-1][j]=1;
-            pq.push(v2);
+            pq.push({heightMap[0][j],0,j});            
+            pq.push({heightMap[m-1][j],m-1,j});
+            visited[0][j]=visited[m-1][j]=1;
         }
        
        int ans=0;
