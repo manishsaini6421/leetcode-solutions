@@ -1,59 +1,75 @@
 class Solution {
 public:
     int trapRainWater(vector<vector<int>>& heightMap) {
-        int m = heightMap.size();
-        if (m == 0) return 0; // Handle edge case for empty input
-        int n = heightMap[0].size();
-        if (n == 0) return 0; // Handle edge case for empty input
+        int m=heightMap.size();
+        int n=heightMap[0].size();
+       
 
-        // Priority queue to hold {height, row, col} of boundary cells
         priority_queue<vector<int>, vector<vector<int>>, greater<vector<int>>> pq;
 
-        // Visited matrix to mark processed cells
-        vector<vector<int>> visited(m, vector<int>(n, 0));
+        vector<vector<int>> visited(m,vector<int> (n,0));
 
-        // Add boundary cells to the priority queue
-        for (int i = 0; i < m; ++i) {
-            pq.push({heightMap[i][0], i, 0});       // Left boundary
-            pq.push({heightMap[i][n - 1], i, n - 1}); // Right boundary
-            visited[i][0] = visited[i][n - 1] = 1; // Mark visited
+        for(int i=0; i<m; i++){
+            vector<int> v1(3,0);
+            v1[0]=heightMap[i][0];
+            v1[1]=i;
+            v1[2]=0;
+            visited[i][0]=1;
+            pq.push(v1);
+            vector<int> v2(3,0);
+            v2[0]=heightMap[i][n-1];
+            v2[1]=i;
+            v2[2]=n-1;
+            visited[i][n-1]=1;
+            pq.push(v2);
+
         }
-        for (int j = 0; j < n; ++j) {
-            pq.push({heightMap[0][j], 0, j});       // Top boundary
-            pq.push({heightMap[m - 1][j], m - 1, j}); // Bottom boundary
-            visited[0][j] = visited[m - 1][j] = 1; // Mark visited
+
+        for(int j=0; j<n; j++){
+            vector<int> v1(3,0);
+            v1[0]=heightMap[0][j];
+            v1[1]=0;
+            v1[2]=j;
+            visited[0][j]=1;
+            pq.push(v1);
+            vector<int> v2(3,0);
+            v2[0]=heightMap[m-1][j];
+            v2[1]=m-1;
+            v2[2]=j;
+            visited[m-1][j]=1;
+            pq.push(v2);
         }
+       
+       int ans=0;
+       while(!pq.empty()){
+            vector<int> v=pq.top();
 
-        // Directions for moving to neighbors
-        vector<pair<int, int>> directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
-        int waterTrapped = 0;
-
-        // Process cells in the priority queue
-        while (!pq.empty()) {
-            auto cell = pq.top();
             pq.pop();
-
-            int height = cell[0]; // Current cell's height
-            int x = cell[1];
-            int y = cell[2];
-
-            // Explore all 4 neighbors
-            for (auto& dir : directions) {
-                int nx = x + dir.first; // New row
-                int ny = y + dir.second; // New col
-
-                // Skip invalid or already visited cells
-                if (nx < 0 || nx >= m || ny < 0 || ny >= n || visited[nx][ny]) 
-                    continue;
-
-                visited[nx][ny] = 1; // Mark neighbor as visited
-                // Calculate trapped water for the neighbor
-                waterTrapped += max(0, height - heightMap[nx][ny]);
-                // Add the neighbor to the queue with the updated height
-                pq.push({max(height, heightMap[nx][ny]), nx, ny});
+            if(v[2]<n-1 && !visited[v[1]][v[2]+1]){
+                ans+=max(0,v[0]-heightMap[v[1]][v[2]+1]);
+                visited[v[1]][v[2]+1]=1;
+                pq.push(vector<int> {max(v[0],heightMap[v[1]][v[2]+1]),v[1],v[2]+1});
             }
-        }
+            if(v[2]>0 && !visited[v[1]][v[2]-1]){
+                ans+=max(0,v[0]-heightMap[v[1]][v[2]-1]);
+                visited[v[1]][v[2]-1]=1;
+                pq.push(vector<int> {max(v[0],heightMap[v[1]][v[2]-1]),v[1],v[2]-1});
+            }
+            if(v[1]<m-1 && !visited[v[1]+1][v[2]]){
+                ans+=max(0,v[0]-heightMap[v[1]+1][v[2]]);
+                visited[v[1]+1][v[2]]=1;
+                pq.push(vector<int> {max(v[0],heightMap[v[1]+1][v[2]]),v[1]+1,v[2]});
+            }
+            if(v[1]>0 && !visited[v[1]-1][v[2]]){
+                ans+=max(0,v[0]-heightMap[v[1]-1][v[2]]);
+                visited[v[1]-1][v[2]]=1;
+                pq.push(vector<int> {max(v[0],heightMap[v[1]-1][v[2]]),v[1]-1,v[2]});
+            }
+            
+                
+       }
 
-        return waterTrapped;
+        return ans;
+
     }
 };
