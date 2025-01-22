@@ -7,7 +7,7 @@ public:
 
         vector<vector<int>> ans(n,vector<int>(m,0));
 
-        priority_queue<vector<int>, vector<vector<int>>, greater<vector<int>>> pq;
+        queue<pair<int,int>> q;
 
         vector<vector<int>> visited(n,vector<int>(m,0));
 
@@ -15,7 +15,7 @@ public:
             for(int j=0; j<m; j++){
                 if(isWater[i][j]){
                     ans[i][j]=0;
-                    pq.push({ans[i][j],i,j});
+                    q.push({i,j});
                     visited[i][j]=1;
                 }
                 
@@ -25,18 +25,18 @@ public:
 
 
         vector<pair<int,int>> directions={{-1,0},{1,0},{0,-1},{0,1}};
-        while(!pq.empty()){
-            vector<int> v=pq.top();
-            pq.pop();
+        while(!q.empty()){
+            pair<int,int> p=q.front();
+            q.pop();
                
                for(auto [x,y]:directions){
-                int nx=v[1]+x;
-                int ny=v[2]+y;
+                int nx=p.first+x;
+                int ny=p.second+y;
 
                 if(nx>=0 && nx<n && ny>=0 && ny<m && !visited[nx][ny]){
-                    ans[nx][ny]=v[0]+1;
+                    ans[nx][ny]=ans[p.first][p.second]+1;
                     visited[nx][ny]=1;
-                    pq.push({v[0]+1,nx,ny});
+                    q.push({nx,ny});
                 }
                }
              
