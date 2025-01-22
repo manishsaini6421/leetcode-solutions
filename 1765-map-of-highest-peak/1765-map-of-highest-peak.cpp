@@ -23,30 +23,23 @@ public:
             }
         }
 
+
+        vector<pair<int,int>> directions={{-1,0},{1,0},{0,-1},{0,1}};
         while(!pq.empty()){
             vector<int> v=pq.top();
             pq.pop();
                
-                if(v[1]<n-1 && !visited[v[1]+1][v[2]]){
-                    visited[v[1]+1][v[2]]=1;
-                    ans[v[1]+1][v[2]]=v[0]+1;
-                    pq.push({v[0]+1,v[1]+1,v[2]});
+               for(auto [x,y]:directions){
+                int nx=v[1]+x;
+                int ny=v[2]+y;
+
+                if(nx>=0 && nx<n && ny>=0 && ny<m && !visited[nx][ny]){
+                    ans[nx][ny]=v[0]+1;
+                    visited[nx][ny]=1;
+                    pq.push({v[0]+1,nx,ny});
                 }
-                if(v[1]>0 && !visited[v[1]-1][v[2]]){
-                    visited[v[1]-1][v[2]]=1;
-                    ans[v[1]-1][v[2]]=v[0]+1;
-                    pq.push({v[0]+1,v[1]-1,v[2]});
-                }
-                if(v[2]<m-1 && !visited[v[1]][v[2]+1]){
-                    visited[v[1]][v[2]+1]=1;
-                    ans[v[1]][v[2]+1]=v[0]+1;
-                    pq.push({v[0]+1,v[1],v[2]+1});
-                }
-                if(v[2]>0 && !visited[v[1]][v[2]-1]){
-                    visited[v[1]][v[2]-1]=1;
-                    ans[v[1]][v[2]-1]=v[0]+1;
-                    pq.push({v[0]+1,v[1],v[2]-1});
-                }
+               }
+             
         }
         return ans;
     }
