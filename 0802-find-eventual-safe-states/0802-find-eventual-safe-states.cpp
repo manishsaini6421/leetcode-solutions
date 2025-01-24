@@ -22,7 +22,7 @@ public:
         while(!q.empty()){
             auto p=q.front();
             q.pop();
-            if(indegree[p]==0)ans.push_back(p);
+            if(!indegree[p])ans.push_back(p);
             for(auto node:v[p]){
                 indegree[node]--;
                 if(!indegree[node])q.push(node);
