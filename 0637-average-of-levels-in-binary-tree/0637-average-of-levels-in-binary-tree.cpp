@@ -15,10 +15,10 @@ public:
         if(!root)return -1;
         if(!root->left && !root->right)return 0;
 
-        int x=1+lavels(root->left);
-        int y=1+lavels(root->right);
+        int x=lavels(root->left);
+        int y=lavels(root->right);
 
-        return max(x,y);
+        return 1+max(x,y);
     }
     void bfs(TreeNode* root,vector<vector<int>> &v,int lavel){
         if(!root)return;
