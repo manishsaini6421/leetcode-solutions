@@ -16,7 +16,7 @@ public:
     int longestCycle(vector<int>& edges) {
         int n=edges.size();
         
-        vector<bool> visited(n,0);
+        vector<bool> visited(n,false);
         for(int i=0; i<n; i++){
             if(!visited[i]){
                 unordered_map<int,int> dist;
