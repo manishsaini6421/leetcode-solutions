@@ -41,7 +41,6 @@ public:
             for(auto num:v[i]){
                 sum+=num;
             }
-            cout<<sum<<" ";
             ans.push_back(sum/v[i].size());
         }
         return ans;
