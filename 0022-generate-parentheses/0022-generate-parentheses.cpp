@@ -2,12 +2,13 @@ class Solution {
 public:
    
     void gen(vector<string> &ans,int n,string s,int open,int close){
-        if(open<close || open>n || close>n)return;
-       if(open==n && close==n){
+        
+
+        if(open==n && close==n){
         ans.push_back(s);
         return;
        }
-       
+       if(open<close || open>n || close>n)return;
        else{
         gen(ans,n,s+')',open,close+1);
         gen(ans,n,s+'(',open+1,close);
