@@ -1,35 +1,24 @@
 class Solution {
 public:
-    bool bfs(vector<vector<int>> &adj,int node,int target,vector<int> &visited){
-        visited[node]=1;
-        queue<int> q;
-        q.push(node);
-        while(!q.empty()){
-            int top=q.front();
+   
+    vector<bool> checkIfPrerequisite(int numCourses, vector<vector<int>>& prerequisites,        vector<vector<int>>& queries) {
 
-            q.pop();
-            for(auto val:adj[top]){
-                if(!visited[val]){
-                    if(val==target)return true;
-                    visited[val]=1;
-                    q.push(val);
+        vector<vector<int>> adj(numCourses,vector<int> (numCourses,0));
+        for(auto pre:prerequisites){
+            adj[pre[0]][pre[1]]=1;
+        }
+
+        for(int k=0; k<numCourses; k++){
+            for(int i=0; i<numCourses; i++){
+                for(int j=0; j<numCourses; j++){
+                    if(adj[i][k] & adj[k][j])
+                        adj[i][j]=1;
                 }
             }
         }
-        return false;
-    }
-    vector<bool> checkIfPrerequisite(int numCourses, vector<vector<int>>& prerequisites,        vector<vector<int>>& queries) {
-
-        vector<vector<int>> adj(numCourses);
-        for(int i=0; i<prerequisites.size(); i++){
-            adj[prerequisites[i][1]].push_back(prerequisites[i][0]);
-            
-        }
-
         vector<bool> ans;
-        for(int i=0; i<queries.size(); i++){
-            vector<int> visited(numCourses,0);
-            if(bfs(adj,queries[i][1],queries[i][0],visited))ans.push_back(true);
+        for(auto query:queries){
+            if(adj[query[0]][query[1]])ans.push_back(true);
             else ans.push_back(false);
         }
         return ans;
