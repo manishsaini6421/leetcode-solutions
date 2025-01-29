@@ -1,48 +1,54 @@
-class Solution {
+class DSU {
+
 public:
-    bool isCycle(vector<vector<int>> &adj,int node,vector<int> &visited){
+    vector<int> Parent, Rank;
 
-        stack<pair<int,int>> s;
-        int n=adj.size();
-        
-        s.push({node,-1});
-        visited[node]=1;
-        while(!s.empty()){
-            auto top=s.top();
-            s.pop();
-            for(auto vertex:adj[top.first]){
+    DSU(int n) {
+        Parent.resize(n);
+        Rank.resize(n, 0);
+        for (int i = 0; i < n; i++)
+            Parent[i] = i;
+    }
 
-                if(visited[vertex] && vertex!=top.second){
-                    cout<<vertex<<" "<<top.second<<endl;
-                    return true;
-                    }
-                else if(!visited[vertex]){
-                    s.push({vertex,top.first});
-                    visited[vertex]=1;
-                }
-                
+    int Find(int x) {
+        if (Parent[x] == x)
+            return x;
+        return Parent[x] = Find(Parent[x]);
+    }
+
+    bool Union(int x, int y) {
+        int rootX = Find(x), rootY = Find(y);
+
+        if (rootX != rootY) {
+            if (Rank[rootX] > Rank[rootY]) {
+                Parent[rootY] = rootX;
+
+            } else if(Rank[rootX] < Rank[rootY]) {
+                Parent[rootX] = rootY;
             }
+            else{
+                Parent[rootY]=rootX;
+                Rank[rootX]++;
+            }
+            
+            return true;
         }
         return false;
     }
-    vector<int> findRedundantConnection(vector<vector<int>>& edges) {
-        
-        int n=edges.size();
-      
-        vector<vector<int>> adj(n+1);
-        vector<int> visited(n+1,0);
+};
+class Solution {
 
-        for(int i=0; i<n; i++){
-            if(visited[edges[i][1]] && visited[edges[i][0]])return edges[i];
-            adj[edges[i][1]].push_back(edges[i][0]);
-            adj[edges[i][0]].push_back(edges[i][1]);
-            visited[edges[i][1]]=1;
-            visited[edges[i][0]]=1;
+public:
+    vector<int> findRedundantConnection(vector<vector<int>>& edges) {
+
+        int n = edges.size();
+        DSU dsu(n);
+
+        for (int i = 0; i < n; i++) {
+            if (!dsu.Union(edges[i][0]-1, edges[i][1]-1))
+                return edges[i];
         }
-        
-        // for(int i=n-1; i>=0; i--){
-        //     if(isCycle(adj,edges[i][0],visited))return edges[i];
-        // }
-        return edges[0];
+
+        return {};
     }
 };
