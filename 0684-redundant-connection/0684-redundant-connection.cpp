@@ -23,14 +23,13 @@ public:
             if (Rank[rootX] > Rank[rootY]) {
                 Parent[rootY] = rootX;
 
-            } else if(Rank[rootX] < Rank[rootY]) {
+            } else if (Rank[rootX] < Rank[rootY]) {
                 Parent[rootX] = rootY;
-            }
-            else{
-                Parent[rootY]=rootX;
+            } else {
+                Parent[rootY] = rootX;
                 Rank[rootX]++;
             }
-            
+
             return true;
         }
         return false;
@@ -45,7 +44,7 @@ public:
         DSU dsu(n);
 
         for (int i = 0; i < n; i++) {
-            if (!dsu.Union(edges[i][0]-1, edges[i][1]-1))
+            if (!dsu.Union(edges[i][0] - 1, edges[i][1] - 1))
                 return edges[i];
         }
 
