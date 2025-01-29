@@ -10,11 +10,7 @@ public:
             Parent[i] = i;
     }
 
-    int Find(int x) {
-        if (Parent[x] == x)
-            return x;
-        return Parent[x] = Find(Parent[x]);
-    }
+    int Find(int x) { return Parent[x] = Parent[x] == x ? x : Find(Parent[x]); }
 
     bool Union(int x, int y) {
         int rootX = Find(x), rootY = Find(y);
