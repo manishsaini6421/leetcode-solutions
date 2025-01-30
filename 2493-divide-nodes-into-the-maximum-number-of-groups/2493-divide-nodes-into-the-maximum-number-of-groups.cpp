@@ -35,7 +35,7 @@ public:
         vector<int> visited(adj.size(),0);
         visited[node] = 1;
 
-        vector<int> dist(adj.size(),-1);
+        vector<int> dist(adj.size());
 
         dist[node] = 1;
 
