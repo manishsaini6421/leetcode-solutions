@@ -53,7 +53,6 @@ public:
                 }
             }
         }
-        cout<<maxDistance<<endl;
         return maxDistance;
     }
 
