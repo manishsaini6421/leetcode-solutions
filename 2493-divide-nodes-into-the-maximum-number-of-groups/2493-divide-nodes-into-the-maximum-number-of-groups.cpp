@@ -73,7 +73,7 @@ public:
                 if (!bipartite(adj, i,visited))
                     return -1;
                 else {
-                    auto v = connectedComponent[connectedComponent.size() - 1];
+                    auto v = connectedComponent.back();
                     maxdistance=0;
                     for (auto node : v) {
                         maxdistance = max(maxdistance, bfs(adj, node));
