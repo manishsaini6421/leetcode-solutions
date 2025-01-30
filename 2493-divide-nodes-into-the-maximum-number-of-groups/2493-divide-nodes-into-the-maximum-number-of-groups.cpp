@@ -32,10 +32,11 @@ public:
     int bfs(vector<vector<int>>& adj, int node) {
         queue<int> q;
         q.push(node);
-        vector<int> visited(adj.size(),0);
+        int n=adj.size();
+        vector<int> visited(n,0);
         visited[node] = 1;
 
-        vector<int> dist(adj.size());
+        vector<int> dist(n);
 
         dist[node] = 1;
 
