@@ -46,7 +46,7 @@ public:
             for(int j=0; j<m; j++){
                 int area=0;
                 set<int> s;
-                if(grid[i][j]==0){
+                if(!grid[i][j]){
                     for(auto [x,y]:directions){
                         int nx=i+x;
                         int ny=j+y;
