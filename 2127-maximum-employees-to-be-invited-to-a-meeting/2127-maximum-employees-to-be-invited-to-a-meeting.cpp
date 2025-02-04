@@ -33,7 +33,7 @@ public:
             if (indegree[i]) {
                 q.push(i);
                 while (!q.empty()) {
-                    auto top = q.front();
+                    int top = q.front();
                     q.pop();
                     indegree[top] = 0;
                     cycleLength++;
