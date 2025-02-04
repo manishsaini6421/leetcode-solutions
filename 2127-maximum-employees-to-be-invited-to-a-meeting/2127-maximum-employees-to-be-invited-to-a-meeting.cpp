@@ -8,7 +8,7 @@ public:
         vector<int> dist(n,0);
         vector<int> indegree(n,0);
 
-        vector<int> visited(n,0);
+        vector<int> visited(n,false);
         for(int i=0; i<n; i++){
             adj[i].push_back(favorite[i]);
             indegree[favorite[i]]++;
@@ -21,7 +21,7 @@ public:
             if(indegree[i]==0 && !visited[i]){
                 queue<int> q;
                 q.push(i);
-                visited[i]=1;
+                visited[i]=true;
                 while(!q.empty()){
                     auto top=q.front();
                     q.pop();
@@ -30,7 +30,7 @@ public:
                         
                         if(--indegree[neighbour]==0 && !visited[neighbour]){
                             q.push(neighbour);
-                            visited[neighbour]=1;
+                            visited[neighbour]=true;
                             
                         }
                     }
@@ -44,7 +44,7 @@ public:
                 queue<int> q;
                 q.push(i);
                 indegree[i]--;
-                visited[i]=1;
+                visited[i]=true;
                 while(!q.empty()){
                     auto top=q.front();
                     q.pop();
@@ -53,7 +53,7 @@ public:
                         if(indegree[neighbour] && !visited[neighbour]){
                             q.push(neighbour);
                             indegree[neighbour]--;
-                            visited[neighbour]=1;
+                            visited[neighbour]=true;
                         }
                     }
                 }
