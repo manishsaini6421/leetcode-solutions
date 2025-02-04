@@ -38,7 +38,7 @@ public:
                     indegree[top] = 0;
                     cycleLength++;
                     int next = favorite[top];
-                    if (indegree[next] != 0)
+                    if (indegree[next])
                         q.push(next);
                 }
                 if (cycleLength > 2) {
