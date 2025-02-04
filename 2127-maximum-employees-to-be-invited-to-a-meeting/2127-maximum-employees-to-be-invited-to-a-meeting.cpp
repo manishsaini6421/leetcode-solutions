@@ -1,72 +1,54 @@
 class Solution {
 public:
-    
     int maximumInvitations(vector<int>& favorite) {
-        int n=favorite.size();
-       
-        vector<vector<int>> adj(n);
-        vector<int> dist(n,0);
-        vector<int> indegree(n,0);
+        int n = favorite.size();
 
-        vector<int> visited(n,false);
-        for(int i=0; i<n; i++){
-            adj[i].push_back(favorite[i]);
+        vector<int> dist(n, 0);
+        vector<int> indegree(n, 0);
+        int maxCycle = 0, twoLengthcycle = 0;
+
+        for (int i = 0; i < n; i++) {
             indegree[favorite[i]]++;
-            dist[i]=1;
+            dist[i] = 1;
         }
 
-        
+        queue<int> q;
 
-        for(int i=0; i<n; i++){
-            if(indegree[i]==0 && !visited[i]){
-                queue<int> q;
+        for (int i = 0; i < n; i++) {
+            if (indegree[i] == 0) {
                 q.push(i);
-                visited[i]=true;
-                while(!q.empty()){
-                    auto top=q.front();
-                    q.pop();
-                    for(auto neighbour:adj[top]){
-                        dist[neighbour]=max(dist[neighbour],dist[top]+1);
-                        
-                        if(--indegree[neighbour]==0 && !visited[neighbour]){
-                            q.push(neighbour);
-                            visited[neighbour]=true;
-                            
-                        }
-                    }
-                }
             }
         }
-        int maxCycle=0,twoLengthcycle=0;
-        for(int i=0; i<n; i++){
-            int cycleLength=0;
-            if(indegree[i] && !visited[i]){
-                queue<int> q;
+        while (!q.empty()) {
+            auto top = q.front();
+            q.pop();
+            int next = favorite[top];
+            dist[next] = max(dist[next], dist[top] + 1);
+            if (--indegree[next] == 0)
+                q.push(next);
+        }
+
+        for (int i = 0; i < n; i++) {
+            int cycleLength = 0;
+            if (indegree[i] != 0) {
                 q.push(i);
-                indegree[i]--;
-                visited[i]=true;
-                while(!q.empty()){
-                    auto top=q.front();
+                while (!q.empty()) {
+                    auto top = q.front();
                     q.pop();
+                    indegree[top] = 0;
                     cycleLength++;
-                    for(auto neighbour:adj[top]){
-                        if(indegree[neighbour] && !visited[neighbour]){
-                            q.push(neighbour);
-                            indegree[neighbour]--;
-                            visited[neighbour]=true;
-                        }
-                    }
+                    int next = favorite[top];
+                    if (indegree[next] != 0)
+                        q.push(next);
                 }
-                if(cycleLength>2){
-                    maxCycle=max(maxCycle,cycleLength);
-                }
-                else{
-                    twoLengthcycle+=dist[i]+dist[adj[i][0]];
+                if (cycleLength > 2) {
+                    maxCycle = max(maxCycle, cycleLength);
+                } else {
+                    twoLengthcycle += dist[i] + dist[favorite[i]];
                 }
             }
-
         }
-        return max(maxCycle,twoLengthcycle);
-       
+
+        return max(maxCycle, twoLengthcycle);
     }
 };
