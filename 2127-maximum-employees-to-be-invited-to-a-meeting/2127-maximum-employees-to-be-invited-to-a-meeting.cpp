@@ -30,7 +30,7 @@ public:
 
         for (int i = 0; i < n; i++) {
             int cycleLength = 0;
-            if (indegree[i] != 0) {
+            if (indegree[i]) {
                 q.push(i);
                 while (!q.empty()) {
                     auto top = q.front();
