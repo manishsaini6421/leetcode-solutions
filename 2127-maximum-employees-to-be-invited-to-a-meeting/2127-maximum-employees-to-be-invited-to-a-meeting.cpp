@@ -25,7 +25,6 @@ public:
                 while(!q.empty()){
                     auto top=q.front();
                     q.pop();
-                    cout<<dist[top]<<" "<<top<<endl;
                     for(auto neighbour:adj[top]){
                         dist[neighbour]=max(dist[neighbour],dist[top]+1);
                         
