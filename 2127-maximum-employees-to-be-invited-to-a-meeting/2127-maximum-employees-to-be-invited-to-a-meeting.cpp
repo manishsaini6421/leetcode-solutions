@@ -40,18 +40,20 @@ public:
         int maxCycle=0,twoLengthcycle=0;
         for(int i=0; i<n; i++){
             int cycleLength=0;
-            if(indegree[i]>0){
+            if(indegree[i] && !visited[i]){
                 queue<int> q;
                 q.push(i);
                 indegree[i]--;
+                visited[i]=1;
                 while(!q.empty()){
                     auto top=q.front();
                     q.pop();
                     cycleLength++;
                     for(auto neighbour:adj[top]){
-                        if(indegree[neighbour]){
+                        if(indegree[neighbour] && !visited[neighbour]){
                             q.push(neighbour);
                             indegree[neighbour]--;
+                            visited[neighbour]=1;
                         }
                     }
                 }
