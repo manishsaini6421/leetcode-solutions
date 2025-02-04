@@ -48,7 +48,6 @@ public:
                     auto top=q.front();
                     q.pop();
                     cycleLength++;
-                    // cout<<cycleLength<<" "<<top<<endl;
                     for(auto neighbour:adj[top]){
                         if(indegree[neighbour]){
                             q.push(neighbour);
