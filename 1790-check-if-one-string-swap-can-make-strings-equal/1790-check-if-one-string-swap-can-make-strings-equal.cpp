@@ -1,18 +1,17 @@
 class Solution {
 public:
     bool areAlmostEqual(string s1, string s2) {
-        int count=0;
+        vector<int> v;
         int n=s1.size();
-        map<char,int> m1,m2;
         for(int i=0; i<n; i++){
-            if(s1[i]!=s2[i])count++;
-            m1[s1[i]]++;
-            m2[s2[i]]++;
+            if(s1[i]!=s2[i]){
+                v.push_back(i);
+
+            }
+            
         }
-        for(int i=0; i<26; i++){
-            if(m1['a'+i]!=m2['a'+i])return false;
-        }
-        if(count<=2)return true;
-        return false;
+        
+        if(v.empty())return true;
+        return v.size()==2 && (s1[v[0]]==s2[v[1]] && s2[v[0]]==s1[v[1]]);
     }
 };
