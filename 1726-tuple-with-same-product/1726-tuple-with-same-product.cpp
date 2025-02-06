@@ -15,7 +15,7 @@ public:
         for(auto frequency:map){
             if(frequency.second>=2){
                 int x=frequency.second;
-                int y=x*(x-1)/2;
+                int y=x*(x-1)/2; //choose two pairs (nc2) which will give 8 such combinations.
                 ans+=(y*8);
             }
         }
