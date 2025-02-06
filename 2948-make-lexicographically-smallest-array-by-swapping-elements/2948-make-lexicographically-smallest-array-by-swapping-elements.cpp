@@ -7,10 +7,10 @@ public:
         vector<int> sortedCopy(nums);
         sort(sortedCopy.begin(),sortedCopy.end());
        unordered_map<int,int> map;
-       unordered_map<int,vector<int>> List;
+       unordered_map<int,queue<int>> List;
        int group=0;
        map[sortedCopy[0]]=0;
-        List[0].push_back(sortedCopy[0]);
+        List[0].push(sortedCopy[0]);
         for(int i=1; i<n; i++){
             if(sortedCopy[i]-sortedCopy[i-1]<=limit){
                 map[sortedCopy[i]]=group;
@@ -21,13 +21,13 @@ public:
                 map[sortedCopy[i]]=group;
                 
             }
-            List[group].push_back(sortedCopy[i]);
+            List[group].push(sortedCopy[i]);
         }
-        
+
         for(int i=0; i<n; i++){
             int group=map[nums[i]];
-            nums[i]=*List[group].begin();
-            List[group].erase(List[group].begin());
+            nums[i]=List[group].front();
+            List[group].pop();
         }
 
 
