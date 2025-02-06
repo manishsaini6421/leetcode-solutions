@@ -23,9 +23,7 @@ public:
             }
             List[group].push_back(sortedCopy[i]);
         }
-        for(auto elements:List){
-            sort(elements.second.begin(),elements.second.end());
-        }
+        
         for(int i=0; i<n; i++){
             int group=map[nums[i]];
             nums[i]=*List[group].begin();
