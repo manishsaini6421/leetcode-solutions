@@ -15,10 +15,8 @@ public:
             long long x=pair.second;
             count+=(x*(x-1))/2;
         }
-       
-        long long total= n*(n-1)/2;
         
-        return total - count;
+        return n*(n-1)/2 - count;
 
     }
 };
