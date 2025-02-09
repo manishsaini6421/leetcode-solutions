@@ -10,13 +10,13 @@ public:
             nums[i]=nums[i]-i;
             m[nums[i]]++;
         }
-        long long count=0;
+        long long valid=0;
         for(auto pair:m){
             long long x=pair.second;
-            count+=(x*(x-1))/2;
+            valid+=(x*(x-1))/2;
         }
         long long total=n*(n-1)/2;
-        return total - count;
+        return total - valid;
 
     }
 };
