@@ -13,7 +13,7 @@ public:
         }
         long long count=0;
         for(auto pair:m){
-            int x=pair.second;
+            long long x=pair.second;
             count+=(x*(x-1))/2;
         }
        
