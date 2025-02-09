@@ -7,8 +7,7 @@ public:
         long long n=nums.size();
           unordered_map<int,int> m;
         for(int i=0; i<n; i++){
-            nums[i]=nums[i]-i;
-            m[nums[i]]++;
+            m[nums[i]-i]++;
         }
         long long valid=0;
         for(auto pair:m){
