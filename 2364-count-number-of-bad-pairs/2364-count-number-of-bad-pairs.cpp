@@ -5,7 +5,7 @@ public:
     }
     long long countBadPairs(vector<int>& nums) {
         long long n=nums.size();
-          map<int,int> m;
+          unordered_map<int,int> m;
         for(int i=0; i<n; i++){
             nums[i]=nums[i]-i;
             m[nums[i]]++;
