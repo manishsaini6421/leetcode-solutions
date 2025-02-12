@@ -21,7 +21,7 @@ public:
             int size=v.second.size();
             if(size>1){
                 sort(v.second.begin(),v.second.end());
-                ans=max(ans,v.second.back()+v.second[size-2]);
+                ans=max(ans,v.second[size-1]+v.second[size-2]);
             }
         }
        
