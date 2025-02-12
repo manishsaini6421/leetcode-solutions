@@ -13,14 +13,15 @@ public:
         unordered_map<int,vector<int>> map;
         int n=nums.size();
         for(int i=0; i<n; i++){
-            map[sumOfDigits(nums[i])].push_back(i);
+            map[sumOfDigits(nums[i])].push_back(nums[i]);
         }
         int ans=-1;
+        cout<<map[6].size();
         for(auto v:map){
-            for(int i=0; i<v.second.size(); i++){
-                for(int j=i+1; j<v.second.size(); j++){
-                    ans=max(ans,nums[v.second[i]]+nums[v.second[j]]);
-                }
+            int size=v.second.size();
+            if(size>1){
+                sort(v.second.begin(),v.second.end());
+                ans=max(ans,v.second.back()+v.second[size-2]);
             }
         }
        
