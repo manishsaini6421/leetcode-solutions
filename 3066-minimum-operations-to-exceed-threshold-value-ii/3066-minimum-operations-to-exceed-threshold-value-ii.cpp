@@ -5,7 +5,7 @@ public:
        
         int ans=0;
        
-        while(minHeap.top()<k && minHeap.size()>1){
+        while(minHeap.top()<k){
             long x=minHeap.top();
             minHeap.pop();
             long y=minHeap.top();
