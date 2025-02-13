@@ -14,18 +14,19 @@ public:
         
         int n=nums.size();
         for(int i=0; i<n; i++){
-            if(map[sumOfDigits(nums[i])].size()>1){
-                if(map[sumOfDigits(nums[i])][0]<=nums[i] || map[sumOfDigits(nums[i])][1]<=nums[i]){
-                    if(map[sumOfDigits(nums[i])][0]>map[sumOfDigits(nums[i])][1]){
-                        map[sumOfDigits(nums[i])][1]=nums[i];
+            int x=sumOfDigits(nums[i]);
+            if(map[x].size()>1){
+                if(map[x][0]<=nums[i] || map[x][1]<=nums[i]){
+                    if(map[x][0]>map[x][1]){
+                        map[x][1]=nums[i];
                     }
                     else{
-                        map[sumOfDigits(nums[i])][0]=nums[i];
+                        map[x][0]=nums[i];
                     }
                 }
             }
             else{
-                map[sumOfDigits(nums[i])].push_back(nums[i]);
+                map[x].push_back(nums[i]);
             }
             
         }
