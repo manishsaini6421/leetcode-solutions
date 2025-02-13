@@ -16,7 +16,6 @@ public:
             map[sumOfDigits(nums[i])].push_back(nums[i]);
         }
         int ans=-1;
-        cout<<map[6].size();
         for(auto v:map){
             int size=v.second.size();
             if(size>1){
