@@ -7,8 +7,7 @@ public:
             pq.push(nums[i]);
         }
         int ans=0;
-        cout<<pq.top();
-
+       
         while(pq.top()<k && pq.size()>1){
             long long x=pq.top();
             pq.pop();
