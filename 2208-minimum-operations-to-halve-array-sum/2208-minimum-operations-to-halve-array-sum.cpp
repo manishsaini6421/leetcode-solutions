@@ -8,8 +8,9 @@ public:
         while(sum>initialHalfSum){
             double x=maxHeap.top();
             maxHeap.pop();
-            sum-=x/2;
+            sum-=x;
             maxHeap.push(x/2);
+            sum+=x/2;
             ans++;
         }
         return ans;
