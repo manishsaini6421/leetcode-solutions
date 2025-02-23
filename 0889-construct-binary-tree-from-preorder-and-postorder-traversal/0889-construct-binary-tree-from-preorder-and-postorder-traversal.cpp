@@ -20,7 +20,7 @@ public:
             int splitIndex=postIndex[preorder[preIndex]];
             if(splitIndex<=right){
                 node->left=tree(preorder,postorder,preIndex,postIndex,left,splitIndex);
-            node->right=tree(preorder,postorder,preIndex,postIndex,splitIndex,right-1);
+            node->right=tree(preorder,postorder,preIndex,postIndex,splitIndex+1,right-1);
             }
             
         }
