@@ -60,8 +60,8 @@ public:
         }
         cout<<endl;
         cout<<v.size()/2<<endl;
-        cout<<amount[v.size()/2]<<endl;
-        if(v.size()%2)amount[v.size()/2]/=2;
+        cout<<amount[v[v.size()/2]]<<endl;
+        if(v.size()%2)amount[v[v.size()/2]]/=2;
         for(int i=0; i<v.size()/2; i++){
             amount[v[i]]=0;
         }
