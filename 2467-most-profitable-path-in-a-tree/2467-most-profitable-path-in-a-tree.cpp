@@ -27,7 +27,7 @@ public:
         
     }
 
-    int dfs2(vector<vector<int>> &adj, vector<int> &amount,int node, vector<int> &visited){
+    int dfs(vector<vector<int>> &adj, vector<int> &amount,int node, vector<int> &visited){
         
         visited[node]=1;
 
@@ -35,7 +35,7 @@ public:
 
         for(auto neighbour:adj[node]){
             if(!visited[neighbour]){
-                temp=max(temp,dfs2(adj,amount,neighbour,visited));
+                temp=max(temp,dfs(adj,amount,neighbour,visited));
             }
            
 
@@ -55,20 +55,13 @@ public:
 
         vector<int> v;
         bfs(adj,bob,v);
-        for(auto num:v){
-            cout<<num<<" ";
-        }
-        cout<<endl;
-        cout<<v.size()/2<<endl;
-        cout<<amount[v[v.size()/2]]<<endl;
+        
         if(v.size()%2)amount[v[v.size()/2]]/=2;
         for(int i=0; i<v.size()/2; i++){
             amount[v[i]]=0;
         }
-        for(auto amt:amount){
-            cout<<amt<<" ";
-        }
+       
         vector<int> visited(amount.size(),0);
-       return dfs2(adj,amount,0,visited);
+       return dfs(adj,amount,0,visited);
     }
 };
