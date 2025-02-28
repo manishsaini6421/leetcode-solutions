@@ -22,7 +22,7 @@ public:
         }
        }
         
-        return ans;
+        return ans=(ans==2)?0:ans;
 
     }
 };
