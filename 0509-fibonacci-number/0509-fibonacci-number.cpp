@@ -1,12 +1,7 @@
 class Solution {
 public:
-    int f(int n, vector<int> dp){
-        if(n<=1)return n;
-        if(dp[n])return dp[n];
-        return dp[n]=f(n-1,dp)+f(n-2,dp);
-    }
     int fib(int n) {
-        vector<int> dp(n+1,0);
-        return f(n,dp);
+        if(n<=1)return n;
+        return fib(n-1)+fib(n-2);
     }
 };
