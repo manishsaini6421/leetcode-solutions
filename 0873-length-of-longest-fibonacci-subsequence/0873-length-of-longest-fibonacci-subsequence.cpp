@@ -16,13 +16,14 @@ public:
             int prevIndex=(map.find(diff)!=map.end())?map[diff]:-1;
             if(prevIndex<j && prevIndex>-1){
                 dp[i][j]=dp[j][prevIndex]+1;
+                ans=max(ans,dp[i][j]);
             }
             else dp[i][j]=2;
-            ans=max(ans,dp[i][j]);
+            
         }
        }
         
-        return ans=(ans==2)?0:ans;
+        return ans;
 
     }
 };
