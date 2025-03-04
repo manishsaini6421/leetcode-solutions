@@ -12,7 +12,7 @@
  */
 class Solution {
 public:
-    int solve(TreeNode* root, map<TreeNode*, int>& dp) {
+    int solve(TreeNode* root, unordered_map<TreeNode*, int>& dp) {
         if (root == NULL)
             return 0;
         if (dp.count(root))
@@ -27,7 +27,7 @@ public:
         return dp[root] = max(incl, excl);
     }
     int rob(TreeNode* root) {
-        map<TreeNode*, int> dp;
+        unordered_map<TreeNode*, int> dp;
         return solve(root, dp);
     }
 };
