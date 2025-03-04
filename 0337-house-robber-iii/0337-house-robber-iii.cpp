@@ -21,8 +21,7 @@ public:
         if (root->left)
             incll = solve(root->left->left, dp) + solve(root->left->right, dp);
         if (root->right)
-            inclr =
-                solve(root->right->left, dp) + solve(root->right->right, dp);
+            inclr = solve(root->right->left, dp) + solve(root->right->right, dp);
         int incl = root->val + incll + inclr;
         int excl = solve(root->left, dp) + solve(root->right, dp);
         return dp[root] = max(incl, excl);
