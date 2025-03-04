@@ -1,10 +1,10 @@
 class Solution {
 public:
-    bool solve(int n,int i,vector<int> &dp){
+    bool solve(int n,int i){
         if(n==0)return true;
         if(n<0 || i<0)return false;
-        if(dp[n]!=-1)return dp[n];
-        return dp[n]=(solve(n,i-1,dp)  || solve(n-pow(3,i),i-1,dp));
+
+        return (solve(n,i-1)  || solve(n-pow(3,i),i-1));
     }
     bool checkPowersOfThree(int n) {
         int x=0;
@@ -12,7 +12,6 @@ public:
         while(n>=pow(3,x)){
             x++;
         }
-        vector<int> dp(n+1,-1);
-        return solve(n,x-1,dp);
+        return solve(n,x-1);
     }
 };
