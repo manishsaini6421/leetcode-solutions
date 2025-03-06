@@ -3,7 +3,7 @@ class Solution {
 public:
     vector<int> findMissingAndRepeatedValues(vector<vector<int>>& grid) {
         int n=grid.size();
-        long long sum=0,sqrSum=0,s=sqr(n),k=s*(s+1);
+        long long sum=0,sqrSum=0,s=sqr(n);
         long long actualSum=(s%2)?s*((s+1)/2):(s/2)*(s+1);
         long long actualSqrSum=s*(s+1)*(2*s+1)/6;
         for(int i=0; i<n; i++){
