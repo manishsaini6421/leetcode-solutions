@@ -1,18 +1,21 @@
+#define sqr(n) n*n
 class Solution {
 public:
     vector<int> findMissingAndRepeatedValues(vector<vector<int>>& grid) {
         int n=grid.size();
-        vector<int> v(n*n+1,0);
+        int sum=0,sqrSum=0,s=sqr(n);
+        int actualSum=(s%2)?s*((s+1)/2):(s/2)*(s+1);
+        int actualSqrSum=(s%2)?(s*((s+1)/2)*(2*s+1))/3:((s/2)*(s+1)*(2*s+1))/3;
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
-                v[grid[i][j]]++;
+                sum+=grid[i][j];
+                sqrSum+=grid[i][j]*grid[i][j];
             }
         }
+
         vector<int> ans(2,0);
-        for(int i=1; i<=n*n; i++){
-            if(v[i]==0)ans[1]=i;
-            if(v[i]==2)ans[0]=i;
-        }
+        ans[1]=(actualSum-sum +(actualSqrSum-sqrSum)/(actualSum-sum))/2;
+        ans[0]=ans[1]-actualSum+sum;
         return ans;
     }
 };
