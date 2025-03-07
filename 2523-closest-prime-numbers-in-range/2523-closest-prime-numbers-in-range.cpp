@@ -1,30 +1,41 @@
 class Solution {
 public:
-    bool isPrime(int n){
-        if(n==1)return false;
-        for(int i=2; i<=sqrt(n); i++){
-            if(n%i==0)return false;
+    bool isPrime(int n) {
+        if (n == 1)
+            return false;
+        for (int i = 2; i <= sqrt(n); i++) {
+            if (n % i == 0)
+                return false;
         }
         return true;
     }
     vector<int> closestPrimes(int left, int right) {
-       
-        vector<int> v;
-        for(int i=left; i<=right; i++){
-             if(isPrime(i)){
-                v.push_back(i);
-             }
-        }
-        if(v.size()<=1)return {-1,-1};
-        int first=v[0],second=v[1],diff=v[1]-v[0];
 
-        for(int i=1; i<v.size()-1; i++){
-            if(v[i+1]-v[i]<diff){
-                first=v[i];
-                second=v[i+1];
-                diff=v[i+1]-v[i];
+        vector<int> ans(2, -1);
+        int prev2 = -1, prev1 = -1, diff = INT_MAX;
+        for (int i = left; i <= right; i++) {
+            if (isPrime(i)) {
+                if (prev2 == -1) {
+                    prev2 = i;
+                } else if (prev1 == -1) {
+                    prev1 = i;
+                    diff = prev1 - prev2;
+                    ans[0] = prev2;
+                    ans[1] = prev1;
+                } else {
+                    prev2 = prev1;
+                    prev1 = i;
+                    if (prev1 - prev2 < diff) {
+                        diff = prev1 - prev2;
+                        ans[0] = prev2;
+                        ans[1] = prev1;
+                    }
+                }
             }
         }
-        return {first, second};
+        if (prev1 == -1 || prev2 == -1)
+            return {-1, -1};
+
+        return ans;
     }
 };
