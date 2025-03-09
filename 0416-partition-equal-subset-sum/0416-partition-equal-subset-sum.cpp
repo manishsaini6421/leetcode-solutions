@@ -2,23 +2,21 @@ class Solution {
 public:
     
     int solveTabOpt(vector<int>& nums, int n, int target) {
-        vector<int> prev(target+1,false);
         vector<int> curr(target+1);
        
         for(int j=0; j<=target; j++){
-            prev[j]=(nums[0]==j)?true:false;
+            curr[j]=(nums[0]==j)?true:false;
         }
         for(int i=1; i<n; i++){
-            for(int j=1; j<=target; j++){
+            for(int j=target; j>=1; j--){
                 bool take=false;
-                if(j-nums[i]>=0)take=prev[j-nums[i]];
-                bool dontTake=prev[j];
+                if(j-nums[i]>=0)take=curr[j-nums[i]];
+                bool dontTake=curr[j];
                 curr[j]=(take || dontTake);
             }
-            prev=curr;
         }
        
-        return prev[target];
+        return curr[target];
     }
 
     bool canPartition(vector<int>& nums) {
