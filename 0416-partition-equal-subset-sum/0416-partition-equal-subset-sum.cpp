@@ -29,7 +29,7 @@ public:
             sum += nums[i];
         }
 
-        vector<vector<int>> dp(n, vector<int>(sum / 2 + 1, -1));
+       // vector<vector<int>> dp(n, vector<int>(sum / 2 + 1, -1));
         if (sum % 2)
             return false;
         return solveTab(nums, n , sum / 2);
