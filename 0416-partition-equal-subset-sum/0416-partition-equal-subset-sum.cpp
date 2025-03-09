@@ -1,7 +1,7 @@
 class Solution {
 public:
     
-    int solveTab(vector<int>& nums, int n, int target) {
+    int solveTabOpt(vector<int>& nums, int n, int target) {
         vector<int> prev(target+1,false);
         vector<int> curr(target+1);
        
@@ -31,6 +31,6 @@ public:
         
         if (sum % 2)
             return false;
-        return solveTab(nums, n , sum / 2);
+        return solveTabOpt(nums, n , sum / 2);
     }
 };
