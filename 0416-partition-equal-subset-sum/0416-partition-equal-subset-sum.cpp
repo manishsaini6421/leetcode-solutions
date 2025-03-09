@@ -1,19 +1,6 @@
 class Solution {
 public:
-    int solve(vector<int>& nums, int index, int target,
-              vector<vector<int>>& dp) {
-        if (target == 0)
-            return true;
-        if (target < 0)
-            return false;
-        if (index < 0)
-            return false;
-        if (dp[index][target] != -1)
-            return dp[index][target];
-        return dp[index][target] =
-                   (solve(nums, index - 1, target - nums[index], dp) ||
-                    solve(nums, index - 1, target, dp));
-    }
+    
     int solveTab(vector<int>& nums, int n, int target) {
         vector<vector<bool>> dp(n,vector<bool>(target+1,false));
 
