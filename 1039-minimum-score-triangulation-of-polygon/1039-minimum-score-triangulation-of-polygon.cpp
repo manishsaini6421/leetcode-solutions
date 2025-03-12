@@ -12,33 +12,34 @@ public:
         return dp[i][j]=ans;
     }
 
-    // int solveTab(vector<int>& values){
-    //     int n=values.size();
+    int solveTab(vector<int>& v){
+        int n=v.size();
 
-    //     vector<vector<int>> dp(n,vector<int> (n,INT_MAX));
+        vector<vector<int>> dp(n,vector<int> (n,INT_MAX));
         
-    //     for(int i=0; i<n; i++){
-    //         for(int j=0; j<n; j++){
-    //             if(abs(j-i)<=1)dp[i][j]=0;
-    //             if(abs(j-i)+1==3)dp[i][j]=values[i]*values[j]*((j-i>0)?values[i+1]:values[j+1]);
-    //             else{
+        for(int i=n-1; i>=0; i--){
+            for(int j=i+1; j<n; j++){
+                if(i+1==j)dp[i][j]=0;
+                else{
 
-    //                 for(int k=i+1; k<j; k++){
-    //                     dp[i][j]= min(dp[i][j],a*b*values[k] + dp[i][k]+dp[k][j]);
-    //                 }
-    //             }
+                    for(int k=i+1; k<j; k++){
+                        dp[i][j]= min(dp[i][j],v[i]*v[j]*v[k] + dp[i][k]+dp[k][j]);
+                    }
+                }
                
-    //         }
-    //     }
+            }
+        }
 
-    //     return dp[0][n-1];
+        return dp[0][n-1];
 
        
-    // }
+    }
 
     int minScoreTriangulation(vector<int>& values) {
         int n=values.size();
-        vector<vector<int>> dp(n,vector<int> (n,-1));
-        return solve(values,0,n-1,dp);
+        // vector<vector<int>> dp(n,vector<int> (n,-1));
+        // return solve(values,0,n-1,dp);
+
+        return solveTab(values);
     }
 };
