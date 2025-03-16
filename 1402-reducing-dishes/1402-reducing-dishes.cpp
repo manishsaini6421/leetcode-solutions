@@ -23,10 +23,7 @@ public:
 
         vector<vector<int>> dp(n+1,vector<int> (n+1,0));
 
-        for(int time=0; time<=n; time++){
-            dp[n][time]=0;
-        }
-
+       
         for(int i=n-1; i>=0; i--){
             for(int time=n-1; time>=0; time--){
                 dp[i][time]=max((time + 1) * satisfaction[i] + dp[i+1][time+1],dp[i+1][time]);
@@ -76,10 +73,10 @@ public:
 
        // return solveMem(satisfaction,0,0,dp);
 
-       //return solveTab(satisfaction);
+       return solveTab(satisfaction);
 
        //return solveOpt(satisfaction);
 
-       return solveOpt_1D(satisfaction);
+       //return solveOpt_1D(satisfaction);
     }
 };
