@@ -56,7 +56,8 @@ public:
                     int ans = 1e9;
                     for (int newLane = 1; newLane <= 3; newLane++) {
                         if (currLane != newLane && obstacles[pos] != newLane)
-                            ans = min(ans, 1 + dp[newLane][pos]);
+                             //Catch
+                            ans = min(ans, 1 + dp[newLane][pos+1]);
                     }
                     dp[currLane][pos] = ans;
                 }
