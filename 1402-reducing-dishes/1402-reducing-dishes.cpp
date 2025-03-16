@@ -40,7 +40,7 @@ public:
         int n=satisfaction.size();
 
         vector<int> next(n+1,0);
-        vector<int> curr(n+1,0);
+        vector<int> curr(n+1);
 
        
 
