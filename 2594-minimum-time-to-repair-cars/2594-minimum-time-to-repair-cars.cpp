@@ -1,7 +1,7 @@
 class Solution {
 public:
     long long repairCars(vector<int>& ranks, int cars) {
-        long long i=0,j=LONG_MAX;
+        long long i=0,j=j = (long long) cars * cars * (*min_element(ranks.begin(), ranks.end()));
         long long ans=0;
         int n=ranks.size();
         while(i<=j){
