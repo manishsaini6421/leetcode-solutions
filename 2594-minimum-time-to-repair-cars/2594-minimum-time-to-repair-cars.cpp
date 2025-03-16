@@ -3,11 +3,12 @@ public:
     long long repairCars(vector<int>& ranks, int cars) {
         long long i=0,j=LONG_MAX;
         long long ans=0;
+        int n=ranks.size();
         while(i<=j){
             long long mid=(i+j)/2;
 
             long long count=0;
-            for(int k=0; k<ranks.size(); k++){
+            for(int k=0; k<n; k++){
                 count+=sqrt(mid/ranks[k]);
                 
             }
