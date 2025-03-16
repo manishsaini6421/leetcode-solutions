@@ -43,7 +43,9 @@ public:
        
 
         for(int i=n-1; i>=0; i--){
-            for(int time=n-1; time>=0; time--){
+
+            //Time can't go more than index
+            for(int time=i; time>=0; time--){
                 curr[time]=max((time + 1) * satisfaction[i] + next[time+1],next[time]);
             }
             next=curr;
@@ -74,9 +76,9 @@ public:
 
        // return solveMem(satisfaction,0,0,dp);
 
-       return solveTab(satisfaction);
+       //return solveTab(satisfaction);
 
-       //return solveOpt(satisfaction);
+       return solveOpt(satisfaction);
 
        //return solveOpt_1D(satisfaction);
     }
