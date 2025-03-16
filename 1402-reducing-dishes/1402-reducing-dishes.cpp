@@ -73,10 +73,10 @@ public:
 
        // return solveMem(satisfaction,0,0,dp);
 
-       return solveTab(satisfaction);
+       //return solveTab(satisfaction);
 
        //return solveOpt(satisfaction);
 
-       //return solveOpt_1D(satisfaction);
+       return solveOpt_1D(satisfaction);
     }
 };
