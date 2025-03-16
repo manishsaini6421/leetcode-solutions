@@ -1,20 +1,20 @@
 class Solution {
 public:
-    int solve(vector<int>& obstacles, int i, int lane,vector<vector<int>> &dp) {
-        if (i == obstacles.size() - 1)
+    int solve(vector<int>& obstacles, int pos, int currLane,vector<vector<int>> &dp) {
+        if (pos == obstacles.size() - 1)
             return 0;
-        if(dp[i][lane]!=-1)return dp[i][lane];
-        if (lane != obstacles[i + 1]) {
-            return solve(obstacles, i + 1, lane,dp);
+        if(dp[pos][currLane]!=-1)return dp[pos][currLane];
+        if (currLane != obstacles[pos + 1]) {
+            return solve(obstacles, pos + 1, currLane,dp);
         }
 
         int ans = INT_MAX;
-        for(int k=1; k<=3; k++){
-            if(lane!=k && obstacles[i]!=k)
-                ans=min(ans,1+solve(obstacles, i, k,dp));
+        for(int newLane=1; newLane<=3; newLane++){
+            if(currLane!=newLane && obstacles[pos]!=newLane)
+                ans=min(ans,1+solve(obstacles, pos, newLane,dp));
         }
        
-        return dp[i][lane]=ans;
+        return dp[pos][currLane]=ans;
     }
     int minSideJumps(vector<int>& obstacles) { 
         int n=obstacles.size();
