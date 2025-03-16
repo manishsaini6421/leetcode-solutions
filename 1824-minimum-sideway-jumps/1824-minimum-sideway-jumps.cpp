@@ -60,9 +60,9 @@ public:
     int minSideJumps(vector<int>& obstacles) { 
         int n=obstacles.size();
        
-        return solve(obstacles, 2, 0); 
+        //return solve(obstacles, 2, 0); 
 
          vector<vector<int>> dp(4,vector<int>(n,-1)); 
-         //return solveMem(obstacles,2,0,dp);
+         return solveMem(obstacles,2,0,dp);
      }
 };
