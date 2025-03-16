@@ -9,22 +9,11 @@ public:
         }
 
         int ans = INT_MAX;
-        if (lane == 1) {
-            if (obstacles[i] != 2)
-                ans = min(ans, 1 + solve(obstacles, i, 2,dp));
-            if (obstacles[i] != 3)
-                ans = min(ans, 1 + solve(obstacles, i, 3,dp));
-        } else if (lane == 2) {
-            if (obstacles[i] != 1)
-                ans = min(ans, 1 + solve(obstacles, i, 1,dp));
-            if (obstacles[i] != 3)
-                ans = min(ans, 1 + solve(obstacles, i, 3,dp));
-        } else if (lane == 3) {
-            if (obstacles[i] != 1)
-                ans = min(ans, 1 + solve(obstacles, i, 1,dp));
-            if (obstacles[i] != 2)
-                ans = min(ans, 1 + solve(obstacles, i, 2,dp));
+        for(int k=1; k<=3; k++){
+            if(lane!=k && obstacles[i]!=k)
+                ans=min(ans,1+solve(obstacles, i, k,dp));
         }
+       
         return dp[i][lane]=ans;
     }
     int minSideJumps(vector<int>& obstacles) { 
