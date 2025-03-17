@@ -59,6 +59,7 @@ public:
            vector<int> curr(n+1,0);
 
            for(int i=n-1; i>=0; i--){
+            //Time can't go more than index
             for(int time=0; time<=i; time++){
                 curr[time]=max((time + 1) * satisfaction[i] + curr[time+1],curr[time]);
             }
@@ -78,8 +79,8 @@ public:
 
        //return solveTab(satisfaction);
 
-       return solveOpt(satisfaction);
+       //return solveOpt(satisfaction);
 
-       //return solveOpt_1D(satisfaction);
+       return solveOpt_1D(satisfaction);
     }
 };
