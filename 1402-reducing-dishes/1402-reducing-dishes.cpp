@@ -67,6 +67,19 @@ public:
         return curr[0];
     }
 
+     int solveOpt_O_1(vector<int>& satisfaction){
+          int n=satisfaction.size();
+          int next=0,curr=0;
+        //    vector<int> curr(n+1,0);
+
+           for(int i=n-1; i>=0; i--){
+            //Time can't go more than index
+            for(int time=0; time<=i; time++){
+                curr=max((time + 1) * satisfaction[i] + next,curr);
+            }
+        }
+        return curr;
+    }
    
     int maxSatisfaction(vector<int>& satisfaction) {
         sort(satisfaction.begin(), satisfaction.end());
