@@ -67,6 +67,7 @@ public:
         return curr[0];
     }
 
+   
     int maxSatisfaction(vector<int>& satisfaction) {
         sort(satisfaction.begin(), satisfaction.end());
 
