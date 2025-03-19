@@ -15,8 +15,8 @@ public:
                 ans.push_back(envelopes[i][1]);
             }
             else{
-                int index=lower_bound(ans.begin(),ans.end(),envelopes[i][1])-ans.begin();
-                ans[index]=envelopes[i][1];
+                auto it =lower_bound(ans.begin(),ans.end(),envelopes[i][1]);
+                *it=envelopes[i][1];
 
             }
         }
