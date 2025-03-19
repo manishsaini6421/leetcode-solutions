@@ -16,7 +16,6 @@ public:
             }
             else{
                 int index=lower_bound(ans.begin(),ans.end(),envelopes[i][1])-ans.begin();
-                cout<<index;
                 ans[index]=envelopes[i][1];
 
             }
