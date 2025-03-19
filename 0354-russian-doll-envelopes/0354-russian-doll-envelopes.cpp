@@ -27,9 +27,6 @@ public:
         sort(envelopes.begin(),envelopes.end(),manual);
         int n=envelopes.size();
 
-        for(int i=0; i<n; i++){
-            cout<<envelopes[i][0]<<" "<<envelopes[i][1]<<endl;
-        }
         return solve(envelopes);
     }
 };
