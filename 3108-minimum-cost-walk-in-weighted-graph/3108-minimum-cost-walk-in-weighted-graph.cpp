@@ -5,7 +5,7 @@ class DSU{
         DSU(int n){
             Parent.resize(n+1);
             Rank.resize(n+1,0);
-            minWalk.resize(n+1,-1);
+            minWalk.resize(n+1,INT_MAX);
 
             for(int i=0; i<=n; i++){
                 Parent[i]=i;
@@ -29,33 +29,21 @@ class DSU{
             if(Rank[ulp_u]<Rank[ulp_v]){
 
                 Parent[ulp_u]=ulp_v;
-                if(minWalk[ulp_u]==-1){
-                    minWalk[ulp_v]&=w;
-                }
-                else{
-                    minWalk[ulp_v]&=(minWalk[ulp_u]&w);
-                }
+                minWalk[ulp_v]&=(minWalk[ulp_u]&w);
+                
                 
             }
             else if(Rank[ulp_u]>Rank[ulp_v]){
                 Parent[ulp_v]=ulp_u;
-                if(minWalk[ulp_v]==-1){
-                    minWalk[ulp_u]&=w;
-                }
-                else{
-                    minWalk[ulp_u]&=(minWalk[ulp_v]&w);
-                }
+                minWalk[ulp_u]&=(minWalk[ulp_v]&w);
+                
                 
             }
             else{
                 Parent[ulp_v]=ulp_u;
                 Rank[ulp_u]++;
-                if(minWalk[ulp_v]==-1){
-                    minWalk[ulp_u]=w;
-                }
-                else{
-                    minWalk[ulp_u]&=(minWalk[ulp_v]&w);
-                }
+                minWalk[ulp_u]&=(minWalk[ulp_v]&w);
+                
             }
         }
 };
