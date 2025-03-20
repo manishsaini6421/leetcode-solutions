@@ -5,6 +5,7 @@ class DSU{
         DSU(int n){
             Parent.resize(n+1);
             Rank.resize(n+1,0);
+            //Initially all bits are set
             minWalk.resize(n+1,INT_MAX);
 
             for(int i=0; i<=n; i++){
@@ -56,7 +57,8 @@ public:
             ds.unionByRank(edge[0],edge[1],edge[2]);
        }
        vector<int> ans;
-       for(int i=0; i<query.size(); i++){
+       int size=query.size();
+       for(int i=0; i<size; i++){
         int ulp_1=ds.find(query[i][0]);
         int ulp_2=ds.find(query[i][1]);
         if(ulp_1==ulp_2){
