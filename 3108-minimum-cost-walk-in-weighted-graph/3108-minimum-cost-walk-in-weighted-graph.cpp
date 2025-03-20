@@ -14,9 +14,7 @@ class DSU{
         }    
 
         int find(int u){
-            if(Parent[u]==u)
-                return u;
-            return Parent[u]=find(Parent[u]);    
+            return (Parent[u]==u)?u:Parent[u]=find(Parent[u]);    
         }
 
         void unionByRank(int u,int v,int w){
