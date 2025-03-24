@@ -7,14 +7,32 @@ public:
         for(auto meeting:meetings){
             cout<<meeting[0]<<" "<<meeting[1]<<endl;
         }
-        int prev=meetings[0][1];
-        int ans=0;
-        ans+=max(0,meetings[0][0]-1);
+
+        vector<vector<int>> v;
+        v.push_back(meetings[0]);
         for(int i=1; i<n; i++){
-            ans+=max(0,meetings[i][0]-prev-1);
-            prev=meetings[i][1];
+           if(meetings[i][0]<=v.back()[1] && meetings[i][1]<=v.back()[1]) {
+            continue;
+           }
+           else if(meetings[i][0]<=v.back()[1]){
+                v.back()[1]=meetings[i][1];
+            }
+            else{
+                v.push_back(meetings[i]);
+            }
         }
-        ans+=max(0,days-prev);
+        cout<<endl;
+        for(auto val:v){
+            cout<<val[0]<<" "<<val[1]<<endl;
+        }
+        int ans=0;
+        int prev=1;
+        for(auto val:v){
+            ans+=val[0]-prev;
+            prev=val[1]+1;
+        }
+
+        ans+=days-prev+1;
         return ans;
     }
 };
