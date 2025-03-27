@@ -29,7 +29,6 @@ public:
         }
 
         for(int i=0; i<n; i++){
-            cout<<v[i]<<" ";
             if(v[i]>(i+1)/2 && count-v[i]>(n-i-1)/2)return i;
         }
         return -1;
