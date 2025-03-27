@@ -10,7 +10,6 @@ public:
         int left=INT_MIN;
         for(int i=0; i<n-1; i++){
             left=max(left,nums[i]);
-            cout<<left<<" "<<right[i+1]<<endl;
             if(left<=right[i+1])return i+1;
         }
         return n;
