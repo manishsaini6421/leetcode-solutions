@@ -35,8 +35,34 @@ public:
         }
         return first || second || third;
     }
+    bool solveMem(vector<int>& stones, int index, int k,vector<vector<int>>& dp) {
+        int n=stones.size();
+        if (index == n-1)
+            return true;
+
+        if(dp[index][k]!=-1)return dp[index][k];    
+        bool first = false;
+        int idx1=search(stones,stones[index] + k - 1,index,n-1);
+        if (k - 1 > 0 && idx1!=-1) {
+            first= solveMem(stones, idx1,k-1,dp);
+        }
+        bool second=false;
+        int idx2=search(stones,stones[index] + k,index,n-1);
+        if(idx2!=-1){
+            second= solveMem(stones,idx2,k,dp);
+        }
+        bool third=false;
+        int idx3=search(stones,stones[index] + k+1,index,n-1);
+        if(idx3!=-1){
+            third= solveMem(stones,idx3,k+1,dp);
+        }
+        return dp[index][k]=(first || second || third);
+    }
     bool canCross(vector<int>& stones) {
         if(stones[1]!=1)return false;
-        return solve(stones,1,1);
+        //return solve(stones,1,1);
+        int n=stones.size();
+        vector<vector<int>> dp(n,vector<int> (n,-1));
+        return solveMem(stones,1,1,dp);
     }
 };
