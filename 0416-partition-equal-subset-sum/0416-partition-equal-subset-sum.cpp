@@ -49,6 +49,36 @@ public:
         }
         return dp[0][0];
     }
+
+
+
+    bool solveOpt(vector<int>& nums){
+        int n=nums.size();
+        int total=0;
+        for(int i=0; i<n; i++){
+            total+=nums[i];
+        }
+        if(total%2)return false;
+        total/=2;
+
+        vector<bool> curr(total+1,false);
+        vector<bool> next(total+1,true);
+        
+        
+        for(int index=n-1; index>=0; index--){
+            for(int sum=0; sum<total; sum++){
+                bool include=false;
+                if(sum+nums[index]<=total)
+                include=next[sum+nums[index]];
+                bool exclude=next[sum];
+
+                curr[sum]=include || exclude;
+            }
+            next=curr;
+        }
+        return curr[0];
+    }
+
     bool canPartition(vector<int>& nums) {
         int n = nums.size();
         int sum=0;
@@ -62,6 +92,8 @@ public:
         // vector<vector<int>> dp(n,vector<int>(sum,-1));
         // return solveMem(nums,0,0,sum/2,dp);
 
-        return solveTab(nums);
+        //return solveTab(nums);
+
+        return solveOpt(nums);
     }
 };
