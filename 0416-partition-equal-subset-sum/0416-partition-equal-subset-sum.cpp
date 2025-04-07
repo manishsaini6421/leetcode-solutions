@@ -1,34 +1,38 @@
 class Solution {
 public:
-    
-    int solveTabOpt(vector<int>& nums, int n, int target) {
-        vector<int> curr(target+1);
-       
-        for(int j=0; j<=target; j++){
-            curr[j]=(nums[0]==j)?true:false;
-        }
-        for(int i=1; i<n; i++){
-            for(int j=target; j>=1; j--){
-                bool take=false;
-                if(j-nums[i]>=0)take=curr[j-nums[i]];
-                bool dontTake=curr[j];
-                curr[j]=(take || dontTake);
-            }
-        }
-       
-        return curr[target];
+    bool solve(vector<int>& nums,int index,int sum,int total){
+        if(sum==total)return true;
+        if(index>=nums.size())return false;
+
+        bool include=solve(nums,index+1,sum+nums[index],total);
+        bool exclude=solve(nums,index+1,sum,total);
+
+        return include || exclude;
+    }
+   
+   bool solveMem(vector<int>& nums,int index,int sum,int total,vector<vector<int>> &dp){
+        if(sum==total)return true;
+        if(index>=nums.size())return false;
+
+        if(dp[index][sum]!=-1)return dp[index][sum];
+
+        bool include=solveMem(nums,index+1,sum+nums[index],total,dp);
+        bool exclude=solveMem(nums,index+1,sum,total,dp);
+
+        return dp[index][sum]=include || exclude;
     }
 
     bool canPartition(vector<int>& nums) {
-        int sum = 0;
         int n = nums.size();
-        for (int i = 0; i < n; i++) {
-            sum += nums[i];
+        int sum=0;
+        for(int i=0; i<n; i++){
+            sum+=nums[i];
         }
-
+        if(sum%2)return false;
         
-        if (sum % 2)
-            return false;
-        return solveTabOpt(nums, n , sum / 2);
+        //return solve(nums,0,0,sum/2);
+
+        vector<vector<int>> dp(n,vector<int>(sum,-1));
+        return solveMem(nums,0,0,sum/2,dp);
     }
 };
