@@ -22,6 +22,33 @@ public:
         return dp[index][sum]=include || exclude;
     }
 
+    bool solveTab(vector<int>& nums){
+        int n=nums.size();
+        int total=0;
+        for(int i=0; i<n; i++){
+            total+=nums[i];
+        }
+        if(total%2)return false;
+        total/=2;
+
+        vector<vector<int>> dp(n+1,vector<int>(total+1,0));
+        
+        for(int i=0; i<=n; i++){
+            dp[i][total]=1;
+        } 
+        
+        for(int index=n-1; index>=0; index--){
+            for(int sum=0; sum<=total; sum++){
+                bool include=false;
+                if(sum+nums[index]<=total)
+                include=dp[index+1][sum+nums[index]];
+                bool exclude=dp[index+1][sum];
+
+                dp[index][sum]=include || exclude;
+            }
+        }
+        return dp[0][0];
+    }
     bool canPartition(vector<int>& nums) {
         int n = nums.size();
         int sum=0;
@@ -32,7 +59,9 @@ public:
         
         //return solve(nums,0,0,sum/2);
 
-        vector<vector<int>> dp(n,vector<int>(sum,-1));
-        return solveMem(nums,0,0,sum/2,dp);
+        // vector<vector<int>> dp(n,vector<int>(sum,-1));
+        // return solveMem(nums,0,0,sum/2,dp);
+
+        return solveTab(nums);
     }
 };
