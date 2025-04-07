@@ -38,7 +38,7 @@ public:
         } 
         
         for(int index=n-1; index>=0; index--){
-            for(int sum=0; sum<=total; sum++){
+            for(int sum=0; sum<total; sum++){
                 bool include=false;
                 if(sum+nums[index]<=total)
                 include=dp[index+1][sum+nums[index]];
