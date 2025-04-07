@@ -62,8 +62,9 @@ public:
         total/=2;
 
         vector<bool> curr(total+1,false);
-        vector<bool> next(total+1,true);
+        vector<bool> next(total+1,false);
         
+        next[total]=true;
         
         for(int index=n-1; index>=0; index--){
             for(int sum=0; sum<total; sum++){
