@@ -11,7 +11,6 @@ public:
         int key=freq.begin()->first;
         int value=freq.begin()->second;
         for(auto pair:freq){
-            cout<<pair.first<<" "<<pair.second<<endl;
             if(pair.first-key==1 && pair.second+value>ans){
                 ans=pair.second+value;
             }
