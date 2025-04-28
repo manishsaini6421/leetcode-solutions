@@ -12,7 +12,6 @@ public:
             map[total]++;
             
             ans+=map[total-k];
-             cout<<total-k<<" "<<total<<" "<<ans<<endl;
         }
         if(k==0)ans=ans-n;
         return ans;
