@@ -26,7 +26,7 @@ public:
                 num2=pair.first;
             }
         }
-        cout<<num1<<" "<<max1<<" "<<num2<<" "<<max2;
+        
         int ans=0;
         if(max1>max2){
             for(int i=0; i<n; i++){
