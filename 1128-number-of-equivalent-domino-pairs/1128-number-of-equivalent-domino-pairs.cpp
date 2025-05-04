@@ -1,9 +1,6 @@
 class Solution {
 public:
-    static bool manual(vector<int> a,vector<int> b){
-        if(a[0]==b[0])return a[1]<b[1];
-        return a[0]<b[0];
-    }
+    
     int numEquivDominoPairs(vector<vector<int>>& dominoes) {
          int n = dominoes.size();
         for(int i=0; i<n; i++){
@@ -15,9 +12,6 @@ public:
         }
         sort(dominoes.begin(), dominoes.end());
 
-        for(auto nums:dominoes){
-            cout<<nums[0]<<" "<<nums[1]<<endl;
-        }
        
         int a = dominoes[0][0], b = dominoes[0][1];
 
