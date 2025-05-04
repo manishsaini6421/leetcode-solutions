@@ -18,8 +18,7 @@ public:
         int ans = 0;
         int count=1;
         for (int i = 1; i < n; i++) {
-            if ((dominoes[i][0] == a && dominoes[i][1] == b) ||
-                (dominoes[i][0] == b && dominoes[i][1] == a))
+            if ((dominoes[i][0] == a && dominoes[i][1] == b))
                 count++;
             else {
                 ans += (count * (count - 1) / 2);
