@@ -10,10 +10,11 @@ public:
             return 2;
         if (n == 3)
             return 5;
-        return (solve(n - 1,dp) *1l* 2 + solve(n - 3,dp))%MOD;
+        if(dp[n]!=-1)return dp[n];    
+        return dp[n]=(solve(n - 1,dp) *1l* 2 + solve(n - 3,dp))%MOD;
     }
     int numTilings(int n) {
-        vector<int> dp(n,-1);
+        vector<int> dp(n+1,-1);
         return solve(n,dp);
     }
 };
