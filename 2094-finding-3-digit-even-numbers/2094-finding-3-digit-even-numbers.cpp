@@ -3,7 +3,7 @@ public:
     vector<int> findEvenNumbers(vector<int>& digits) {
         int n = digits.size();
         vector<int> ans;
-        set<int> temp;
+        unordered_map<int,int> map;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 for (int k = 0; k < n; k++) {
@@ -14,15 +14,16 @@ public:
                         int num = digits[i]*100+digits[j]*10+digits[k];
 
                         if (num % 2 == 0) {
-                            temp.insert(num);
+                            map[num]++;
                         }
                     }
                 }
             }
         }
-        for (auto num : temp) {
-            ans.push_back(num);
+        for (auto num : map) {
+            ans.push_back(num.first);
         }
+        sort(ans.begin(),ans.end());
         return ans;
     }
 };
