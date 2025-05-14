@@ -13,10 +13,7 @@ public:
             }
             ans=max(ans,dp[arr[i]]);
         }
-        // int ans=0;
-        // for(auto num:dp){
-        //     ans=max(ans,num.second);
-        // }
+       
         return ans;
     }
 };
