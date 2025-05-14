@@ -19,11 +19,7 @@ public:
                 maxi[{i,j}]=max(arr[j],maxi[{i,j-1}]);
             }
        }
-        for(int i=0; i<n; i++){
-            for(int j=i; j<n; j++){
-                cout<<i<<"->"<<j<<"ans is ->"<<maxi[{i,j}]<<endl;
-            }
-        }
+       
         vector<vector<int>> dp(n+1,vector<int>(n+1,-1));
         return solve(0,n-1,maxi,dp);
     }
