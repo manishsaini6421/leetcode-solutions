@@ -1,13 +1,14 @@
 class Solution {
 public:
     
-    int solve(int i,int j,map<pair<int,int>,int> &maxi){
+    int solve(int i,int j,map<pair<int,int>,int> &maxi,vector<vector<int>> &dp){
         if(i>=j)return 0;
+        if(dp[i][j]!=-1)return dp[i][j];
         int ans=INT_MAX;
         for(int k=i; k<j; k++){
-            ans=min(ans,maxi[{i,k}]*maxi[{k+1,j}]+solve(i,k,maxi)+solve(k+1,j,maxi));
+            ans=min(ans,maxi[{i,k}]*maxi[{k+1,j}]+solve(i,k,maxi,dp)+solve(k+1,j,maxi,dp));
         }
-        return ans;
+        return dp[i][j]=ans;
     }
     int mctFromLeafValues(vector<int>& arr) {
        map<pair<int,int>,int> maxi;
@@ -23,6 +24,7 @@ public:
                 cout<<i<<"->"<<j<<"ans is ->"<<maxi[{i,j}]<<endl;
             }
         }
-        return solve(0,n-1,maxi);
+        vector<vector<int>> dp(n+1,vector<int>(n+1,-1));
+        return solve(0,n-1,maxi,dp);
     }
 };
