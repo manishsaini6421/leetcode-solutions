@@ -22,7 +22,7 @@ public:
         dp[3]=5;
         for(int j=4; j<=n; j++){
             int ans=0;
-            for(int i=0; i<n; i++){
+            for(int i=0; i<j; i++){
                 ans+=dp[i]*dp[j-i-1];
             }
             dp[j]=ans;
