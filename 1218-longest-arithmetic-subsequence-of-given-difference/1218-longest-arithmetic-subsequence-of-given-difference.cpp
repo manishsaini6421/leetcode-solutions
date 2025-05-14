@@ -5,12 +5,9 @@ public:
         int n=arr.size();
         int ans=0;
         for(int i=0; i<n; i++){
-            if(dp.count(arr[i]-difference)){
+            
                 dp[arr[i]]=1+dp[arr[i]-difference];
-            }
-            else{
-                dp[arr[i]]=1;
-            }
+            
             ans=max(ans,dp[arr[i]]);
         }
        
