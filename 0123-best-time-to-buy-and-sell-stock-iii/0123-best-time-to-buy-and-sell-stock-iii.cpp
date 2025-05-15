@@ -10,9 +10,7 @@ public:
             maxi=max(maxi,prices[i]);
 
         }
-        for(int i=0; i<n; i++){
-            cout<<profit[i]<<" ";
-        }
+       
         int mini=prices[0];
         int ans=0;
         for(int i=0; i<n; i++){
