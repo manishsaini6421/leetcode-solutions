@@ -76,14 +76,14 @@ public:
                 int buy = 0;
                 int sell = 0;
                 if (OperationNo % 2 == 0) {
-                    buy = solveMem(index + 1, OperationNo + 1, k, prices, dp) -
+                    buy = dp[index + 1][OperationNo + 1] -
                           prices[index];
                 } else {
                     sell = prices[index] +
-                           solveMem(index + 1, OperationNo + 1, k, prices, dp);
+                           dp[index + 1][OperationNo + 1];
                 }
 
-                int skip = solveMem(index + 1, OperationNo, k, prices, dp);
+                int skip = dp[index + 1][OperationNo];
 
                 dp[index][OperationNo] = max(skip, max(buy, sell));
             }
