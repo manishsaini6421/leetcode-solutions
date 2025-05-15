@@ -27,7 +27,27 @@ public:
         }
         return curr[1][Limit];
     }
+    int solve(int index,int OperationNo,int k,vector<int>& prices){
+        if(index==prices.size())return 0;
+        if(OperationNo==2*k)return 0;
+
+        int buy=0;
+        int sell=0;
+        if(OperationNo%2==0){
+            buy=solve(index+1,OperationNo+1,k,prices)-prices[index];
+        }
+        else{
+            sell=prices[index]+solve(index+1,OperationNo+1,k,prices);
+        }
+
+        int skip=solve(index+1,OperationNo,k,prices);
+
+        return max(skip,max(buy,sell));
+    }
+
     int maxProfit(int k, vector<int>& prices) {
-        return solveTabOptOpt(prices,k);
+        //return solveTabOptOpt(prices,k);
+
+        return solve(0,0,k,prices);
     }
 };
