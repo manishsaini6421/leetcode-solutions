@@ -16,7 +16,6 @@ public:
                 ans+=(n-i+skip-1 + (skip-1)*(n-i-1));
             }
            
-            // cout<<skip<<" "<<ans<<" "<<n<<" "<<n-i<<endl; 
             
         }
         return ans;
