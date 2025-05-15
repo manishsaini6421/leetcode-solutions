@@ -30,6 +30,12 @@ public:
         int skip = solveMem(index + 1, flag, prices,dp);
         return dp[index][flag]=max(skip, max(buy, sell));
     }
+
+    // int solveTab(vector<int>& prices){
+    //     int n=prices.size();
+    //     vector<int
+    //     for(int )
+    // }
    
 
    int maxProfit(vector<int>& prices) {
