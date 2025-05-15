@@ -3,12 +3,12 @@ public:
     int numberOfSubstrings(string s) {
         int n=s.size();
         int ans=0,j=0,k=0;
-        unordered_map<char,int> mp;
+        int arr[3]={0};
         for(int i=0; i<n; i++){
-            mp[s[i]]++;
-            if(mp['a'] && mp['b'] && mp['c']){
-                while(mp['a'] && mp['b'] && mp['c']){
-                    mp[s[j]]--;
+            arr[s[i]-'a']++;
+            if(arr[0] && arr[1] && arr[2]){
+                while(arr[0] && arr[1] && arr[2]){
+                    arr[s[j]-'a']--;
                     j++;
                 }
                 ans+=(n-i+j-k-1 + (j-k-1)*(n-i-1));
