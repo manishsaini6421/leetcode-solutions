@@ -45,9 +45,32 @@ public:
         return max(skip,max(buy,sell));
     }
 
+    int solveMem(int index,int OperationNo,int k,vector<int>& prices,vector<vector<int>> &dp){
+        if(index==prices.size())return 0;
+        if(OperationNo==2*k)return 0;
+
+        if(dp[index][OperationNo]!=-1)return dp[index][OperationNo];
+        int buy=0;
+        int sell=0;
+        if(OperationNo%2==0){
+            buy=solveMem(index+1,OperationNo+1,k,prices,dp)-prices[index];
+        }
+        else{
+            sell=prices[index]+solveMem(index+1,OperationNo+1,k,prices,dp);
+        }
+
+        int skip=solveMem(index+1,OperationNo,k,prices,dp);
+
+        return dp[index][OperationNo]=max(skip,max(buy,sell));
+    }
+
     int maxProfit(int k, vector<int>& prices) {
         //return solveTabOptOpt(prices,k);
 
-        return solve(0,0,k,prices);
+        //return solve(0,0,k,prices);
+
+        int n=prices.size();
+        vector<vector<int>> dp(n+1,vector<int> (2*k,-1));
+        return solveMem(0,0,k,prices,dp);
     }
 };
