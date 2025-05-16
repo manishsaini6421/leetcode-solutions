@@ -35,21 +35,23 @@ public:
     int solveTab(string& s) {
 
         int n = s.size();
-        if(n==1)return 1;
+        if (n == 1)
+            return 1;
         vector<vector<int>> dp(n + 1, vector<int>(n + 1, 0));
         for (int i = n - 1; i >= 0; i--) {
             for (int j = i; j < n; j++) {
                 int ans = 0;
+                if(j-1>=0){
                 if (s[i] == s[j]) {
-                    ans = 2 + solveMem(s, i + 1, j - 1, dp);
+                    ans = 2 + dp[i + 1][j - 1];
                 } else {
-                    ans = max(solveMem(s, i + 1, j, dp),
-                              solveMem(s, i, j - 1, dp));
+                    ans = max(dp[i + 1][j], dp[i][j - 1]);
+                }
                 }
                 dp[i][j] = ans;
             }
         }
-        return dp[0][n-1];
+        return dp[0][n - 1];
     }
     int longestPalindromeSubseq(string s) {
         // return solve(s,0,s.size()-1);
