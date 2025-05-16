@@ -35,8 +35,8 @@ public:
     int solveTab(string& s) {
 
         int n = s.size();
-        if (n == 1)
-            return 1;
+        // if (n == 1)
+        //     return 1;
         vector<vector<int>> dp(n + 1, vector<int>(n + 1, 0));
         for(int i=0; i<n; i++){
             dp[i][i]=1;
@@ -56,6 +56,33 @@ public:
         }
         return dp[0][n - 1];
     }
+
+    // int solveTabOpt(string& s) {
+
+    //     int n = s.size();
+    //     // if (n == 1)
+    //     //     return 1;
+    //     vector<int> curr (n + 1, 0);
+    //     vector<int> next (n + 1, 0);
+
+    //     for(int i=0; i<n; i++){
+    //         dp[i][i]=1;
+    //     }
+    //     for (int i = n - 1; i >= 0; i--) {
+    //         for (int j = i+1; j < n; j++) {
+    //             int ans = 0;
+    //             if (s[i] == s[j]) {
+    //                 ans = 2 + dp[i + 1][j - 1];
+    //             } else {
+                    
+    //                 ans = max(dp[i + 1][j], dp[i][j-1]);
+    //             }
+
+    //             dp[i][j] = ans;
+    //         }
+    //     }
+    //     return dp[0][n - 1];
+    // }
     int longestPalindromeSubseq(string s) {
         // return solve(s,0,s.size()-1);
 
