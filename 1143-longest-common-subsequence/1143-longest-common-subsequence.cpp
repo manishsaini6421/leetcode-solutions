@@ -49,6 +49,28 @@ public:
         }
         return dp[0][0];
     }
+
+    int solveTabOpt(string& text1, string& text2) {
+        int m = text1.size();
+        int n = text2.size();
+
+        vector<int> next(n+1, 0);
+        vector<int> curr(n+1, 0);
+
+        for (int i = m - 1; i >= 0; i--) {
+            for (int j = n - 1; j >= 0; j--) {
+                int length = 0;
+                if (text1[i] == text2[j]) {
+                    length = 1 + next[j + 1];
+                } else {
+                    length = max(next[j], curr[j + 1]);
+                }
+                curr[j] = length;
+            }
+            next=curr;
+        }
+        return curr[0];
+    }
     int longestCommonSubsequence(string text1, string text2) {
 
         // return solve(0,0,text1,text2);
@@ -60,6 +82,8 @@ public:
 
         // return solveMem(0, 0, text1, text2, dp);
 
-        return solveTab(text1, text2);
+        // return solveTab(text1, text2);
+
+        return solveTabOpt(text1, text2);
     }
 };
