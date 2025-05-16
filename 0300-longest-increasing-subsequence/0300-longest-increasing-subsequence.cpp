@@ -94,6 +94,21 @@ public:
         }
         return ans.size();
     }
+    int x(vector<int>& nums){
+        int n=nums.size();
+        vector<int> ans;
+        ans.push_back(nums[0]);
+        for(int i=1; i<n; i++){
+            if(ans.back()<nums[i]){
+                ans.push_back(nums[i]);
+            }
+            else{
+                auto it=lower_bound(ans.begin(),ans.end(),nums[i]);
+                *it=nums[i];
+            }
+        }
+        return ans.size();
+    }
     int lengthOfLIS(vector<int>& nums) {
         //return solve(nums,0,-1);
        
@@ -105,6 +120,8 @@ public:
     
     //return solveOpt(nums);
     
-    return solveMostOpt(nums);
+    //return solveMostOpt(nums);
+
+    return x(nums);
     }
 };
