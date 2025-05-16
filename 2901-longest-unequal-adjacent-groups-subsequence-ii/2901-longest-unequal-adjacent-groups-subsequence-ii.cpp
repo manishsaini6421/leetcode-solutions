@@ -12,7 +12,7 @@ public:
                                                 vector<int>& groups) {
         int n = words.size();
 
-        vector<int> dp(n + 1, 1);
+        vector<int> dp(n, 1);
         vector<int> parent(n, -1);
 
         int longestSub=1;
