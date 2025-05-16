@@ -38,7 +38,7 @@ public:
         return dp[i][j]=ans;
     }
     int minDistance(string word1, string word2) {
-        return solve(0, 0, word1, word2);
+        // return solve(0, 0, word1, word2);
 
         int m=word1.size();
         int n=word2.size();
