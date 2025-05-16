@@ -66,6 +66,30 @@ public:
         }
         return dp[0][0];
     }
+    int solveTabOpt(string& word1, string& word2) {
+        int m = word1.size();
+        int n = word2.size();
+        vector<int> curr(n + 1, 0);
+        vector<int> next(n + 1, 0);
+        for (int j = 0; j <= n; j++) {
+            next[j] = n - j;
+        }
+
+        for (int i = m - 1; i >= 0; i--) {
+            curr[n]=m-i;
+            for (int j = n - 1; j >= 0; j--) {
+                int ans = 0;
+                if (word1[i] == word2[j]) {
+                    ans = next[j + 1];
+                } else {
+                    ans = 1 + min(next[j + 1], min(next[j], curr[j + 1]));
+                }
+                curr[j] = ans;
+            }
+            next = curr;
+        }
+        return curr[0];
+    }
     int minDistance(string word1, string word2) {
         // return solve(0, 0, word1, word2);
 
@@ -75,6 +99,8 @@ public:
 
         // return solveMem(0, 0, word1, word2, dp);
 
-        return solveTab(word1,word2);
+        // return solveTab(word1,word2);
+
+        return solveTabOpt(word1, word2);
     }
 };
