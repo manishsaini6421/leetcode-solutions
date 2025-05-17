@@ -18,6 +18,14 @@ public:
         return ans;
     }
     vector<vector<int>> matrixExpo(vector<vector<int>> &mt,int n){
+        if(n==0){
+            vector<vector<int>> temp(mt.size(),vector<int>(mt.size(),0));
+            for(int i=0; i<mt.size(); i++){
+                temp[i][i]=1;
+
+            }
+            return temp;
+        }
         if(n==1)return mt;
         vector<vector<int>> ans=matrixExpo(mt,n/2);
         ans=matmul(ans,ans);
@@ -35,6 +43,7 @@ public:
         // }
         // return temp2;
 
+        if(n<=1)return n;
         vector<vector<int>> mt(2,vector<int> (2,0));
         mt[0][0]=1;
         mt[0][1]=1;
