@@ -10,7 +10,7 @@ public:
         for(int i=0; i<m; i++){
             for(int j=0; j<p; j++){
                 for(int k=0; k<n; k++){
-                    result[i][j]+=mt1[i][k]*mt2[k][j];
+                    result[i][j]=(result[i][j]+(mt1[i][k]*1l*mt2[k][j])%MOD)%MOD;
                 }
             }
         }
