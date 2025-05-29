@@ -50,7 +50,8 @@ public:
         vector<int> ans;
 
         for(int i=0; i<adj1.size(); i++){
-            ans.push_back(levels1[i]%2?(tree1.second + tree2.second):(tree1.first+tree2.second));
+            int temp=max(tree2.first,tree2.second);
+            ans.push_back(levels1[i]%2?(tree1.second + temp):(tree1.first+temp));
         }
 
         return ans;
