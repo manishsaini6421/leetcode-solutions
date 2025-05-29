@@ -47,7 +47,7 @@ public:
         int m=adj2.size();
 
         vector<int> levels1(n,0);
-        vector<int> levels2(n,0);
+        vector<int> levels2(m,0);
 
         auto tree1=BFS(adj1,levels1);
         auto tree2=BFS(adj2,levels2);
