@@ -18,7 +18,7 @@ public:
             for(int i=0; i<size; i++){
                 int top=q.front();
                 q.pop();
-                levels[top]=level;
+                levels[top]=level%2;
                 for(int neighbour:adj[top]){
                     if(!visited[neighbour]){
                         visited[neighbour]=true;
@@ -56,7 +56,7 @@ public:
 
         for(int i=0; i<n; i++){
             int temp=max(tree2.first,tree2.second);
-            ans.push_back(levels1[i]%2?(tree1.second + temp):(tree1.first+temp));
+            ans.push_back(levels1[i]?(tree1.second + temp):(tree1.first+temp));
         }
 
         return ans;
