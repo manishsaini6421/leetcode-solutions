@@ -23,11 +23,12 @@ public:
         }
         return leaf;
     }
-    int BFS(unordered_map<int, unordered_set<int>>& adj,int node) {
+    int BFS(unordered_map<int, unordered_set<int>>& adj,int node,int &maxDist) {
         int n = adj.size();
         vector<bool> visited(n, false);
         queue<int> q;
         int level=0;
+        int leaf=0;
         if (n > 0) {
             q.push(node);
             visited[node] = true;
@@ -35,6 +36,7 @@ public:
                 int size = q.size();
                 for (int i = 0; i < size; i++) {
                     int top = q.front();
+                    leaf=top;
                     q.pop();
                     for (int neighbour : adj[top]) {
                         if (!visited[neighbour]) {
@@ -46,7 +48,8 @@ public:
                 level++;
             }
         }
-        return level;
+        maxDist=level;
+        return leaf;
     }
     int minimumDiameterAfterMerge(vector<vector<int>>& edges1,
                                   vector<vector<int>>& edges2) {
@@ -66,12 +69,18 @@ public:
         }
         
         
-        
-        int lastLeaf1=lastLeaf(adj1);
-        int diameter1=max(0,BFS(adj1,lastLeaf1)-1);
+        int dist1=0;
+        int farthestNode1=BFS(adj1,0,dist1);
+        int dist2=0;
+        BFS(adj1,farthestNode1,dist2);
+        int diameter1=max(0,dist2-1);
 
-         int lastLeaf2=lastLeaf(adj2);
-        int diameter2=max(0,BFS(adj2,lastLeaf2)-1);
+        
+        int farthestNode2=BFS(adj2,0,dist1);
+        BFS(adj2,farthestNode2,dist2);
+        int diameter2=max(0,dist2-1);
+
+         
 
         
         
