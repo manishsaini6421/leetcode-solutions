@@ -3,7 +3,7 @@ class Solution {
 public:
    void BFS(unordered_map<int,unordered_set<int>> &adj,vector<int> &distance,int node){
         int n=adj.size();
-        vector<bool> visited(n,false);
+        vector<bool> visited(distance.size(),false);
         queue<int> q;
         q.push(node);
         visited[node]=true;
