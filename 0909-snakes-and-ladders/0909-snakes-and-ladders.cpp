@@ -27,17 +27,14 @@ public:
                     pair<int,int> coordinate=getCoordinates(n,newVal);
                     int row=coordinate.first;
                     int col=coordinate.second;
-
-                    if(!visited[newVal] && board[row][col]==-1){
-                        visited[newVal]=true;
-                        q.push(newVal);
-                    }
-                  
                     
-                    if(board[row][col]!=-1 && !visited[board[row][col]]){
-                        q.push(board[row][col]);
-                        visited[board[row][col]]=true;
+                    int destination=(board[row][col]==-1)?newVal:board[row][col];
+
+                    if(!visited[destination]){
+                        visited[destination]=true;
+                        q.push(destination);
                     }
+                    
                 }
             }
             level++;
