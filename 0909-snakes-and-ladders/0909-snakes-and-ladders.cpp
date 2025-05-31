@@ -18,19 +18,23 @@ public:
             int size=q.size();
             for(int i=0; i<size; i++){
                 int top=q.front();
+                cout<<top<<endl;
                 if(top==n*n)return level;
                 q.pop();
                 for(int i=1; i<=6; i++){
                     int newVal=min(n*n,top+i);
-                    
-                    if(!visited[newVal]){
-                        visited[newVal]=true;
-                        q.push(newVal);
-                    }
+
                     pair<int,int> coordinate=getCoordinates(n,newVal);
                     int row=coordinate.first;
                     int col=coordinate.second;
-                    if(board[row][col]!=-1){
+
+                    if(!visited[newVal] && board[row][col]==-1){
+                        visited[newVal]=true;
+                        q.push(newVal);
+                    }
+                  
+                    
+                    if(board[row][col]!=-1 && !visited[board[row][col]]){
                         q.push(board[row][col]);
                         visited[board[row][col]]=true;
                     }
