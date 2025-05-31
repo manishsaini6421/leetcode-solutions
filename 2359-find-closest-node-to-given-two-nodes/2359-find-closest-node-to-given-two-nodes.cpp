@@ -2,7 +2,6 @@
 class Solution {
 public:
    void BFS(vector<int>& edges,vector<int> &distance,int node){
-        // int n=adj.size();
         vector<bool> visited(distance.size(),false);
         queue<int> q;
         q.push(node);
@@ -28,12 +27,7 @@ public:
         
     }
     int closestMeetingNode(vector<int>& edges, int node1, int node2) {
-        // unordered_map<int,unordered_set<int>> adj;
-
-        // for(int i=0; i<edges.size(); i++){
-        //     if(edges[i]!=-1)
-        //     adj[i].insert(edges[i]);
-        // }
+       
         int n=edges.size();
         vector<int> distance1(n,INT_MAX),distance2(n,INT_MAX);
 
