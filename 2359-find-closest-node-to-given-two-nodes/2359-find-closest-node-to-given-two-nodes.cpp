@@ -9,8 +9,7 @@ public:
         int level=0;
 
         while(!q.empty()){
-            int size=q.size();
-            for(int i=0; i<size; i++){
+            
                 int top=q.front();
                 distance[top]=level;
                 q.pop();
@@ -21,7 +20,7 @@ public:
                         q.push(neighbour);
                     }
                 }
-            }
+            
             level++;
         }
         
