@@ -75,12 +75,10 @@ public:
 
         
         
-       
-        cout << diameter1 << " " << diameter2 << endl;
         int half1 = (diameter1 % 2) ? diameter1 / 2 + 1 : diameter1 / 2;
         int half2 = (diameter2 % 2) ? diameter2 / 2 + 1 : diameter2 / 2;
 
-        cout << half1 << " " << half2 << endl;
+        
         return max(half1 + half2 + 1,max(diameter1,diameter2));
     }
 };
