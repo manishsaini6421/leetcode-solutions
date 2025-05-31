@@ -1,8 +1,8 @@
 #include <algorithm>
 class Solution {
 public:
-   void BFS(unordered_map<int,unordered_set<int>> &adj,vector<int> &distance,int node){
-        int n=adj.size();
+   void BFS(vector<int>& edges,vector<int> &distance,int node){
+        // int n=adj.size();
         vector<bool> visited(distance.size(),false);
         queue<int> q;
         q.push(node);
@@ -15,7 +15,8 @@ public:
                 int top=q.front();
                 distance[top]=level;
                 q.pop();
-                for(int neighbour:adj[top]){
+                if(edges[top]!=-1){
+                    int neighbour=edges[top];
                     if(!visited[neighbour]){
                         visited[neighbour]=true;
                         q.push(neighbour);
@@ -27,17 +28,17 @@ public:
         
     }
     int closestMeetingNode(vector<int>& edges, int node1, int node2) {
-        unordered_map<int,unordered_set<int>> adj;
+        // unordered_map<int,unordered_set<int>> adj;
 
-        for(int i=0; i<edges.size(); i++){
-            if(edges[i]!=-1)
-            adj[i].insert(edges[i]);
-        }
+        // for(int i=0; i<edges.size(); i++){
+        //     if(edges[i]!=-1)
+        //     adj[i].insert(edges[i]);
+        // }
         int n=edges.size();
         vector<int> distance1(n,INT_MAX),distance2(n,INT_MAX);
 
-        BFS(adj,distance1,node1);
-        BFS(adj,distance2,node2);
+        BFS(edges,distance1,node1);
+        BFS(edges,distance2,node2);
 
         int ans=-1;
         int dist=INT_MAX;
