@@ -19,17 +19,17 @@ public:
         return dp[index] = ans;
     }
     bool solveTab(vector<int>& nums) {
-        int n=nums.size();
+        int n = nums.size();
         vector<bool> dp(n, false);
-        dp[n-1]=true;
+        dp[n - 1] = true;
         for (int index = n - 2; index >= 0; index--) {
             bool ans = false;
             for (int i = 1; i <= nums[index]; i++) {
-                
-                if(index+i<n)
+
+                if (index + i < n)
                     ans |= dp[index + i];
-                if(ans)break;
-                
+                if (ans)
+                    break;
             }
             dp[index] = ans;
         }
