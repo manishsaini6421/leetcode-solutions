@@ -52,12 +52,33 @@ public:
         return prev[n-1];
     }
 
+    int solveTabMostOpt(int m,int n){
+       
+        
+        vector<int> curr(n,0);
+        
+        curr[0]=1;
+      
+
+        for(int i=0; i<m; i++){
+            for(int j=1; j<n; j++){
+                 int left=curr[j-1];
+                int top=curr[j];
+
+                curr[j]=left+top;
+            }
+            // prev=curr;
+        }
+        return curr[n-1];
+    }
     int uniquePaths(int m, int n) {
         // vector<vector<int>> dp(m,vector<int>(n,-1));
         // return solve(m-1,n-1,dp);
 
         // return solveTab(m,n);
 
-        return solveTabOpt(m,n);
+        //return solveTabOpt(m,n);
+
+        return solveTabMostOpt(m,n);
     }
 };
