@@ -13,8 +13,8 @@ public:
     string longestPalindrome(string s) {
         
         int n=s.size();
-        int len=0;
-        string ans;
+        int startIndex=0,maxLen=0;
+        
 
         vector<vector<int>> dp(n,vector<int> (n,-1));
 
@@ -24,13 +24,13 @@ public:
 
         for(int i=0; i<n; i++){
             for(int j=i; j<n; j++){
-                if(isPalindrome(s,i,j,dp) && j-i+1>len){
-                    len=j-i+1;
-                    ans=s.substr(i,j-i+1);
+                if(isPalindrome(s,i,j,dp) && j-i+1>maxLen){
+                    maxLen=j-i+1;
+                    startIndex=i;
                 }
             }
         }
         
-        return ans;
+        return s.substr(startIndex,maxLen);
     }
 };
