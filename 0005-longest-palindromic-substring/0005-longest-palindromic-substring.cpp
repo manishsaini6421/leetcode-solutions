@@ -11,7 +11,6 @@ public:
         for(int i=0; i<n; i++){
             for(int j=i; j>=0; j--){
                 dp[i][j]=1;
-            cout<<i<<j<<dp[i][j]<<endl;
             }
             
         }
@@ -21,11 +20,9 @@ public:
                 if(s[i]==s[j]){
                     if(j>0)
                     dp[i][j]=dp[i+1][j-1];
-                    cout<<"hello";
                     
                 } 
                 else dp[i][j]=0;
-                cout<<i<<j<<dp[i][j];
                 if(dp[i][j]==1 && j-i+1>maxLen){
                     
                     maxLen=j-i+1;
