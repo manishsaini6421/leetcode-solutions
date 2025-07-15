@@ -31,10 +31,33 @@ public:
         }
         return dp[m-1][n-1];
     }
+
+    int solveTabOpt(int m,int n){
+       
+        vector<int> prev(n,1);
+        vector<int> curr(n,0);
+        
+        curr[0]=1;
+      
+
+        for(int i=1; i<m; i++){
+            for(int j=1; j<n; j++){
+                 int left=curr[j-1];
+                int top=prev[j];
+
+                curr[j]=left+top;
+            }
+            prev=curr;
+        }
+        return prev[n-1];
+    }
+
     int uniquePaths(int m, int n) {
         // vector<vector<int>> dp(m,vector<int>(n,-1));
         // return solve(m-1,n-1,dp);
 
-        return solveTab(m,n);
+        // return solveTab(m,n);
+
+        return solveTabOpt(m,n);
     }
 };
