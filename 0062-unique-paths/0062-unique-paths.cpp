@@ -67,7 +67,7 @@ public:
 
                 curr[j]=left+top;
             }
-            // prev=curr;
+            
         }
         return curr[n-1];
     }
