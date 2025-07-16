@@ -18,27 +18,25 @@ public:
         return dp[target][i] = (ans <= 0) ? -1 : ans;
     }
 
-    int solveTab(vector<int>& nums, int total){
-        int n=nums.size();
-        vector<vector<int>> dp(total+1,vector<int> (n+1,INT_MIN));
+    int solveTab(vector<int>& nums, int total) {
+        int n = nums.size();
+        vector<vector<int>> dp(total + 1, vector<int>(n + 1, INT_MIN));
 
-        for(int i=0; i<n; i++){
-            dp[0][i]=0;
+        for (int i = 0; i <= n; i++) {
+            dp[0][i] = 0;
         }
 
-        for(int target=1; target<=total; target++){
-            for(int i=n-1; i>=0; i--){
+        for (int target = 1; target <= total; target++) {
+            for (int i = n - 1; i >= 0; i--) {
                 int include = INT_MIN;
-                if(target - nums[i]>=0)
-                include=1 + dp[target - nums[i]][i + 1];
-        int exclude = dp[target][i + 1];
+                if (target - nums[i] >= 0 && dp[target - nums[i]][i + 1]!=INT_MIN)
+                    include = 1 + dp[target - nums[i]][i + 1];
+                int exclude = dp[target][i + 1];
 
-        dp[target][i] = max(include, exclude);
-
-         
+                dp[target][i] = max(include, exclude);
             }
         }
-        return (dp[total][0]<=0)?-1:dp[total][0];
+        return (dp[total][0] <= 0) ? -1 : dp[total][0];
     }
 
     int lengthOfLongestSubsequence(vector<int>& nums, int target) {
