@@ -24,7 +24,6 @@ public:
             if(num%2==1 && flag==0){
                 flag=1;
                 count++;
-                cout<<num<<" ";
             }
         }
         cout<<count;
