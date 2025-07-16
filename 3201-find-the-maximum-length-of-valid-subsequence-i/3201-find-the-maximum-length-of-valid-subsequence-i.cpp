@@ -21,7 +21,7 @@ public:
                 count++;
                 
             }
-            if(num%2==1 && flag==0){
+            else if(num%2==1 && flag==0){
                 flag=1;
                 count++;
             }
