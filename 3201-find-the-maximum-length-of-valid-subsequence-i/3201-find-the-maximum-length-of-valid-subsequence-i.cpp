@@ -26,7 +26,6 @@ public:
                 count++;
             }
         }
-        cout<<count;
         return max(count,max(odd,even));
     }
 };
