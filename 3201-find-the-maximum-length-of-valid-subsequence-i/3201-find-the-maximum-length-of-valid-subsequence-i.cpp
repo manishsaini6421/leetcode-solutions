@@ -14,14 +14,14 @@ public:
             flag=1;
         }
 
-        
-        for(int num:nums){
-            if(num%2==0 && flag==1){
+        int n=nums.size();
+        for(int i=1; i<n; i++){
+            if(nums[i]%2==0 && flag==1){
                 flag=0;
                 count++;
                 
             }
-            else if(num%2==1 && flag==0){
+            else if(nums[i]%2==1 && flag==0){
                 flag=1;
                 count++;
             }
