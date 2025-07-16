@@ -29,26 +29,27 @@ public:
         if (obstacleGrid[0][0] == 1 || obstacleGrid[m - 1][n - 1] == 1)
             return 0;
 
-        vector<vector<int>> dp(m, vector<int>(n, 0));
-
-        
+        vector<vector<long>> dp(m, vector<long>(n, 0));
 
         for (int i = m - 1; i >= 0; i--) {
             for (int j = n - 1; j >= 0; j--) {
+                if (obstacleGrid[i][j] == 1) {
+                    dp[i][j] = 0;
+                    continue;
+                }
                 if (i == m - 1 && j == n - 1) {
-            dp[i][j]= 1;
-            continue;
-        }
-                int right = 0;
+                    dp[i][j] = 1;
+                    continue;
+                }
+                long right = 0;
                 if (j < n - 1 && obstacleGrid[i][j + 1] == 0) {
                     right = dp[i][j + 1];
                 }
-                int down = 0;
+                long down = 0;
                 if (i < m - 1 && obstacleGrid[i + 1][j] == 0) {
                     down = dp[i + 1][j];
                 }
                 dp[i][j] = right + down;
-
             }
         }
         return dp[0][0];
