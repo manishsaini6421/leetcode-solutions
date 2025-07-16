@@ -9,10 +9,9 @@ public:
             else even++;
         }
 
-        int flag=0,count=0;
+        int flag=0,count=1;
         if(nums[0]%2){
             flag=1;
-            count++;
         }
 
         
