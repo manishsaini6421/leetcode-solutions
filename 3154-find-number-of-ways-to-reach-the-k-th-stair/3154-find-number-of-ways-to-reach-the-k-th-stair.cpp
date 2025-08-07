@@ -1,7 +1,7 @@
 class Solution {
 public:
 
-    int solve(int i, int jump, int jumpType, int k,map<array<int,3>,int> &dp,vector<long long> &exp) {
+    int solve(int i, int jump, int jumpType, int k,map<array<int,3>,int> &dp,vector<int> &exp) {
         if (i > k + 1 )
             return 0;
 
@@ -28,9 +28,9 @@ public:
     int waysToReachStair(int k) {
         map<array<int,3>,int> dp;
 
-        vector<long long> exp(33);
+        vector<int> exp(31);
         exp[0]=1;
-        for(int i=1; i<33; i++){
+        for(int i=1; i<31; i++){
             exp[i]=exp[i-1]*2;
         }
          return solve(1, 0, 1, k,dp,exp);
