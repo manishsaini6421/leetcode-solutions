@@ -13,7 +13,7 @@ public:
         
         
 
-        if (jumpType && i>0)
+        if (jumpType)
             ans += solve(i - 1, jump, 0, k,dp,exp);
         
             ans += solve(i + exp[jump], jump + 1, 1, k,dp,exp);
