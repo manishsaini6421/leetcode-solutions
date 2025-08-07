@@ -5,10 +5,8 @@ public:
         if (i > k + 1 )
             return 0;
 
-        int ans=0; 
-        if (i == k) {
-            ans++;
-        }
+        int ans=(i==k)?1:0; 
+       
 
         if(dp.count({i,jump,jumpType}))return dp[{i,jump,jumpType}];
 
