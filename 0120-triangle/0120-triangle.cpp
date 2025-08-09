@@ -1,18 +1,20 @@
 class Solution {
 public:
      
-    int solve(int i,int j, vector<vector<int>>& triangle){
+    int solve(int i,int j, vector<vector<int>>& triangle,map<array<int,2>,int> &dp){
         int n=triangle.size();
         if(i==n-1)return triangle[i][j];
 
-        int down=triangle[i][j]+solve(i+1,j,triangle);
+        if(dp.count({i,j}))return dp[{i,j}];
+        int down=triangle[i][j]+solve(i+1,j,triangle,dp);
 
-        int diagonal=triangle[i][j]+solve(i+1,j+1,triangle);
+        int diagonal=triangle[i][j]+solve(i+1,j+1,triangle,dp);
 
-        return min(down,diagonal);
+        return dp[{i,j}]=min(down,diagonal);
 
     }
     int minimumTotal(vector<vector<int>>& triangle) {
-        return solve(0,0,triangle);
+        map<array<int,2>,int> dp;
+        return solve(0,0,triangle,dp);
     }
 };
