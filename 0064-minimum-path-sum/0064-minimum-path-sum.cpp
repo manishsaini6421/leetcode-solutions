@@ -23,7 +23,7 @@ public:
         int m = grid.size();
         int n = grid[0].size();
         vector<int> curr(n,0);
-        vector<int> next(n,0);
+        // vector<int> next(n,0);
         curr[n-1]=grid[m-1][n-1];
 
         
@@ -35,13 +35,12 @@ public:
                     right = grid[i][j] + curr[j + 1];
                 int down = INT_MAX;
                 if (i < m - 1)
-                    down = grid[i][j] + next[j];
+                    down = grid[i][j] + curr[j];
 
                 if(!(i==m-1 && j==n-1))curr[j] = min(right, down);
             }
-            next=curr;
         }
-        return next[0];
+        return curr[0];
     }
     int minPathSum(vector<vector<int>>& grid) {
         // int m = grid.size();
