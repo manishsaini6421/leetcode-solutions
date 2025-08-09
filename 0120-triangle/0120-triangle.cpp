@@ -16,18 +16,21 @@ public:
     }
     int solveTab(vector<vector<int>>& triangle) {
         int n = triangle.size();
-        vector<vector<int>> dp = triangle;
+        // vector<vector<int>> dp = triangle;
+        vector<int> curr(n);
+        vector<int> next=triangle[n-1];
         for (int i = n - 2; i >= 0; i--) {
             for (int j = i; j >= 0; j--) {
-                int down = triangle[i][j] + dp[i + 1][j];
+                int down = triangle[i][j] + next[j];
 
                 int diagonal =
-                    triangle[i][j] + dp[i + 1][j + 1];
+                    triangle[i][j] +next[j + 1];
 
-                dp[i][j] = min(down, diagonal);
+                curr[j] = min(down, diagonal);
             }
+            next=curr;
         }
-        return dp[0][0];
+        return next[0];
     }
     int minimumTotal(vector<vector<int>>& triangle) {
         // map<array<int, 2>, int> dp;
