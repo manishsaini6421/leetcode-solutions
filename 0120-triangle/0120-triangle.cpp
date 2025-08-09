@@ -13,6 +13,10 @@ public:
         return dp[{i,j}]=min(down,diagonal);
 
     }
+    // int solveTab(vector<vector<int>>& triangle){
+    //     int n=triangle.size();
+    //     map<array<int,2>,int> dp;
+    // }
     int minimumTotal(vector<vector<int>>& triangle) {
         map<array<int,2>,int> dp;
         return solve(0,0,triangle,dp);
