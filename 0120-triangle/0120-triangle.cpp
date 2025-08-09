@@ -16,7 +16,6 @@ public:
     }
     int solveTab(vector<vector<int>>& triangle) {
         int n = triangle.size();
-        // vector<vector<int>> dp = triangle;
         vector<int> curr(n);
         vector<int> next=triangle[n-1];
         for (int i = n - 2; i >= 0; i--) {
