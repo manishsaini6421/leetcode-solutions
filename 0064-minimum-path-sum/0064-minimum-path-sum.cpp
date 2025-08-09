@@ -24,7 +24,7 @@ public:
         int n = grid[0].size();
         vector<int> curr(n,0);
         vector<int> next(n,0);
-        next[n-1]=curr[n-1]=grid[m-1][n-1];
+        curr[n-1]=grid[m-1][n-1];
 
         
 
