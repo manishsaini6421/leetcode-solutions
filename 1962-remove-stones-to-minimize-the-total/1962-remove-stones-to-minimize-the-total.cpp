@@ -6,7 +6,8 @@ public:
         for(int i=0; i<k; i++){
             int temp=maxHeap.top();
             maxHeap.pop();
-            maxHeap.push(ceil(temp/2.0));
+            temp-=temp/2;
+            maxHeap.push(temp);
         }
         int ans=0;
         while(!maxHeap.empty()){
