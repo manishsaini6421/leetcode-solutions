@@ -18,8 +18,10 @@ public:
     int numberOfWays(int n, int x) {
         vector<int> powers;
         int temp=1;
-        while(pow(temp,x) <= n){
-            powers.push_back(pow(temp,x));
+        int res=1;
+        while(res <= n){
+            res=pow(temp,x);
+            powers.push_back(res);
             temp++;
         }
         int size=powers.size();
