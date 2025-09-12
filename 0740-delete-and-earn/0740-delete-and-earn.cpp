@@ -1,17 +1,21 @@
 class Solution {
 public:
     
-    int solve(vector<int> &arr,int curr,int took,vector<vector<int>> &dp){
-       if(curr>=arr.size())return 0;
+    int solve(vector<int> &arr,int index,int tookPrev,vector<vector<int>> &dp){
+       if(index>=arr.size())return 0;
 
-        if(dp[curr][took]!=-1)return dp[curr][took];
+        if(dp[index][tookPrev]!=-1)return dp[index][tookPrev];
         int take=0;
-        if(!took)take=arr[curr]+solve(arr,curr+1,1,dp);
+        if(!tookPrev)take=arr[index]+solve(arr,index+1,1,dp);
 
-        int dontTake=solve(arr,curr+1,0,dp);
+        int dontTake=solve(arr,index+1,0,dp);
 
-        return dp[curr][took]=max(take,dontTake);
+        return dp[index][tookPrev]=max(take,dontTake);
     }
+
+    // int solveTab(vector<int> &arr){
+
+    // }
     int deleteAndEarn(vector<int>& nums) {
        
        int maxElement= *max_element(nums.begin(),nums.end());
