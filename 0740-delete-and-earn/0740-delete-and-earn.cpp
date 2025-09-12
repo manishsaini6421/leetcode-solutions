@@ -18,14 +18,14 @@ public:
 
     int solveTab(vector<int>& arr) {
         int n = arr.size();
-        vector<vector<int>> dp(n + 1, vector<int>(2, -1));
+        vector<vector<int>> dp(n + 1, vector<int>(2, 0));
         for (int index = n - 1; index >= 0; index--) {
             for (int tookPrev = 1; tookPrev >= 0; tookPrev--) {
                 int take = 0;
                 if (!tookPrev)
-                    take = arr[index] + solve(arr, index + 1, 1, dp);
+                    take = arr[index] + dp[index + 1][1];
 
-                int dontTake = solve(arr, index + 1, 0, dp);
+                int dontTake = dp[index + 1][0];
 
                 dp[index][tookPrev] = max(take, dontTake);
             }
