@@ -1,16 +1,16 @@
 class Solution {
 public:
     
-    int solve(vector<int> &arr,int curr,int prev,vector<vector<int>> &dp){
+    int solve(vector<int> &arr,int curr,int took,vector<vector<int>> &dp){
        if(curr>=arr.size())return 0;
 
-        if(dp[curr][prev+1]!=-1)return dp[curr][prev+1];
+        if(dp[curr][took]!=-1)return dp[curr][took];
         int take=0;
-        if(curr-1!=prev)take=arr[curr]+solve(arr,curr+1,curr,dp);
+        if(!took)take=arr[curr]+solve(arr,curr+1,1,dp);
 
-        int dontTake=solve(arr,curr+1,prev,dp);
+        int dontTake=solve(arr,curr+1,0,dp);
 
-        return dp[curr][prev+1]=max(take,dontTake);
+        return dp[curr][took]=max(take,dontTake);
     }
     int deleteAndEarn(vector<int>& nums) {
        
@@ -24,8 +24,8 @@ public:
             arr[nums[i]]+=nums[i];
         }
 
-        vector<vector<int>> dp(maxElement+1,vector<int>(maxElement+2,-1)); 
-        int ans=solve(arr,0,-1,dp);
+        vector<vector<int>> dp(maxElement+1,vector<int>(2,-1)); 
+        int ans=solve(arr,0,0,dp);
         return ans;
     }
 };
