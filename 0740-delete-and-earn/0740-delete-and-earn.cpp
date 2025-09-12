@@ -46,6 +46,8 @@ public:
 
         vector<vector<int>> dp(maxElement + 1, vector<int>(2, -1));
          
-        return solve(arr, 0, 0, dp);;
+        // return solve(arr, 0, 0, dp);
+
+         return solveTab(arr);
     }
 };
