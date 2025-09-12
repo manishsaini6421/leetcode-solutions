@@ -18,19 +18,12 @@ public:
 
     int solveTab(vector<int>& arr) {
         int n = arr.size();
-        vector<vector<int>> dp(n + 1, vector<int>(2, 0));
-        for (int index = n - 1; index >= 0; index--) {
-            for (int tookPrev = 1; tookPrev >= 0; tookPrev--) {
-                int take = 0;
-                if (!tookPrev)
-                    take = arr[index] + dp[index + 1][1];
-
-                int dontTake = dp[index + 1][0];
-
-                dp[index][tookPrev] = max(take, dontTake);
-            }
+        vector<int> dp(n + 1, 0);
+        dp[1]=arr[1];
+        for (int i = 2; i <n; i++) {
+            dp[i]=max(dp[i-1],dp[i-2]+arr[i]);
         }
-        return dp[0][0];
+        return dp[n-1];
     }
     int deleteAndEarn(vector<int>& nums) {
 
