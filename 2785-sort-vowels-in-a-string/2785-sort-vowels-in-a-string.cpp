@@ -1,17 +1,24 @@
 class Solution {
 public:
+
+    bool isVovel(char c){
+        if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u' || c=='A' ||c=='A' || c=='E' || c=='I' || c=='O' || c=='U'){
+                return true;
+            }
+            return false;
+    }
     string sortVowels(string s) {
         map<char,int> mp;
         for(int i=0; i<s.size(); i++){
-            if(s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u' || s[i]=='A' ||s[i]=='A' || s[i]=='E' || s[i]=='I' || s[i]=='O' || s[i]=='U'){
+            if(isVovel(s[i]))
                 mp[s[i]]++;
-            }
+            
 
         }
         string temp="AEIOUaeiou";
         int index=0;
         for(int i=0; i<s.size(); i++){
-            if(s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u' || s[i]=='A' ||s[i]=='A' || s[i]=='E' || s[i]=='I' || s[i]=='O' || s[i]=='U'){
+            if(isVovel(s[i])){
                 while(mp[temp[index]]==0){
                     index++;
                 }
