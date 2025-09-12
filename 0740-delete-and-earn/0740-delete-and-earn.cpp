@@ -25,6 +25,18 @@ public:
         }
         return dp[n-1];
     }
+
+    int solveTabImp(vector<int>& arr){
+
+        int n = arr.size();
+        int curr=arr[1],prev2=arr[0],prev1=arr[1];
+        for (int i = 2; i <n; i++) {
+            curr=max(prev1,prev2+arr[i]);
+            prev2=prev1;
+            prev1=curr;
+        }
+        return curr;
+    }
     int deleteAndEarn(vector<int>& nums) {
 
         int maxElement = *max_element(nums.begin(), nums.end());
@@ -41,6 +53,8 @@ public:
          
         // return solve(arr, 0, 0, dp);
 
-         return solveTab(arr);
+        //  return solveTab(arr);
+
+        return solveTabImp(arr);
     }
 };
