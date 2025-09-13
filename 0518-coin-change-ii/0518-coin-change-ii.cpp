@@ -12,7 +12,7 @@ public:
         return dp[amount][prev]=ans;
     }
     int change(int amount, vector<int>& coins) {
-        sort(coins.begin(),coins.end());
+        // sort(coins.begin(),coins.end());
         vector<vector<int>> dp(amount+1,vector<int>(coins.size(),-1));
         return solve(amount,coins,0,dp);
     }
