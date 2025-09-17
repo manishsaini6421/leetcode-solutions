@@ -11,9 +11,10 @@ public:
             }
             st.push(val);
         }
-        vector<int> v(st.size(), 0);
-        while (!st.empty()) {
-            v[st.size() - 1] = st.top();
+        int size=st.size();
+        vector<int> v(size, 0);
+        for(int i=size-1; i>=0; i--) {
+            v[i] = st.top();
             st.pop();
         }
         return v;
