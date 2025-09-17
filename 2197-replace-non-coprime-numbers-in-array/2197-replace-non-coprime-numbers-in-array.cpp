@@ -1,20 +1,22 @@
 class Solution {
 public:
-    int coPrime(int a,int b){
-        int n=min(a,b);
-        for(int i=2; i<=n; i++){
-            if(a%i==0 && b%i==0)return false;
-        }
-        return true;
-    }
+   
     vector<int> replaceNonCoprimes(vector<int>& nums) {
         stack<int> st;
         st.push(nums[0]);
         for(int i=1; i<nums.size(); i++){
-            if(coPrime(st.top(),nums[i])==false){
-                int temp=st.top();
+            if(gcd(st.top(),nums[i])!=1){
+                
+                
+                int temp1=st.top();
                 st.pop();
-                st.push(lcm(temp,nums[i]));
+               int temp2 = lcm(temp1,nums[i]);
+               while(!st.empty() && gcd(st.top(),temp2)!=1){
+                temp1=st.top();
+                st.pop();
+                temp2=lcm(temp1,temp2);
+               } 
+               st.push(temp2);
             }
             else{
                 st.push(nums[i]);
