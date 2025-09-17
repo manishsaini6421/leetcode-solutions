@@ -2,8 +2,7 @@ class Solution {
 public:
     vector<int> replaceNonCoprimes(vector<int>& nums) {
         stack<int> st;
-        st.push(nums[0]);
-        for (int i = 1; i < nums.size(); i++) {
+        for (int i = 0; i < nums.size(); i++) {
             int val = nums[i];
             
             while (!st.empty() && gcd(st.top(), val) != 1) {
