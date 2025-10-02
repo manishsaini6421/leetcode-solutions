@@ -14,7 +14,8 @@ public:
     int maxBottlesDrunk(int numBottles, int numExchange) {
         int a=1;
         int b=2*numExchange -3;
-        double delta= (double)(b*b - 4 * a * (-2*numBottles));
+        int c= -2*numBottles;
+        int delta= b*b - 4 * a * c;
 
         double ans=ceil(((-b)+(double)sqrt(delta))/2);
         return numBottles+ans-1;
