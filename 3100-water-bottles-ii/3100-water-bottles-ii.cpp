@@ -17,7 +17,7 @@ public:
         int c= -2*numBottles;
         int delta= b*b - 4 * a * c;
 
-        double ans=ceil(((-b)+(double)sqrt(delta))/2);
-        return numBottles+ans-1;
+        double k=ceil(((-b)+(double)sqrt(delta))/2);
+        return numBottles+k-1;
     }
 };
