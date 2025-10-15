@@ -4,7 +4,6 @@ public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
         sort(intervals.begin(),intervals.end());
         int n=intervals.size();
-        cout<<intervals[0][1]<<endl;
         vector<vector<int>> ans;
         for(int i=0; i<n; i++){
             vector<int> temp;
