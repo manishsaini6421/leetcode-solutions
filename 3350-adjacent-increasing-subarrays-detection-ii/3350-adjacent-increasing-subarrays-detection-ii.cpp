@@ -19,10 +19,10 @@ public:
         }
 
         int a=0,b=n;
-        int k=1,mid;
+        int k=0,mid;
         while(a<=b){
             mid=(a+b)/2;
-            if(check(freq,mid) && mid>=k){
+            if(check(freq,mid)){
                 k=mid;
                 a=mid+1;
             }
