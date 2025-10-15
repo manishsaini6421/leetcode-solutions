@@ -5,8 +5,7 @@ public:
 
         for (int i = 0; i < n-k; i++) {
             if (freq[i] >= k && freq[i + k] >= k) {
-                cout<<"index "<<i<<" freqi "<<freq[i]<<" freqi+k "<<freq[i+k]<<" k "<<k<<endl;
-                return true;
+               return true;
             }
         }
         return false;
