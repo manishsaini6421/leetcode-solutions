@@ -18,8 +18,8 @@ public:
                 freq[i] = freq[i - 1] + 1;
         }
 
-        int a=0,b=n;
-        int k=0,mid;
+        int a=0,b=n,k=0,mid;
+     
         while(a<=b){
             mid=(a+b)/2;
             if(check(freq,mid)){
