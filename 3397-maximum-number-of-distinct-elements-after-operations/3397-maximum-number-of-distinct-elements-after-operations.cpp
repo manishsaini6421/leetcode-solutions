@@ -6,11 +6,19 @@ public:
         map<int,int> mp;
         
         for(int i=0; i<n; i++){
-            int temp=-k;
-            while(mp.count(nums[i]+temp) && temp<k){
-                temp++;
+            
+            int a=-k;
+            int b=k;
+            int temp,ans=0;
+            while(a<=b){
+                temp=(a+b)/2;
+                if(!mp.count(nums[i]+temp)){
+                    ans=temp;
+                    b=temp-1;
+                }
+                else a=temp+1;
             }
-            mp[nums[i]+temp]=1;
+            mp[nums[i]+ans]=1;
         }
 
         return mp.size();
