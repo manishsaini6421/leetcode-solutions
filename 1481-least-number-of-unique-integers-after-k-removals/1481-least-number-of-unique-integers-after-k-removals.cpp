@@ -14,12 +14,12 @@ public:
         while(k>0){
             int temp=pq.top();
             
-            pq.pop();
-            if(temp<=k)k-=temp;
-            else {
-                pq.push(temp-k);
-                k=0;
+            
+            if(temp<=k){
+                k-=temp;
+                pq.pop();
             }
+            else break;
 
         }
         return pq.size();
