@@ -20,10 +20,22 @@ public:
         }
         return dp[0];
     }
+
+    int solveOpt(int n){
+        int curr=0,second=0,first=1;
+        for(int k=n-1; k>=0; k--){
+            curr=first+second;
+            second=first;
+            first=curr;
+        }
+        return first;
+    }
     int climbStairs(int n) {
         // vector<int> dp(n, -1);
         // return solve(n, 0, dp);
 
-        return solveTab(n);
+        // return solveTab(n);
+
+        return solveOpt(n);
     }
 };
