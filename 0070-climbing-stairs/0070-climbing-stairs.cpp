@@ -40,7 +40,7 @@ public:
 
         for(int i=0; i<m; i++){
             for(int j=0; j<p; j++){
-                int sum=0;
+                long long sum=0;
                 for(int k=0; k<n; k++){
                     sum+=A[i][k]*B[k][j];
                 }
