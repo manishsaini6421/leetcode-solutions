@@ -30,12 +30,57 @@ public:
         }
         return first;
     }
+
+    vector<vector<int>> matmul(vector<vector<int>> const &A, vector<vector<int>> const &B){
+        int m=A.size();
+        int n=A[0].size();
+        int p=B[0].size();
+
+        vector<vector<int>> C(m,vector<int> (p,0));
+
+        for(int i=0; i<m; i++){
+            for(int j=0; j<p; j++){
+                int sum=0;
+                for(int k=0; k<n; k++){
+                    sum+=A[i][k]*B[k][j];
+                }
+                C[i][j]=sum;
+            }
+        }
+        return C;
+    }
+    vector<vector<int>> matpower(vector<vector<int>> const &A,int n){
+        int m=A.size();
+
+        vector<vector<int>> B(m,vector<int> (m,0));
+        if(n==0){
+            for(int i=0; i<m; i++){
+                B[i][i]=1;
+            }
+        }
+        if(n==1)return A;
+
+        B=matpower(A,n/2);
+
+        return (n%2)? matmul(matmul(B,B),A):matmul(B,B);
+    }
+    //Using matrix Exponention
+    int solveMat(int n){
+        vector<vector<int>> A={{0,1},{1,1}};
+        vector<vector<int>> B={{1},{1}};
+        vector<vector<int>> C{{0},{0}}; 
+         C=matmul(matpower(A,n),B);
+         return C[0][0];
+    }
+
     int climbStairs(int n) {
         // vector<int> dp(n, -1);
         // return solve(n, 0, dp);
 
         // return solveTab(n);
 
-        return solveOpt(n);
+        // return solveOpt(n);
+
+        return solveMat(n);
     }
 };
