@@ -12,7 +12,7 @@ public:
         if(nums[0]-diff[0]>0)return false;
         for(int i=1; i<n; i++){
             diff[i]+=diff[i-1];
-            if(nums[i]-diff[i]>0)return false;
+            if(nums[i]>diff[i])return false;
         }
         
         return true;
