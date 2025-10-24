@@ -13,9 +13,7 @@ public:
             diff[i]+=diff[i-1];
         }
         bool result=true;
-        for(int i=0; i<n; i++){
-            cout<<diff[i]<<" ";
-        }
+       
         for(int i=0; i<n; i++){
             if(nums[i]-diff[i]>0)return false;
         }
