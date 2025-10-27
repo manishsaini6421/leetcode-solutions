@@ -12,10 +12,7 @@ public:
             }
             count[i]=temp;
         }
-        for(int i=0; i<m; i++){
-            cout<<count[i]<<" ";
-        }
-        cout<<endl;
+       
         int ans=0;
         for(int i=0; i<m-1; i++){
             int j=i+1;
@@ -23,7 +20,6 @@ public:
                 j++;
             }
             ans+=(count[i]*count[j]);
-            cout<<ans<<endl;
         }
         return ans;
     }
