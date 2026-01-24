@@ -20,20 +20,19 @@ public:
 
     //Using Bit Manipulation 
     int singleNumber(vector<int>& nums) {
-        int A[32]={0};
+        int count=0;
         int n=nums.size();
+        int num=0;
         for(int i=0; i<32; i++){
             for(int j=0; j<n; j++){
-                A[31-i]+=(nums[j]&1);
-                nums[j]>>=1;
+                count+=(nums[j]>>i & 1);
+               
             }
+            if(count%3==1)num|=(1<<i);
+            count=0;
         }
-        int num=0;
-        long pow=1;
-        for(int i=31; i>=0; i--){
-            num+=(A[i]%3)*pow;
-            pow*=2;
-        }
+      
+        
         return num;
     }
 
