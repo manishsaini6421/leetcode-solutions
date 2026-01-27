@@ -1,10 +1,10 @@
 class Solution {
 public:
     int minCost(int n, vector<vector<int>>& edges) {
-        unordered_map<int, set<pair<int, int>>> adjList;
+        vector<vector<pair<int,int>>> adjList(n);
         for (auto edge : edges) {
-            adjList[edge[0]].insert({edge[1], edge[2]});
-            adjList[edge[1]].insert({edge[0], 2 * edge[2]});
+            adjList[edge[0]].push_back({edge[1], edge[2]});
+            adjList[edge[1]].push_back({edge[0], 2 * edge[2]});
         }
         vector<int> visited(n, 0);
         vector<int> dist(n, INT_MAX);
