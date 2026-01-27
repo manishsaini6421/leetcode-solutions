@@ -1,10 +1,10 @@
 class Solution {
 public:
     int minCost(int n, vector<vector<int>>& edges) {
-        unordered_map<int,set<pair<int,int>>> connections;
+        unordered_map<int,set<pair<int,int>>> adjList;
         for(auto edge:edges){
-            connections[edge[0]].insert({edge[1],edge[2]});
-            connections[edge[1]].insert({edge[0],2*edge[2]});
+            adjList[edge[0]].insert({edge[1],edge[2]});
+            adjList[edge[1]].insert({edge[0],2*edge[2]});
         }
         vector<int> visited(n,0);
         vector<int> dist(n,INT_MAX);
@@ -14,14 +14,18 @@ public:
        s.insert({0,0});
        while(!s.empty()){
          auto top=*s.begin();
-         visited[top.second]=1;
+         int pathLength=top.first;
+         int node=top.second;
+         visited[node]=1;
          s.erase(s.begin());
-         for(auto node:connections[top.second]){
-            if(!visited[node.first]){
-                if(dist[node.first]>node.second+top.first){
-                    dist[node.first]=node.second+top.first;
+         for(auto pair:adjList[node]){
+            int neighbour=pair.first;
+            int edgeWeight=pair.second;
+            if(!visited[neighbour]){
+                if(dist[neighbour]>edgeWeight+pathLength){
+                    dist[neighbour]=edgeWeight+pathLength;
                 }
-                s.insert({dist[node.first],node.first});
+                s.insert({dist[neighbour],neighbour});
             }
             
          }
