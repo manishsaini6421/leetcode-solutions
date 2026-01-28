@@ -29,7 +29,7 @@ public:
             pq.pop();
            
             if(cost>dist[x][y][t])continue;
-            
+
             if(x==m-1 && y==n-1)return dist[x][y][t];
             if(x+1<m){
                 int nc=cost+grid[x+1][y];
@@ -51,6 +51,10 @@ public:
                 while(ptr[t]<cells.size() && cells[ptr[t]].first<=grid[x][y]){
                     int i=cells[ptr[t]].second.first;
                     int j=cells[ptr[t]].second.second;
+                    if(i==x && j==y){
+                        ptr[t]++;
+                        continue;
+                    }
                     if(cost<dist[i][j][t+1]){
                         dist[i][j][t+1]=cost;
                         pq.push({cost,i,j,t+1});
