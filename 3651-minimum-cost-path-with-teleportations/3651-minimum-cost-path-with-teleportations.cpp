@@ -28,7 +28,8 @@ public:
             auto [cost,x,y,t]=pq.top();
             pq.pop();
            
-
+            if(cost>dist[x][y][t])continue;
+            
             if(x==m-1 && y==n-1)return dist[x][y][t];
             if(x+1<m){
                 int nc=cost+grid[x+1][y];
