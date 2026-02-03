@@ -5,24 +5,36 @@ public:
         int n=nums.size();
         sort(nums.begin(),nums.end());
 
-        set<vector<int>> temp;
+        vector<vector<int>> ans;
         for(int i=0; i<n-2; i++){
-            int j=i+1,k=n-1;
+            //Skip first duplicate element
+            if(i>0 && nums[i]==nums[i-1])continue;
+            if(nums[i]>0)break;
+
+            int j=i+1,k=n-1,x=INT_MAX,y=INT_MAX;
            while(j<k){
+
                 if(nums[i]+nums[j]+nums[k]==0){
-                    temp.insert({nums[i],nums[j],nums[k]});
+                    ans.push_back({nums[i],nums[j],nums[k]});
+                    x=nums[j];
+                    y=nums[k];
                     j++;
                     k--;
+                    //Skip second duplicate element
+                    while(j<k && nums[j]==nums[j-1]){
+                        j++;
+                    }
+                    //Skip third duplicate element
+                    while(j<k && nums[k]==nums[k+1]){
+                        k--;
+                    }
                 }
                 else if(nums[i]+nums[j]+nums[k]<0){
                     j++;
                 }else k--;
            }
         }
-        vector<vector<int>> ans;
-        for(auto v:temp){
-            ans.push_back(v);
-        }
+        
         return ans;
     }
 };
