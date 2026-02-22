@@ -1,20 +1,22 @@
 class Solution {
 public:
     int binaryGap(int n) {
-        vector<int> v;
-        int i=-1;
+        int ans=0;
+        int curr=-1,prev=-1;
         while(n){
-            i++;
+            curr++;
             if(n&1){
-                v.push_back(i);
+                if(prev!=-1)
+                ans=max(ans,curr-prev);
+                prev=curr;
             }
             
             n>>=1;
         }
-        int ans=0;
-        for(int i=1; i<v.size(); i++){
-            ans=max(ans,v[i]-v[i-1]);
-        }
+        
+        // for(int i=1; i<v.size(); i++){
+        //     ans=max(ans,v[i]-v[i-1]);
+        // }
         return ans;
     }
 };
