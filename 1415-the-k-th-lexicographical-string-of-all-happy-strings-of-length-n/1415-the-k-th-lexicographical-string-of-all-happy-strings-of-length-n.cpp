@@ -12,7 +12,7 @@ public:
             }
             return;
         }
-
+        if(count>k)return;
         if (s.size()==0 || s[s.size() - 1] != 'a')
             solve(k, n, s + 'a');
         if (s.size()==0 || s[s.size() - 1] != 'b')
