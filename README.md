@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- | ------- |
 | [0043-multiply-strings](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0043-multiply-strings) |
 | [0066-plus-one](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0066-plus-one) |
+| [0628-maximum-product-of-three-numbers](https://github.com/manishsaini6421/leetcode-solutions/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0670-maximum-swap](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0670-maximum-swap) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1806-count-of-matches-in-tournament](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1806-count-of-matches-in-tournament) |
@@ -47,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0442-find-all-duplicates-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+| [0628-maximum-product-of-three-numbers](https://github.com/manishsaini6421/leetcode-solutions/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0907-koko-eating-bananas](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0907-koko-eating-bananas) |
 | [0952-word-subsets](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0952-word-subsets) |
@@ -175,6 +177,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0532-k-diff-pairs-in-an-array) |
+| [0628-maximum-product-of-three-numbers](https://github.com/manishsaini6421/leetcode-solutions/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/manishsaini6421/leetcode-solutions/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [1256-rank-transform-of-an-array](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1256-rank-transform-of-an-array) |
 | [1458-sort-integers-by-the-number-of-1-bits](https://github.com/manishsaini6421/leetcode-solutions/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
