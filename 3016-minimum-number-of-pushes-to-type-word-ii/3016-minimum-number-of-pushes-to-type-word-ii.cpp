@@ -15,10 +15,6 @@ public:
             else if(i<24)ans+=(v[i]*3);
             else ans+=(v[i]*4);
         }
-        for(auto x:v){
-            cout<<x<<endl;
-        }
-        
        
         return ans;
        
